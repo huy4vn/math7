@@ -183,13 +183,28 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
 
       {globalUploadedUrls.length > 0 && (
         <div style={{ marginBottom: '1.5rem', padding: '1rem', backgroundColor: '#eff6ff', borderRadius: '0.75rem', border: '1px solid #bfdbfe' }}>
-          <p style={{ fontSize: '0.9rem', color: '#1e40af', margin: '0 0 0.5rem 0', fontWeight: 600 }}>
+          <p style={{ fontSize: '0.9rem', color: '#1e40af', margin: '0 0 0.75rem 0', fontWeight: 600 }}>
             📸 Ảnh bài làm đã tải lên ({globalUploadedUrls.length}):
           </p>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
             {globalUploadedUrls.map((url, i) => (
-              <a key={i} href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#2563eb', fontSize: '0.875rem', fontWeight: 500 }}>
-                Xem ảnh {i + 1}
+              <a key={i} href={url} target="_blank" rel="noopener noreferrer" title={`Xem ảnh ${i + 1}`}>
+                <img
+                  src={url}
+                  alt={`Ảnh bài làm ${i + 1}`}
+                  style={{
+                    width: '90px',
+                    height: '90px',
+                    objectFit: 'cover',
+                    borderRadius: '0.5rem',
+                    border: '2px solid #93c5fd',
+                    display: 'block',
+                    transition: 'transform 0.2s, border-color 0.2s',
+                    cursor: 'pointer',
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLImageElement).style.transform = 'scale(1.05)'; (e.currentTarget as HTMLImageElement).style.borderColor = '#2563eb'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLImageElement).style.transform = 'scale(1)'; (e.currentTarget as HTMLImageElement).style.borderColor = '#93c5fd'; }}
+                />
               </a>
             ))}
           </div>
