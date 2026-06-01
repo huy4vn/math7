@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/blob": "^2.4.0",
+    "cloudinary": "^2.10.0",
     "framer-motion": "^12.40.0",
     "katex": "^0.17.0",
     "lucide-react": "^1.17.0",

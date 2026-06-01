@@ -36,7 +36,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ id: st
       
       <QuizComponent quizzes={chapterData.quizzes} />
       
-      <EssayComponent essays={chapterData.essays} />
+      <EssayComponent essays={chapterData.essays} chapterId={chapterData.id} />
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HelpCircle, CheckCircle2, XCircle, Loader2 } from "lucide-react";
+import { HelpCircle, CheckCircle2, XCircle, Loader2, ChevronDown, ChevronUp } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -22,6 +22,7 @@ export default function QuizComponent({ quizzes }: QuizProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   const handleSelect = (qIndex: number, optIndex: number) => {
     if (showResults) return;
@@ -69,12 +70,30 @@ export default function QuizComponent({ quizzes }: QuizProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <div className={styles.sectionHeader}>
-        <div className={styles.iconWrapper}>
-          <HelpCircle size={20} className={styles.icon} />
+      <div 
+        className={styles.sectionHeader}
+        style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+        onClick={() => setIsCollapsed(!isCollapsed)}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div className={styles.iconWrapper}>
+            <HelpCircle size={20} className={styles.icon} />
+          </div>
+          <h2 style={{ margin: 0 }}>Trắc Nghiệm Nhanh</h2>
         </div>
-        <h2>Trắc Nghiệm Nhanh</h2>
+        <button style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer' }}>
+          {isCollapsed ? <ChevronDown size={24} /> : <ChevronUp size={24} />}
+        </button>
       </div>
+
+      <AnimatePresence>
+        {!isCollapsed && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            style={{ overflow: 'hidden' }}
+          >
 
       <div className={styles.quizList}>
         {quizzes.map((quiz, qIdx) => {
@@ -177,6 +196,9 @@ export default function QuizComponent({ quizzes }: QuizProps) {
           </button>
         </div>
       )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }

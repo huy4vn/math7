@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PenTool, ChevronDown, ChevronUp, Lightbulb, Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
@@ -15,13 +15,18 @@ interface EssayProps {
     hint: string;
     solution: string;
   }[];
+  chapterId?: number;
 }
 
-export default function EssayComponent({ essays }: EssayProps) {
+export default function EssayComponent({ essays, chapterId }: EssayProps) {
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [currentInputs, setCurrentInputs] = useState<Record<number, string>>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Record<number, string>>({});
   const [isSubmitting, setIsSubmitting] = useState<Record<number, boolean>>({});
+  const [isUploadingGlobal, setIsUploadingGlobal] = useState(false);
+  const [globalUploadedUrls, setGlobalUploadedUrls] = useState<string[]>([]);
+  const [isSectionCollapsed, setIsSectionCollapsed] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const toggleExpand = (id: number) => {
     setExpandedId(expandedId === id ? null : id);
@@ -43,7 +48,8 @@ export default function EssayComponent({ essays }: EssayProps) {
         body: JSON.stringify({
           type: 'essay',
           essayIndex: idx,
-          studentAnswer: currentInputs[idx]
+          studentAnswer: currentInputs[idx],
+          imageUrls: globalUploadedUrls
         })
       });
       setSubmittedAnswers({ ...submittedAnswers, [idx]: currentInputs[idx] });
@@ -52,6 +58,48 @@ export default function EssayComponent({ essays }: EssayProps) {
     }
     
     setIsSubmitting({ ...isSubmitting, [idx]: false });
+  };
+
+  const handleGlobalFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.files || !e.target.files[0]) return;
+    const file = e.target.files[0];
+    
+    setIsUploadingGlobal(true);
+    
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    const folderPath = chapterId ? `math-revision/chuong-${chapterId}` : 'math-revision/bai-tu-luan-chung';
+    formData.append('folder', folderPath);
+
+    try {
+      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (data.url) {
+        setGlobalUploadedUrls(prev => {
+          const newUrls = [...prev, data.url];
+          
+          // Tự động đồng bộ sang blob ngay sau khi upload
+          fetch('/api/sync', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              type: 'image_upload',
+              imageUrls: newUrls
+            })
+          }).catch(err => console.error('Failed to sync image upload', err));
+          
+          return newUrls;
+        });
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    setIsUploadingGlobal(false);
+    
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
   };
 
   const inlineMarkdownComponents = {
@@ -65,14 +113,59 @@ export default function EssayComponent({ essays }: EssayProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
     >
-      <div className={styles.sectionHeader}>
-        <div className={styles.iconWrapper}>
-          <PenTool size={20} className={styles.icon} />
+      <div 
+        className={styles.sectionHeader}
+        style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+        onClick={() => setIsSectionCollapsed(!isSectionCollapsed)}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div className={styles.iconWrapper}>
+            <PenTool size={20} className={styles.icon} />
+          </div>
+          <h2 style={{ margin: 0 }}>Thử Thách Tự Luận</h2>
         </div>
-        <h2>Thử Thách Tự Luận</h2>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <button 
+            className="btn btn-secondary"
+            style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap', padding: '0.5rem 1rem', background: 'white', color: '#374151', border: '1px solid #d1d5db', borderRadius: '0.5rem', cursor: 'pointer' }}
+            onClick={(e) => {
+              e.stopPropagation();
+              fileInputRef.current?.click();
+            }}
+            disabled={isUploadingGlobal}
+          >
+            {isUploadingGlobal ? <Loader2 size={16} style={{ animation: 'spin 2s linear infinite' }} /> : '📸 Upload ảnh'}
+          </button>
+          <button style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer' }}>
+            {isSectionCollapsed ? <ChevronDown size={24} /> : <ChevronUp size={24} />}
+          </button>
+        </div>
       </div>
 
-      <div className={styles.essayList}>
+      {globalUploadedUrls.length > 0 && (
+        <div style={{ marginBottom: '1.5rem', padding: '1rem', backgroundColor: '#eff6ff', borderRadius: '0.75rem', border: '1px solid #bfdbfe' }}>
+          <p style={{ fontSize: '0.9rem', color: '#1e40af', margin: '0 0 0.5rem 0', fontWeight: 600 }}>
+            📸 Ảnh bài làm đã tải lên ({globalUploadedUrls.length}):
+          </p>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            {globalUploadedUrls.map((url, i) => (
+              <a key={i} href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#2563eb', fontSize: '0.875rem', fontWeight: 500 }}>
+                Xem ảnh {i + 1}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <AnimatePresence>
+        {!isSectionCollapsed && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            style={{ overflow: 'hidden' }}
+          >
+            <div className={styles.essayList}>
         {essays.map((essay, idx) => (
           <div key={idx} className={styles.essayItem}>
             <div 
@@ -155,7 +248,18 @@ export default function EssayComponent({ essays }: EssayProps) {
             </AnimatePresence>
           </div>
         ))}
-      </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <input 
+        type="file" 
+        ref={fileInputRef} 
+        accept="image/*" 
+        style={{ display: 'none' }} 
+        onChange={handleGlobalFileUpload} 
+      />
     </motion.div>
   );
 }
