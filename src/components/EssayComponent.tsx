@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PenTool, ChevronDown, ChevronUp, Lightbulb, Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
@@ -28,6 +28,43 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
   const [isSectionCollapsed, setIsSectionCollapsed] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  useEffect(() => {
+    if (!chapterId) return;
+    const loadData = async () => {
+      try {
+        const res = await fetch('/api/sync');
+        if (res.ok) {
+          const data = await res.json();
+          // Filter data for this chapter
+          const chapterRecords = data.filter((r: any) => r.chapterId === chapterId);
+          
+          // Load uploaded images
+          const imageUploads = chapterRecords.filter((r: any) => r.type === 'image_upload');
+          if (imageUploads.length > 0) {
+            const latest = imageUploads[imageUploads.length - 1];
+            if (latest.imageUrls) {
+              setGlobalUploadedUrls(latest.imageUrls);
+            }
+          }
+          
+          // Load submitted answers
+          const essayRecords = chapterRecords.filter((r: any) => r.type === 'essay');
+          const loadedAnswers: Record<number, string> = {};
+          const loadedInputs: Record<number, string> = {};
+          essayRecords.forEach((r: any) => {
+             loadedAnswers[r.essayIndex] = r.studentAnswer;
+             loadedInputs[r.essayIndex] = r.studentAnswer;
+          });
+          setSubmittedAnswers(loadedAnswers);
+          setCurrentInputs(prev => ({ ...prev, ...loadedInputs }));
+        }
+      } catch (e) {
+        console.error('Failed to load data', e);
+      }
+    };
+    loadData();
+  }, [chapterId]);
+
   const toggleExpand = (id: number) => {
     setExpandedId(expandedId === id ? null : id);
   };
@@ -47,6 +84,7 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'essay',
+          chapterId: chapterId || 1,
           essayIndex: idx,
           studentAnswer: currentInputs[idx],
           imageUrls: globalUploadedUrls
@@ -85,6 +123,7 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               type: 'image_upload',
+              chapterId: chapterId || 1,
               imageUrls: newUrls
             })
           }).catch(err => console.error('Failed to sync image upload', err));

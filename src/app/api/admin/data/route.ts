@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     const { blobs } = await list({ prefix: FILE_NAME, limit: 1, token });
     if (blobs.length === 0) return NextResponse.json([]);
     
-    const res = await fetch(blobs[0].url);
+    const res = await fetch(blobs[0].downloadUrl);
     if (!res.ok) {
         return NextResponse.json({ error: 'Failed to fetch blob data' }, { status: 500 });
     }
