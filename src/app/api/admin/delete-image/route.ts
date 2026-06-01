@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       const { blobs } = await list({ prefix: FILE_NAME, limit: 1, token });
       
       if (blobs.length > 0) {
-        const res = await fetch(blobs[0].url);
+        const res = await fetch(blobs[0].downloadUrl);
         if (res.ok) {
           existingData = await res.json();
         }
@@ -55,12 +55,25 @@ export async function POST(request: Request) {
         }
       }
 
-      await put(FILE_NAME, JSON.stringify(existingData), {
-        access: 'public',
-        addRandomSuffix: false,
-        token,
-        contentType: 'application/json',
-      });
+      try {
+        await put(FILE_NAME, JSON.stringify(existingData), {
+          access: 'public',
+          addRandomSuffix: false,
+          token,
+          contentType: 'application/json',
+        });
+      } catch (e: any) {
+        if (e.message?.includes('private store')) {
+          await put(FILE_NAME, JSON.stringify(existingData), {
+            access: 'private',
+            addRandomSuffix: false,
+            token,
+            contentType: 'application/json',
+          });
+        } else {
+          throw e;
+        }
+      }
     }
 
     return NextResponse.json({ success: true });
