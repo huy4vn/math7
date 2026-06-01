@@ -37,6 +37,9 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
           const data = await res.json();
           // Filter data for this chapter - use == to handle both string and number
           const chapterRecords = data.filter((r: any) => Number(r.chapterId) === Number(chapterId));
+          console.log('[EssayComponent] all data:', data);
+          console.log('[EssayComponent] chapterId:', chapterId, typeof chapterId);
+          console.log('[EssayComponent] chapterRecords:', chapterRecords);
           
           // Load uploaded images
           const imageUploads = chapterRecords.filter((r: any) => r.type === 'image_upload');
