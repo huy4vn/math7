@@ -1,67 +1,179 @@
 {
   "id": 7,
-  "title": "Chương 7: Biểu thức đại số",
-  "summary": "1. Biểu thức số: Gồm các số nối với nhau bởi các phép tính.\nVí dụ: 2 + 3.4 - 5\n2. Biểu thức đại số: Gồm các số, các chữ (đại diện cho số) nối với nhau bởi các phép tính.\nVí dụ: 2x^2 + 3y\n3. Đa thức một biến: Là tổng của những đơn thức của cùng một biến. Bậc của đa thức một biến là số mũ lớn nhất của biến.\nVí dụ: P(x) = x^2 + 5x - 6 (Bậc 2)\n4. Phép cộng, trừ đa thức: Cộng/trừ các đơn thức cùng lũy thừa (đồng dạng).\nVí dụ: (2x^2 + x) + (x^2) = 3x^2 + x.\n5. Phép nhân, chia đa thức một biến: Nhân đơn thức với đa thức, đa thức với đa thức theo tính chất phân phối. Chia đa thức đã sắp xếp cho đa thức.\nVí dụ: x(x + 2) = x^2 + 2x.",
+  "title": "Chương 7: Biểu thức đại số và Đa thức một biến",
+  "summary": "Dưới đây là hệ thống hóa chi tiết kèm phương pháp làm bài về **Biểu thức đại số** và **Đa thức một biến**:\n\n---\n\n## 1. Phân biệt Biểu thức số và Biểu thức đại số\n\n* **Biểu thức số:** Chỉ chứa các số thực và các phép toán (cộng, trừ, nhân, chia, nâng lên lũy thừa).\n  * *Ví dụ:* $5 \\cdot (3^2 - 4) + \\frac{1}{2}$\n\n* **Biểu thức đại số:** Ngoài các số và phép toán, biểu thức còn chứa **các chữ** (gọi là biến số), đại diện cho các số chưa biết.\n  * *Ví dụ:* $3x - 5y + \\frac{z}{x}$\n\n---\n\n## 2. Đa thức một biến\n\nĐa thức một biến là một dạng biểu thức đại số đặc biệt, trong đó chỉ xuất hiện **duy nhất một chữ** (biến).\n\n![Đa thức một biến](/images/da_thuc_mot_bien.png)\n\n### Các khái niệm quan trọng cần nhớ:\n\n* **Thu gọn đa thức:** Nhóm các đơn thức có cùng số mũ của biến (đơn thức đồng dạng) lại với nhau để cộng/trừ các hệ số.\n* **Sắp xếp đa thức:** Thường sắp xếp theo **lũy thừa giảm dần** hoặc tăng dần của biến (nên ưu tiên sắp xếp giảm dần trước khi làm các phép toán).\n* **Bậc của đa thức:** Là **số mũ lớn nhất** của biến trong đa thức đó (sau khi đã thu gọn).\n* **Hệ số:**\n  * *Hệ số cao nhất:* Là hệ số của hạng tử có bậc lớn nhất.\n  * *Hệ số tự do:* Là hạng tử không chứa biến (bậc 0).\n\n**Ví dụ thực tế:** Cho đa thức $A(x) = 2x - 5x^3 + x^2 + 5x^3 + 7$.\n\n1. *Thu gọn:* Nhận thấy $-5x^3$ và $5x^3$ triệt tiêu nhau $\\rightarrow A(x) = x^2 + 2x + 7$.\n2. *Bậc:* Số mũ lớn nhất là $2 \\rightarrow$ Đa thức bậc 2.\n3. *Hệ số:* Hệ số cao nhất là $1$ (của $x^2$), hệ số tự do là $7$.\n\n---\n\n## 3. Các phép toán trên Đa thức một biến\n\n### A. Phép cộng và trừ đa thức\n\nCó 2 cách làm phổ biến:\n\n* **Cách 1 (Hàng ngang):** Phá ngoặc (chú ý đổi dấu nếu trước ngoặc là dấu trừ) rồi nhóm các hạng tử đồng dạng.\n* **Cách 2 (Cột dọc):** Sắp xếp hai đa thức theo lũy thừa giảm dần, đặt các hạng tử cùng bậc thẳng cột với nhau rồi cộng/trừ theo từng cột.\n\n**Ví dụ (Phép trừ theo cột dọc):**\nTính $P(x) - Q(x)$ biết $P(x) = 3x^2 + 2x - 1$ và $Q(x) = x^2 - x + 4$.\n\n```text\n  P(x)        =  3x² + 2x - 1\n- Q(x)        =   x² -  x + 4\n-----------------------------\n  P(x) - Q(x) = 2x² + 3x - 5\n```\n\n### B. Phép nhân đa thức\n\n* **Nhân đơn thức với đa thức:** $A \\cdot (B + C) = A \\cdot B + A \\cdot C$\n* **Nhân đa thức với đa thức:** $(A + B) \\cdot (C + D) = A \\cdot C + A \\cdot D + B \\cdot C + B \\cdot D$\n*(Lấy từng hạng tử của đa thức thứ nhất nhân lần lượt với từng hạng tử của đa thức thứ hai rồi cộng các kết quả lại).*\n\n**Ví dụ (Phép nhân đa thức):**\nTính $(x - 3) \\cdot (2x + 5)$\n* $= x \\cdot (2x + 5) - 3 \\cdot (2x + 5)$\n* $= (2x^2 + 5x) - (6x + 15)$\n* $= 2x^2 + 5x - 6x - 15$\n* $= 2x^2 - x - 15$\n\n### C. Phép chia đa thức một biến\n\nĐối với lớp 7, ta thực hiện phép chia đa thức đã sắp xếp bằng cách đặt tính chia tương tự như chia các số tự nhiên.\n\n**Các bước thực hiện:**\n\n1. Lấy hạng tử bậc cao nhất của đa thức bị chia chia cho hạng tử bậc cao nhất của đa thức chia $\\rightarrow$ Được thương đầu tiên.\n2. Nhân thương này ngược lại với đa thức chia.\n3. Lấy đa thức bị chia trừ đi tích vừa tìm được $\\rightarrow$ Được dư thứ nhất.\n4. Tiếp tục lặp lại quy trình với phần dư cho đến khi số dư có bậc nhỏ hơn bậc của đa thức chia (Phép chia có dư) hoặc số dư bằng 0 (Phép chia hết).\n\n**Ví dụ (Đặt tính chia đa thức):**\nTính $(2x^3 - 5x^2 + 6x - 15) : (x - 2)$\n\n**Chi tiết các bước thực hiện:**\n* **Lần chia 1:** Lấy $2x^3$ chia cho $x$ được $2x^2$. Nhân ngược $2x^2$ với $(x-2)$ được $2x^3 - 4x^2$. Trừ đi, dư $-x^2$. Hạ $6x$ xuống.\n* **Lần chia 2:** Lấy $-x^2$ chia cho $x$ được $-x$. Nhân ngược $-x$ với $(x-2)$ được $-x^2 + 2x$. Trừ đi, dư $4x$. Hạ $-15$ xuống.\n* **Lần chia 3:** Lấy $4x$ chia cho $x$ được $4$. Nhân ngược $4$ với $(x-2)$ được $4x - 8$. Trừ đi, dư $-7$.\n* **Dừng lại:** Bậc của $-7$ (bậc 0) nhỏ hơn đa thức chia (bậc 1) nên phép chia kết thúc.\n\n![Đặt tính chia đa thức](/images/phep_chia_da_thuc.png)\n\n*Kết luận:* Thương là $2x^2 - x + 4$, số dư là $-7$.",
   "quizzes": [
     {
-      "question": "Trong các biểu thức sau, đâu là biểu thức đại số?",
-      "options": [
-        "2 + 3.4",
-        "x^2 + 5x - 6",
-        "15 / 3",
-        "2^3 + 1"
-      ],
+      "question": "Biểu thức nào sau đây là biểu thức đại số?",
+      "options": ["$5 \\cdot 3^2 - 1$", "$2x - 3y + 5$", "$15 + 2 \\cdot 7$", "$\\frac{1}{2} + \\frac{3}{4}$"],
       "answer": 1,
-      "explanation": "Biểu thức đại số chứa cả chữ (biến) và số."
+      "explanation": "Biểu thức đại số là biểu thức có chứa các chữ (biến số) đại diện cho số chưa biết. Đáp án $2x - 3y + 5$ chứa biến $x, y$."
     },
     {
-      "question": "Bậc của đa thức P(x) = 5x^3 - 2x^4 + x - 1 là bao nhiêu?",
-      "options": [
-        "3",
-        "4",
-        "1",
-        "5"
-      ],
-      "answer": 1,
-      "explanation": "Bậc là số mũ lớn nhất của biến trong đa thức. Trong trường hợp này là 4."
+      "question": "Đa thức $P(x) = 5x^4 - 2x^2 + 3x - 7$ có bậc là bao nhiêu?",
+      "options": ["$1$", "$2$", "$3$", "$4$"],
+      "answer": 3,
+      "explanation": "Bậc của đa thức là số mũ lớn nhất của biến trong đa thức đã thu gọn. Trong đa thức này, số mũ lớn nhất là $4$."
     },
     {
-      "question": "Nghiệm của đa thức P(x) là giá trị của x làm cho:",
-      "options": [
-        "P(x) > 0",
-        "P(x) = 1",
-        "P(x) = 0",
-        "P(x) < 0"
-      ],
+      "question": "Hệ số tự do của đa thức $A(x) = 3x^3 - 4x^2 + x - 9$ là:",
+      "options": ["$3$", "$-4$", "$1$", "$-9$"],
+      "answer": 3,
+      "explanation": "Hệ số tự do là hạng tử không chứa biến (tương ứng với bậc 0). Ở đây là $-9$."
+    },
+    {
+      "question": "Hệ số cao nhất của đa thức $B(x) = -2x^5 + 4x^3 - x + 10$ là:",
+      "options": ["$10$", "$-2$", "$4$", "$-1$"],
+      "answer": 1,
+      "explanation": "Hệ số cao nhất là hệ số của hạng tử có bậc lớn nhất. Bậc lớn nhất là 5, hệ số đi kèm là $-2$."
+    },
+    {
+      "question": "Thu gọn đa thức $M(x) = 3x^2 - 5x + x^2 + 2x$ ta được:",
+      "options": ["$4x^2 - 3x$", "$2x^2 - 3x$", "$4x^2 + 3x$", "$2x^2 + 7x$"],
+      "answer": 0,
+      "explanation": "$M(x) = (3x^2 + x^2) + (-5x + 2x) = 4x^2 - 3x$."
+    },
+    {
+      "question": "Cho $P(x) = 2x - 3$ và $Q(x) = x + 5$. Tính $P(x) + Q(x)$.",
+      "options": ["$3x + 2$", "$3x - 8$", "$x + 2$", "$x - 8$"],
+      "answer": 0,
+      "explanation": "$P(x) + Q(x) = (2x - 3) + (x + 5) = 2x + x - 3 + 5 = 3x + 2$."
+    },
+    {
+      "question": "Tính $A(x) - B(x)$ biết $A(x) = 4x^2 - 2x$ và $B(x) = x^2 + x$.",
+      "options": ["$3x^2 - x$", "$3x^2 - 3x$", "$5x^2 - x$", "$5x^2 - 3x$"],
+      "answer": 1,
+      "explanation": "$A(x) - B(x) = (4x^2 - 2x) - (x^2 + x) = 4x^2 - 2x - x^2 - x = 3x^2 - 3x$."
+    },
+    {
+      "question": "Tích của đơn thức $3x$ và đa thức $(x - 2)$ là:",
+      "options": ["$3x^2 - 2$", "$3x^2 - 6x$", "$3x^2 - 6$", "$x^2 - 6x$"],
+      "answer": 1,
+      "explanation": "$3x \\cdot (x - 2) = 3x \\cdot x - 3x \\cdot 2 = 3x^2 - 6x$."
+    },
+    {
+      "question": "Giá trị của đa thức $P(x) = x^2 - 4x + 4$ tại $x = 2$ là:",
+      "options": ["$0$", "$4$", "$8$", "$-4$"],
+      "answer": 0,
+      "explanation": "Thay $x = 2$ vào $P(x)$: $P(2) = 2^2 - 4 \\cdot 2 + 4 = 4 - 8 + 4 = 0$."
+    },
+    {
+      "question": "Số $a$ được gọi là nghiệm của đa thức $P(x)$ nếu:",
+      "options": ["$P(a) = 1$", "$P(a) = 0$", "$P(0) = a$", "$a = 0$"],
+      "answer": 1,
+      "explanation": "Nghiệm của đa thức là giá trị của biến làm cho giá trị của đa thức bằng 0."
+    },
+    {
+      "question": "Đa thức nào sau đây không có nghiệm thực?",
+      "options": ["$x^2 - 1$", "$x - 5$", "$x^2 + 1$", "$2x$"],
       "answer": 2,
-      "explanation": "Nghiệm của đa thức là giá trị của biến tại đó giá trị đa thức bằng 0."
+      "explanation": "Vì $x^2 \\ge 0$ với mọi $x$, nên $x^2 + 1 \\ge 1 > 0$ với mọi $x$. Đa thức $x^2 + 1$ không bao giờ bằng 0."
+    },
+    {
+      "question": "Nghiệm của đa thức $Q(x) = 2x - 6$ là:",
+      "options": ["$2$", "$-3$", "$6$", "$3$"],
+      "answer": 3,
+      "explanation": "Cho $Q(x) = 0 \\Rightarrow 2x - 6 = 0 \\Rightarrow 2x = 6 \\Rightarrow x = 3$."
+    },
+    {
+      "question": "Kết quả của phép nhân $(x + 1)(x + 2)$ là:",
+      "options": ["$x^2 + 2$", "$x^2 + 3x + 2$", "$x^2 + 2x + 1$", "$2x + 3$"],
+      "answer": 1,
+      "explanation": "$(x+1)(x+2) = x(x+2) + 1(x+2) = x^2 + 2x + x + 2 = x^2 + 3x + 2$."
+    },
+    {
+      "question": "Đa thức $P(x) = -3x^2 + x^3 - 2 + 5x$ sau khi sắp xếp theo lũy thừa giảm dần là:",
+      "options": ["$x^3 - 3x^2 + 5x - 2$", "$-3x^2 + x^3 + 5x - 2$", "$-2 + 5x - 3x^2 + x^3$", "$x^3 + 5x - 3x^2 - 2$"],
+      "answer": 0,
+      "explanation": "Bậc lớn nhất là 3 ($x^3$), tiếp theo là 2 ($-3x^2$), tiếp theo là 1 ($5x$), cuối cùng là tự do ($-2$). Kết quả: $x^3 - 3x^2 + 5x - 2$."
+    },
+    {
+      "question": "Bậc của đa thức $A(x) = x(x^2 - 1)$ là:",
+      "options": ["$1$", "$2$", "$3$", "$4$"],
+      "answer": 2,
+      "explanation": "Ta nhân ra: $A(x) = x \\cdot x^2 - x \\cdot 1 = x^3 - x$. Số mũ lớn nhất là 3, nên bậc là 3."
+    },
+    {
+      "question": "Khi chia đa thức $2x^3 - x^2$ cho đơn thức $x^2$, ta được thương là:",
+      "options": ["$2x - 1$", "$2x - x^2$", "$2x^2 - 1$", "$2x + 1$"],
+      "answer": 0,
+      "explanation": "$(2x^3 - x^2) : x^2 = 2x^3 : x^2 - x^2 : x^2 = 2x - 1$."
+    },
+    {
+      "question": "Cho $P(x) = x^2 - 5x + 6$. Số nào sau đây là nghiệm của $P(x)$?",
+      "options": ["$1$", "$2$", "$4$", "$-2$"],
+      "answer": 1,
+      "explanation": "Thay $x = 2$ vào $P(x)$: $2^2 - 5(2) + 6 = 4 - 10 + 6 = 0$. Vậy 2 là nghiệm."
+    },
+    {
+      "question": "Hệ số cao nhất của đa thức $H(x) = 5 - 7x^3 + 2x^2$ là:",
+      "options": ["$5$", "$-7$", "$2$", "$3$"],
+      "answer": 1,
+      "explanation": "Bậc lớn nhất là 3 ($x^3$). Hệ số đi kèm với nó là $-7$."
+    },
+    {
+      "question": "Tính đa thức $M(x)$ biết $M(x) + (x^2 - x) = 3x^2 + 2x$.",
+      "options": ["$2x^2 + 3x$", "$4x^2 + x$", "$2x^2 + x$", "$4x^2 - 3x$"],
+      "answer": 0,
+      "explanation": "$M(x) = (3x^2 + 2x) - (x^2 - x) = 3x^2 + 2x - x^2 + x = 2x^2 + 3x$."
+    },
+    {
+      "question": "Nghiệm của đa thức $A(x) = x^2 - 9$ là:",
+      "options": ["$3$", "$-3$", "$3$ và $-3$", "Vô nghiệm"],
+      "answer": 2,
+      "explanation": "$x^2 - 9 = 0 \\Rightarrow x^2 = 9 \\Rightarrow x = 3$ hoặc $x = -3$."
     }
   ],
   "essays": [
     {
-      "question": "Tính giá trị biểu thức A = 2x^2 - 3x + 1 tại x = -1.",
-      "hint": "Thay x = -1 vào biểu thức và tính.",
-      "solution": "A = 2(-1)^2 - 3(-1) + 1 = 2.1 + 3 + 1 = 6."
+      "question": "Cho đa thức $A(x) = 3x^4 - 2x^3 + 5x^2 - 7x^4 + 2x - 1 + 4x^4$.\n1. Thu gọn đa thức $A(x)$.\n2. Xác định bậc, hệ số cao nhất và hệ số tự do của $A(x)$ sau khi thu gọn.",
+      "hint": "Nhóm các hạng tử có cùng bậc lại ($x^4$ với $x^4$, v.v.) rồi cộng trừ hệ số.",
+      "solution": "1. Thu gọn đa thức:\n$$A(x) = (3x^4 - 7x^4 + 4x^4) - 2x^3 + 5x^2 + 2x - 1$$\n$$A(x) = 0 \\cdot x^4 - 2x^3 + 5x^2 + 2x - 1$$\n$$A(x) = -2x^3 + 5x^2 + 2x - 1$$\n\n2. Các thành phần của $A(x)$:\n- **Bậc:** 3 (vì số mũ lớn nhất là 3)\n- **Hệ số cao nhất:** $-2$ (hệ số của $x^3$)\n- **Hệ số tự do:** $-1$"
     },
     {
-      "question": "Thu gọn đa thức: P(x) = 3x^2 + 5x - 2x^2 + 4 - x",
-      "hint": "Nhóm các hạng tử có cùng số mũ của x.",
-      "solution": "P(x) = (3x^2 - 2x^2) + (5x - x) + 4 = x^2 + 4x + 4."
+      "question": "Tính giá trị của đa thức $P(x) = 2x^3 - 3x^2 + 5x - 4$ tại $x = 2$ và $x = -1$.",
+      "hint": "Thay lần lượt $x=2$ và $x=-1$ vào biểu thức rồi tính toán cẩn thận dấu âm.",
+      "solution": "* Thay $x = 2$ vào $P(x)$:\n$$P(2) = 2 \\cdot (2)^3 - 3 \\cdot (2)^2 + 5 \\cdot (2) - 4$$\n$$P(2) = 2 \\cdot 8 - 3 \\cdot 4 + 10 - 4$$\n$$P(2) = 16 - 12 + 10 - 4 = 10$$\n\n* Thay $x = -1$ vào $P(x)$:\n$$P(-1) = 2 \\cdot (-1)^3 - 3 \\cdot (-1)^2 + 5 \\cdot (-1) - 4$$\n$$P(-1) = 2 \\cdot (-1) - 3 \\cdot 1 - 5 - 4$$\n$$P(-1) = -2 - 3 - 5 - 4 = -14$$"
     },
     {
-      "question": "Cho P(x) = x^2 + 2x và Q(x) = 3x - x^2. Tính P(x) + Q(x).",
-      "hint": "Cộng các đa thức.",
-      "solution": "P(x) + Q(x) = (x^2 - x^2) + (2x + 3x) = 5x."
+      "question": "Cho hai đa thức:\n$M(x) = 4x^3 - 2x^2 + 5x - 3$\n$N(x) = -x^3 + 3x^2 - 5x + 7$\nTính $M(x) + N(x)$ và $M(x) - N(x)$.",
+      "hint": "Sử dụng cách đặt phép tính theo cột dọc hoặc nhóm các số hạng đồng dạng ở hàng ngang.",
+      "solution": "**Tính $M(x) + N(x)$:**\n$M(x) + N(x) = (4x^3 - 2x^2 + 5x - 3) + (-x^3 + 3x^2 - 5x + 7)$\n$= (4 - 1)x^3 + (-2 + 3)x^2 + (5 - 5)x + (-3 + 7)$\n$= 3x^3 + x^2 + 4$\n\n**Tính $M(x) - N(x)$:**\n$M(x) - N(x) = (4x^3 - 2x^2 + 5x - 3) - (-x^3 + 3x^2 - 5x + 7)$\n$= 4x^3 - 2x^2 + 5x - 3 + x^3 - 3x^2 + 5x - 7$\n$= (4 + 1)x^3 + (-2 - 3)x^2 + (5 + 5)x + (-3 - 7)$\n$= 5x^3 - 5x^2 + 10x - 10$"
     },
     {
-      "question": "Thực hiện phép nhân: x(2x - 3)",
-      "hint": "Nhân đơn thức với từng hạng tử của đa thức.",
-      "solution": "x.2x - x.3 = 2x^2 - 3x."
+      "question": "Tìm nghiệm của các đa thức sau:\na) $A(x) = 3x - 15$\nb) $B(x) = (x - 2)(2x + 1)$",
+      "hint": "Cho đa thức bằng 0. Với tích của hai biểu thức bằng 0, thì ít nhất một trong hai biểu thức phải bằng 0.",
+      "solution": "a) Cho $A(x) = 0$\n$\\Rightarrow 3x - 15 = 0$\n$\\Rightarrow 3x = 15 \\Rightarrow x = 5$\nVậy đa thức $A(x)$ có nghiệm là $x = 5$.\n\nb) Cho $B(x) = 0$\n$\\Rightarrow (x - 2)(2x + 1) = 0$\nTrường hợp 1: $x - 2 = 0 \\Rightarrow x = 2$\nTrường hợp 2: $2x + 1 = 0 \\Rightarrow 2x = -1 \\Rightarrow x = -\\frac{1}{2}$\nVậy đa thức $B(x)$ có hai nghiệm là $x = 2$ và $x = -\\frac{1}{2}$."
     },
     {
-      "question": "Chứng tỏ x = 2 là nghiệm của đa thức M(x) = x^2 - 4.",
-      "hint": "Thay x = 2 vào M(x) xem có bằng 0 không.",
-      "solution": "M(2) = 2^2 - 4 = 4 - 4 = 0. Vậy x = 2 là một nghiệm của đa thức."
+      "question": "Thực hiện phép nhân đa thức:\na) $2x \\cdot (3x^2 - 4x + 1)$\nb) $(x - 3)(2x + 5)$",
+      "hint": "a) Nhân đơn thức với từng hạng tử của đa thức. b) Lấy từng hạng tử của $(x-3)$ nhân với từng hạng tử của $(2x+5)$ rồi cộng lại.",
+      "solution": "a) $2x \\cdot (3x^2 - 4x + 1)$\n$= 2x \\cdot 3x^2 + 2x \\cdot (-4x) + 2x \\cdot 1$\n$= 6x^3 - 8x^2 + 2x$\n\nb) $(x - 3)(2x + 5)$\n$= x(2x + 5) - 3(2x + 5)$\n$= 2x^2 + 5x - 6x - 15$\n$= 2x^2 - x - 15$"
+    },
+    {
+      "question": "Thực hiện phép chia đa thức: $(4x^3 - 6x^2 + 2x) : 2x$.",
+      "hint": "Lấy từng hạng tử của đa thức bị chia đem chia cho đơn thức $2x$.",
+      "solution": "$(4x^3 - 6x^2 + 2x) : 2x$\n$= (4x^3 : 2x) - (6x^2 : 2x) + (2x : 2x)$\n$= 2x^2 - 3x + 1$\n\nVậy thương của phép chia là $2x^2 - 3x + 1$."
+    },
+    {
+      "question": "Tìm đa thức $Q(x)$ biết: $P(x) + Q(x) = x^3 - 2x^2 + 5x - 1$, với $P(x) = 2x^3 - 3x + 4$.",
+      "hint": "Muốn tìm số hạng chưa biết, ta lấy tổng trừ đi số hạng đã biết: $Q(x) = (Tổng) - P(x)$.",
+      "solution": "Ta có: $Q(x) = (x^3 - 2x^2 + 5x - 1) - P(x)$\n$\\Rightarrow Q(x) = (x^3 - 2x^2 + 5x - 1) - (2x^3 - 3x + 4)$\n$\\Rightarrow Q(x) = x^3 - 2x^2 + 5x - 1 - 2x^3 + 3x - 4$\n$\\Rightarrow Q(x) = (x^3 - 2x^3) - 2x^2 + (5x + 3x) + (-1 - 4)$\n$\\Rightarrow Q(x) = -x^3 - 2x^2 + 8x - 5$\nVậy $Q(x) = -x^3 - 2x^2 + 8x - 5$."
+    },
+    {
+      "question": "Chứng minh đa thức $F(x) = x^2 - 4x + 5$ không có nghiệm thực.",
+      "hint": "Tách số $5 = 4 + 1$ và sử dụng hằng đẳng thức hoặc nhận xét $(x-2)^2 \\ge 0$.",
+      "solution": "Ta biến đổi đa thức $F(x)$:\n$F(x) = x^2 - 4x + 5$\n$F(x) = (x^2 - 4x + 4) + 1$\n$F(x) = (x - 2)^2 + 1$\n\nTa có: $(x - 2)^2 \\ge 0$ với mọi số thực $x$.\nDo đó: $(x - 2)^2 + 1 \\ge 1 > 0$ với mọi số thực $x$.\nVì $F(x)$ luôn lớn hơn 0, nên $F(x)$ không bao giờ bằng 0. \nVậy đa thức $F(x)$ không có nghiệm thực."
+    },
+    {
+      "question": "Thực hiện phép chia đa thức $(x^2 + 5x + 6)$ cho đa thức $(x + 2)$.",
+      "hint": "Đặt tính chia hoặc phân tích đa thức bị chia thành nhân tử: $x^2 + 5x + 6 = (x+2)(x+3)$.",
+      "solution": "Cách nhanh nhất ở lớp 7 là phân tích thành nhân tử (nếu có thể):\n$x^2 + 5x + 6$\n$= x^2 + 2x + 3x + 6$\n$= x(x + 2) + 3(x + 2)$\n$= (x + 2)(x + 3)$\n\nThực hiện phép chia:\n$(x^2 + 5x + 6) : (x + 2) = (x + 2)(x + 3) : (x + 2) = x + 3$\nVậy thương của phép chia là đa thức $x + 3$ (phép chia hết)."
+    },
+    {
+      "question": "Cho $P(x) = mx + 6$. Tìm hệ số $m$ biết rằng $P(x)$ có nghiệm là $x = -2$.",
+      "hint": "Đa thức có nghiệm $x = -2$ nghĩa là $P(-2) = 0$. Thay $x = -2$ vào và giải phương trình tìm $m$.",
+      "solution": "Vì $x = -2$ là nghiệm của đa thức $P(x)$, nên ta có $P(-2) = 0$.\nThay $x = -2$ vào $P(x)$:\n$$m \\cdot (-2) + 6 = 0$$\n$$\\Rightarrow -2m + 6 = 0$$\n$$\\Rightarrow -2m = -6$$\n$$\\Rightarrow m = 3$$\nVậy $m = 3$."
     }
   ]
 }

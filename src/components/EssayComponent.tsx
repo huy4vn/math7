@@ -141,9 +141,6 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
     }
   };
 
-  const inlineMarkdownComponents = {
-    p: ({node, ...props}: any) => <span {...props} />
-  };
 
   return (
     <motion.div 
@@ -231,7 +228,6 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
                 <ReactMarkdown 
                   remarkPlugins={[remarkMath, remarkGfm]} 
                   rehypePlugins={[rehypeKatex]}
-                  components={inlineMarkdownComponents}
                 >
                   {essay.question}
                 </ReactMarkdown>
@@ -250,35 +246,37 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
                   className={styles.essaySolutionContainer}
                 >
                   {submittedAnswers[idx] ? (
-                    <>
-                      <div className={styles.hintBox}>
-                        <Lightbulb size={18} className={styles.hintIcon} />
-                        <div>
-                          <strong>Gợi ý: </strong>
-                          <ReactMarkdown 
-                            remarkPlugins={[remarkMath, remarkGfm]} 
-                            rehypePlugins={[rehypeKatex]}
-                            components={inlineMarkdownComponents}
-                          >
-                            {essay.hint}
-                          </ReactMarkdown>
-                        </div>
+                    <div className={styles.solutionBox}>
+                      <h4>Giải chi tiết:</h4>
+                      <div className={styles.markdownContent}>
+                        <ReactMarkdown 
+                          remarkPlugins={[remarkMath, remarkGfm]} 
+                          rehypePlugins={[rehypeKatex]}
+                        >
+                          {essay.solution}
+                        </ReactMarkdown>
                       </div>
-                      <div className={styles.solutionBox}>
-                        <h4>Giải chi tiết:</h4>
-                        <div className={styles.markdownContent}>
-                          <ReactMarkdown 
-                            remarkPlugins={[remarkMath, remarkGfm]} 
-                            rehypePlugins={[rehypeKatex]}
-                          >
-                            {essay.solution}
-                          </ReactMarkdown>
-                        </div>
-                      </div>
-                    </>
+                    </div>
                   ) : (
-                    <div className={styles.essayInputContainer}>
-                      <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Hãy nhập kết quả bạn tính được trước khi xem lời giải nhé:</p>
+                    <>
+                      {essay.hint && (
+                        <div className={styles.hintBox}>
+                          <Lightbulb size={18} className={styles.hintIcon} />
+                          <div>
+                            <strong>Gợi ý: </strong>
+                            <div className={styles.markdownContent} style={{ display: 'inline', fontSize: '0.95rem' }}>
+                              <ReactMarkdown 
+                                remarkPlugins={[remarkMath, remarkGfm]} 
+                                rehypePlugins={[rehypeKatex]}
+                              >
+                                {essay.hint}
+                              </ReactMarkdown>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                      <div className={styles.essayInputContainer}>
+                        <p style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Hãy nhập kết quả bạn tính được trước khi xem lời giải nhé:</p>
                       <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                         <input 
                           type="text" 
@@ -295,7 +293,8 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
                           {isSubmitting[idx] ? <Loader2 size={18} style={{ animation: 'spin 2s linear infinite' }} /> : 'Gửi & Xem Giải'}
                         </button>
                       </div>
-                    </div>
+                      </div>
+                    </>
                   )}
                 </motion.div>
               )}

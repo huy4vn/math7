@@ -1,67 +1,179 @@
 {
   "id": 8,
   "title": "Chương 8: Tam giác",
-  "summary": "1. Tổng 3 góc của tam giác: Luôn bằng 180°.\nVí dụ: Nếu 2 góc là 60° và 50°, góc còn lại là 180° - 110° = 70°.\n2. Các trường hợp bằng nhau của tam giác: c-c-c, c-g-c, g-c-g. Đối với tam giác vuông: cạnh huyền-góc nhọn, cạnh huyền-cạnh góc vuông.\nVí dụ: Cạnh-cạnh-cạnh (hai tam giác có 3 cạnh tương ứng bằng nhau).\n3. Tam giác cân: Tam giác có 2 cạnh bằng nhau. Hai góc ở đáy bằng nhau.\nVí dụ: Tam giác có 2 cạnh cùng bằng 5cm.\n4. Quan hệ giữa đường vuông góc và đường xiên: Đường vuông góc ngắn hơn mọi đường xiên.\nVí dụ: Từ 1 điểm đến 1 đường thẳng, đường vuông góc là đoạn ngắn nhất.\n5. Các đường đồng quy trong tam giác: 3 đường trung tuyến (cắt nhau tại trọng tâm), 3 đường phân giác, 3 đường trung trực, 3 đường cao (trực tâm).\nVí dụ: Giao điểm 3 đường trung tuyến gọi là trọng tâm.",
+  "summary": "Dưới đây là chi tiết hóa từng phần kèm sơ đồ tư duy hình học về **Hình học tam giác**:\n\n---\n\n## 1. Tổng ba góc của một tam giác\n\nTrong mọi tam giác (thường, vuông, cân, hay đều), tổng số đo của ba góc trong luôn luôn bằng $180^\\circ$.\n\n![Tổng ba góc của một tam giác](/images/tong_ba_goc.png)\n\n$$\\widehat{A} + \\widehat{B} + \\widehat{C} = 180^\\circ$$\n\n> **Mở rộng (Góc ngoài của tam giác):** Mỗi góc ngoài của một tam giác bằng tổng của hai góc trong không kề với nó.\n\n---\n\n## 2. Các trường hợp bằng nhau của tam giác\n\nĐể chứng minh hai tam giác bằng nhau, chúng ta sử dụng các bộ ba yếu tố tương ứng bằng nhau thay vì phải chứng minh tất cả 6 yếu tố (3 cạnh, 3 góc).\n\n### A. Đối với tam giác thường:\n\n* **Cạnh - Cạnh - Cạnh (c-c-c):** Ba cạnh của tam giác này bằng ba cạnh của tam giác kia.\n![Trường hợp c-c-c](/images/bang_nhau_ccc.png)\n\n* **Cạnh - Góc - Cạnh (c-g-c):** Hai cạnh và **góc xen giữa** của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia.\n![Trường hợp c-g-c](/images/bang_nhau_cgc.png)\n\n* **Góc - Cạnh - Góc (g-c-g):** Một cạnh và **hai góc kề** cạnh đó của tam giác này bằng một cạnh và hai góc kề của tam giác kia.\n![Trường hợp g-c-g](/images/bang_nhau_gcg.png)\n\n### B. Đối với tam giác vuông (Các trường hợp đặc biệt):\n\nDo tam giác vuông đã có sẵn một góc bằng $90^\\circ$ nên chỉ cần thêm 2 yếu tố:\n\n* **Cạnh huyền - Góc nhọn** (Suy ra từ trường hợp g-c-g).\n![Cạnh huyền - Góc nhọn](/images/bang_nhau_vuong_gn.png)\n\n* **Cạnh huyền - Cạnh góc vuông** (Suy ra từ định lý Pythagore và c-c-c).\n![Cạnh huyền - Cạnh góc vuông](/images/bang_nhau_vuong_cgv.png)\n\n---\n\n## 3. Tam giác cân\n\n### Định nghĩa & Tính chất:\n\n![Tam giác cân](/images/tam_giac_can.png)\n\n* Là tam giác có **2 cạnh bên bằng nhau**.\n* **Tính chất:** Hai góc ở đáy bằng nhau.\n* *Trường hợp đặc biệt:* **Tam giác đều** là tam giác cân có cả 3 cạnh bằng nhau (và 3 góc bằng nhau, đều bằng $60^\\circ$).\n\n---\n\n## 4. Quan hệ giữa đường vuông góc và đường xiên\n\nTừ một điểm $A$ nằm ngoài đường thẳng $d$, ta kẻ một đường vuông góc $AH$ và các đường xiên $AB, AC...$ đến $d$.\n\n![Đường vuông góc và đường xiên](/images/vuong_goc_duong_xien.png)\n\n* **Định lý 1:** Đường vuông góc luôn là đoạn thẳng ngắn nhất trong tất cả các đoạn thẳng kẻ từ $A$ đến đường thẳng $d$ ($AH < AB, AH < AC$).\n* **Định lý 2 (Quan hệ giữa đường xiên và hình chiếu):** Đường xiên nào có hình chiếu lớn hơn thì lớn hơn.\n* Nếu hình chiếu $HC > HB$ thì đường xiên $AC > AB$ (và ngược lại).\n![Quan hệ giữa đường xiên và hình chiếu](/images/duong_xien_hinh_chieu.png)\n\n---\n\n## 5. Các đường đồng quy trong tam giác\n\nTrong một tam giác, bốn loại đường đặc biệt sau đây luôn có tính chất đồng quy (3 đường cùng cắt nhau tại 1 điểm):\n\n![Các đường trung tuyến đồng quy (Trọng tâm)](/images/cac_duong_dong_quy.png)\n![Các đường đồng quy khác (Trực tâm, Tâm nội tiếp)](/images/duong_dong_quy_khac.png)\n\n### Bảng phân biệt 4 loại đường đồng quy:\n\n| Tên đường | Định nghĩa | Tên giao điểm | Tính chất đặc trưng của giao điểm |\n| --- | --- | --- | --- |\n| **Đường Trung tuyến** | Nối từ đỉnh đến **trung điểm** cạnh đối diện. | **Trọng tâm** ($G$) | Cách đỉnh bằng $\\frac{2}{3}$ độ dài đường trung tuyến đi qua đỉnh đó. |\n| **Đường Phân giác** | Chia đôi một góc của tam giác. | **Tâm đường tròn nội tiếp** | **Cách đều 3 cạnh** của tam giác. |\n| **Đường Trung trực** | Vuông góc với cạnh tại **trung điểm** của cạnh đó. | **Tâm đường tròn ngoại tiếp** | **Cách đều 3 đỉnh** của tam giác. |\n| **Đường Cao** | Hạ vuông góc từ đỉnh xuống cạnh đối diện. | **Trực tâm** ($H$) | Không có tính chất khoảng cách đặc biệt, phục vụ tính diện tích. |\n\n> **Mẹo nhớ nhanh cho tam giác cân:** Trong một tam giác cân, đường cao, đường trung tuyến, đường phân giác và đường trung trực xuất phát từ đỉnh cân **trùng nhau** làm một.",
   "quizzes": [
     {
-      "question": "Tổng ba góc trong một tam giác bằng bao nhiêu?",
-      "options": [
-        "90°",
-        "180°",
-        "270°",
-        "360°"
-      ],
+      "question": "Tổng ba góc của một tam giác bằng bao nhiêu?",
+      "options": ["$90^\\circ$", "$180^\\circ$", "$270^\\circ$", "$360^\\circ$"],
       "answer": 1,
-      "explanation": "Định lí cơ bản: Tổng 3 góc của một tam giác luôn là 180°."
+      "explanation": "Định lý tổng ba góc của một tam giác khẳng định rằng tổng số đo 3 góc luôn luôn bằng $180^\\circ$."
     },
     {
-      "question": "Tam giác có hai cạnh bằng nhau gọi là tam giác gì?",
-      "options": [
-        "Tam giác nhọn",
-        "Tam giác vuông",
-        "Tam giác cân",
-        "Tam giác đều"
-      ],
+      "question": "Trong $\\triangle ABC$, nếu $\\widehat{A} = 50^\\circ$ và $\\widehat{B} = 70^\\circ$ thì số đo góc $\\widehat{C}$ là:",
+      "options": ["$50^\\circ$", "$60^\\circ$", "$70^\\circ$", "$80^\\circ$"],
+      "answer": 1,
+      "explanation": "Ta có $\\widehat{C} = 180^\\circ - (50^\\circ + 70^\\circ) = 180^\\circ - 120^\\circ = 60^\\circ$."
+    },
+    {
+      "question": "Mỗi góc ngoài của một tam giác bằng:",
+      "options": ["Tổng 3 góc trong của tam giác.", "Tổng 2 góc trong kề với nó.", "Tổng 2 góc trong không kề với nó.", "$180^\\circ$ trừ đi tổng 2 góc kề."],
       "answer": 2,
-      "explanation": "Tam giác cân là tam giác có hai cạnh bằng nhau."
+      "explanation": "Tính chất góc ngoài: Mỗi góc ngoài của một tam giác bằng tổng của hai góc trong không kề với nó."
     },
     {
-      "question": "Giao điểm của 3 đường trung tuyến trong tam giác được gọi là:",
-      "options": [
-        "Trực tâm",
-        "Trọng tâm",
-        "Tâm đường tròn nội tiếp",
-        "Tâm đường tròn ngoại tiếp"
-      ],
+      "question": "Bộ 3 trường hợp bằng nhau cơ bản của tam giác thường là:",
+      "options": ["c-c-c, g-g-g, c-g-c", "c-c-c, c-g-c, g-c-g", "c-g-c, g-c-g, c-c-g", "g-g-g, c-c-c, g-c-g"],
       "answer": 1,
-      "explanation": "Ba đường trung tuyến cắt nhau tại một điểm gọi là trọng tâm của tam giác."
+      "explanation": "Ba trường hợp bằng nhau của tam giác thường là: Cạnh-cạnh-cạnh (c-c-c), Cạnh-góc-cạnh (c-g-c), và Góc-cạnh-góc (g-c-g). g-g-g (góc-góc-góc) chỉ dùng cho tam giác đồng dạng."
+    },
+    {
+      "question": "Để chứng minh hai tam giác bằng nhau theo trường hợp cạnh-góc-cạnh (c-g-c), góc được chọn phải là:",
+      "options": ["Góc nhọn.", "Góc vuông.", "Góc xen giữa hai cạnh đó.", "Góc kề một trong hai cạnh."],
+      "answer": 2,
+      "explanation": "Trường hợp c-g-c yêu cầu 2 cạnh và **góc xen giữa** của tam giác này bằng 2 cạnh và góc xen giữa của tam giác kia."
+    },
+    {
+      "question": "Tam giác có hai cạnh bằng nhau được gọi là:",
+      "options": ["Tam giác nhọn", "Tam giác cân", "Tam giác vuông", "Tam giác đều"],
+      "answer": 1,
+      "explanation": "Tam giác có 2 cạnh bằng nhau là tam giác cân."
+    },
+    {
+      "question": "Trong tam giác cân, tính chất nào sau đây là đúng?",
+      "options": ["Hai góc ở đáy bằng nhau.", "Ba góc bằng nhau.", "Hai đường trung tuyến bằng nhau.", "Cả A và C đều đúng."],
+      "answer": 3,
+      "explanation": "Trong tam giác cân, hai góc ở đáy bằng nhau, và hai đường trung tuyến/đường cao/phân giác ứng với hai cạnh bên cũng bằng nhau."
+    },
+    {
+      "question": "Trong một tam giác vuông cân, hai góc nhọn có số đo bằng bao nhiêu?",
+      "options": ["$30^\\circ$", "$45^\\circ$", "$60^\\circ$", "$90^\\circ$"],
+      "answer": 1,
+      "explanation": "Tam giác vuông cân có góc vuông $= 90^\\circ$. Tổng 2 góc nhọn bằng $90^\\circ$ và chúng bằng nhau $\\rightarrow 90^\\circ / 2 = 45^\\circ$."
+    },
+    {
+      "question": "Giao điểm của 3 đường trung tuyến trong một tam giác được gọi là:",
+      "options": ["Trọng tâm", "Trực tâm", "Tâm đường tròn ngoại tiếp", "Tâm đường tròn nội tiếp"],
+      "answer": 0,
+      "explanation": "Giao điểm của ba đường trung tuyến được gọi là trọng tâm của tam giác."
+    },
+    {
+      "question": "Trọng tâm của tam giác cách đỉnh một khoảng bằng bao nhiêu so với độ dài đường trung tuyến đi qua đỉnh đó?",
+      "options": ["$\\frac{1}{2}$", "$\\frac{1}{3}$", "$\\frac{2}{3}$", "$\\frac{3}{4}$"],
+      "answer": 2,
+      "explanation": "Trọng tâm cách mỗi đỉnh một khoảng bằng $\\frac{2}{3}$ độ dài đường trung tuyến đi qua đỉnh ấy."
+    },
+    {
+      "question": "Đường trung trực của một đoạn thẳng là đường thẳng:",
+      "options": ["Đi qua trung điểm của đoạn thẳng đó.", "Vuông góc với đoạn thẳng đó.", "Vuông góc với đoạn thẳng tại trung điểm của nó.", "Chia đoạn thẳng đó làm ba phần bằng nhau."],
+      "answer": 2,
+      "explanation": "Đường trung trực phải vừa đi qua trung điểm, vừa vuông góc với đoạn thẳng tại trung điểm đó."
+    },
+    {
+      "question": "Giao điểm của 3 đường trung trực trong tam giác có tính chất gì?",
+      "options": ["Cách đều 3 cạnh của tam giác.", "Cách đều 3 đỉnh của tam giác.", "Là trọng tâm tam giác.", "Cách đỉnh bằng $2/3$ trung tuyến."],
+      "answer": 1,
+      "explanation": "Giao điểm của 3 đường trung trực là tâm đường tròn ngoại tiếp, cách đều 3 đỉnh của tam giác."
+    },
+    {
+      "question": "Trực tâm của tam giác là giao điểm của 3 đường nào?",
+      "options": ["Đường cao", "Đường trung tuyến", "Đường phân giác", "Đường trung trực"],
+      "answer": 0,
+      "explanation": "Trực tâm là tên gọi cho giao điểm của ba đường cao trong tam giác."
+    },
+    {
+      "question": "Từ điểm $A$ nằm ngoài đường thẳng $d$, kẻ đường vuông góc $AH$ và đường xiên $AB$ đến $d$. Phát biểu nào đúng?",
+      "options": ["$AH > AB$", "$AH = AB$", "$AH < AB$", "Không so sánh được."],
+      "answer": 2,
+      "explanation": "Đường vuông góc luôn là đường ngắn nhất trong các đoạn thẳng kẻ từ $A$ đến $d$, nên $AH < AB$."
+    },
+    {
+      "question": "Theo định lý quan hệ giữa góc và cạnh đối diện, trong một tam giác, góc đối diện với cạnh lớn hơn thì:",
+      "options": ["Nhỏ hơn", "Bằng nhau", "Lớn hơn", "Bù nhau"],
+      "answer": 2,
+      "explanation": "Góc đối diện với cạnh lớn hơn là góc lớn hơn."
+    },
+    {
+      "question": "Bất đẳng thức tam giác phát biểu rằng trong $\\triangle ABC$, độ dài cạnh $AB$ luôn:",
+      "options": ["Nhỏ hơn tổng $AC + BC$", "Lớn hơn tổng $AC + BC$", "Bằng tổng $AC + BC$", "Nhỏ hơn hiệu $AC - BC$"],
+      "answer": 0,
+      "explanation": "Bất đẳng thức tam giác: Trong một tam giác, tổng độ dài hai cạnh bất kỳ bao giờ cũng lớn hơn độ dài cạnh còn lại. ($AB < AC + BC$)"
+    },
+    {
+      "question": "Giao điểm của 3 đường phân giác trong tam giác có tính chất gì?",
+      "options": ["Cách đều 3 cạnh của tam giác.", "Cách đều 3 đỉnh của tam giác.", "Là trực tâm của tam giác.", "Chia tam giác thành 6 phần diện tích bằng nhau."],
+      "answer": 0,
+      "explanation": "Giao điểm của 3 đường phân giác là tâm đường tròn nội tiếp, cách đều 3 cạnh của tam giác."
+    },
+    {
+      "question": "Tam giác có ba góc bằng nhau là tam giác gì?",
+      "options": ["Tam giác vuông", "Tam giác cân", "Tam giác đều", "Tam giác vuông cân"],
+      "answer": 2,
+      "explanation": "Tam giác có 3 góc bằng nhau là tam giác đều, mỗi góc bằng $60^\\circ$."
+    },
+    {
+      "question": "Hai tam giác vuông có thể bằng nhau theo trường hợp đặc biệt nào?",
+      "options": ["Cạnh góc vuông - Cạnh huyền", "Góc nhọn - Góc vuông", "Cạnh huyền - Cạnh góc vuông", "Cạnh huyền - Góc vuông"],
+      "answer": 2,
+      "explanation": "Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứng bằng nhau thì bằng nhau."
+    },
+    {
+      "question": "Đường cao của tam giác đều đồng thời là đường gì?",
+      "options": ["Đường trung tuyến", "Đường phân giác", "Đường trung trực", "Cả 3 đường trên"],
+      "answer": 3,
+      "explanation": "Trong tam giác đều, từ một đỉnh, đường cao đồng thời là đường trung tuyến, đường phân giác và đường trung trực của cạnh đối diện."
     }
   ],
   "essays": [
     {
-      "question": "Cho tam giác ABC có góc A = 50°, góc B = 60°. Tính góc C.",
-      "hint": "Góc A + Góc B + Góc C = 180°.",
-      "solution": "Góc C = 180° - (50° + 60°) = 180° - 110° = 70°."
+      "question": "Cho tam giác $ABC$ có $\\widehat{A} = 60^\\circ$, $\\widehat{B} = 40^\\circ$. Hãy tính số đo $\\widehat{C}$ và so sánh độ dài 3 cạnh của tam giác $ABC$.",
+      "hint": "Dùng định lý tổng ba góc để tính $\\widehat{C}$. Sau đó dùng quan hệ giữa góc và cạnh đối diện để sắp xếp cạnh.",
+      "solution": "* Tính $\\widehat{C}$:\nÁp dụng định lý tổng 3 góc trong $\\triangle ABC$:\n$$\\widehat{A} + \\widehat{B} + \\widehat{C} = 180^\\circ$$\n$$60^\\circ + 40^\\circ + \\widehat{C} = 180^\\circ$$\n$$\\widehat{C} = 180^\\circ - 100^\\circ = 80^\\circ$$\n\n* So sánh 3 cạnh:\nTa có các góc: $\\widehat{B} < \\widehat{A} < \\widehat{C}$ (vì $40^\\circ < 60^\\circ < 80^\\circ$).\nTheo định lý quan hệ giữa góc và cạnh đối diện trong tam giác, cạnh đối diện góc lớn hơn sẽ lớn hơn.\n- Cạnh đối diện $\\widehat{B}$ là $AC$\n- Cạnh đối diện $\\widehat{A}$ là $BC$\n- Cạnh đối diện $\\widehat{C}$ là $AB$\nSuy ra: $AC < BC < AB$."
     },
     {
-      "question": "Tam giác MNP cân tại M. Biết góc ở đỉnh M = 80°. Tính góc N và góc P.",
-      "hint": "Tam giác cân tại M nên góc N = góc P = (180° - góc M) / 2.",
-      "solution": "Góc N = Góc P = (180° - 80°) / 2 = 100° / 2 = 50°."
+      "question": "Cho tam giác $ABC$ cân tại $A$. Gọi $M$ là trung điểm của $BC$. Chứng minh rằng $\\triangle ABM = \\triangle ACM$.",
+      "hint": "Tam giác cân tại A có $AB = AC$. $M$ là trung điểm nên $MB = MC$. Dùng trường hợp cạnh-cạnh-cạnh (c-c-c).",
+      "solution": "Xét $\\triangle ABM$ và $\\triangle ACM$ có:\n- $AB = AC$ (do $\\triangle ABC$ cân tại $A$)\n- $AM$ là cạnh chung\n- $MB = MC$ (do $M$ là trung điểm của $BC$)\n\nVậy $\\triangle ABM = \\triangle ACM$ (theo trường hợp cạnh - cạnh - cạnh)."
     },
     {
-      "question": "Trong tam giác DEF, vẽ trung tuyến DM. Gọi G là trọng tâm. Biết DM = 6cm. Tính DG và GM.",
-      "hint": "Trọng tâm chia trung tuyến theo tỉ lệ 2/3 kể từ đỉnh.",
-      "solution": "DG = 2/3 DM = 2/3 * 6 = 4 (cm). GM = 1/3 DM = 1/3 * 6 = 2 (cm)."
+      "question": "Tiếp tục bài trên, chứng minh rằng $AM$ là tia phân giác của góc $A$ và $AM \\perp BC$.",
+      "hint": "Từ $\\triangle ABM = \\triangle ACM$, suy ra các góc tương ứng bằng nhau. Chứng minh $\\widehat{AMB} + \\widehat{AMC} = 180^\\circ$.",
+      "solution": "Từ chứng minh $\\triangle ABM = \\triangle ACM$ (c-c-c):\n\n1. Ta suy ra $\\widehat{BAM} = \\widehat{CAM}$ (hai góc tương ứng).\n$\\Rightarrow AM$ là tia phân giác của góc $\\widehat{A}$.\n\n2. Ta suy ra $\\widehat{AMB} = \\widehat{AMC}$ (hai góc tương ứng).\nMà $\\widehat{AMB} + \\widehat{AMC} = 180^\\circ$ (hai góc kề bù).\n$\\Rightarrow \\widehat{AMB} = \\widehat{AMC} = \\frac{180^\\circ}{2} = 90^\\circ$.\n$\\Rightarrow AM \\perp BC$."
     },
     {
-      "question": "Chứng minh rằng trong tam giác vuông, cạnh huyền là cạnh lớn nhất.",
-      "hint": "Sử dụng quan hệ giữa góc và cạnh đối diện.",
-      "solution": "Trong tam giác vuông, góc vuông là góc lớn nhất (90°). Vì tổng 3 góc là 180° nên 2 góc kia phải nhọn (<90°). Cạnh đối diện góc lớn nhất là cạnh lớn nhất. Suy ra cạnh huyền lớn nhất."
+      "question": "Cho tam giác $ABC$ vuông tại $A$, đường phân giác $BD$. Kẻ $DE \\perp BC$ ($E \\in BC$). Chứng minh $AB = BE$.",
+      "hint": "Chứng minh $\\triangle ABD = \\triangle EBD$ dựa vào trường hợp bằng nhau của tam giác vuông (cạnh huyền - góc nhọn).",
+      "solution": "Xét hai tam giác vuông $\\triangle ABD$ (vuông tại $A$) và $\\triangle EBD$ (vuông tại $E$) có:\n- Cạnh huyền $BD$ chung.\n- $\\widehat{ABD} = \\widehat{EBD}$ (do $BD$ là tia phân giác của góc $\\widehat{B}$).\n\nDo đó, $\\triangle ABD = \\triangle EBD$ (theo trường hợp Cạnh huyền - Góc nhọn).\n$\\Rightarrow AB = BE$ (hai cạnh tương ứng)."
     },
     {
-      "question": "Cho tam giác ABC cân tại A. Vẽ AH vuông góc với BC tại H. Chứng minh H là trung điểm của BC.",
-      "hint": "Chứng minh hai tam giác vuông AHB và AHC bằng nhau.",
-      "solution": "Xét hai tam giác vuông AHB và AHC: Cạnh huyền AB = AC (tam giác ABC cân). AH là cạnh chung. Suy ra tam giác AHB = tam giác AHC (cạnh huyền - cạnh góc vuông). Từ đó suy ra HB = HC, hay H là trung điểm BC."
+      "question": "Kiểm tra bộ ba độ dài $2\\text{cm}, 3\\text{cm}, 6\\text{cm}$ có thể là ba cạnh của một tam giác không? Vì sao?",
+      "hint": "Áp dụng bất đẳng thức tam giác: Tổng 2 cạnh nhỏ nhất phải lớn hơn cạnh lớn nhất.",
+      "solution": "Áp dụng bất đẳng thức tam giác, ta xét tổng của hai cạnh nhỏ nhất:\n$$2 + 3 = 5$$\nTa thấy $5 < 6$ (tổng hai cạnh nhỏ hơn cạnh còn lại).\nĐiều này vi phạm bất đẳng thức tam giác (tổng hai cạnh bất kỳ phải luôn lớn hơn cạnh còn lại).\n\nVậy bộ ba độ dài $2\\text{cm}, 3\\text{cm}, 6\\text{cm}$ **không thể** là ba cạnh của một tam giác."
+    },
+    {
+      "question": "Cho $\\triangle ABC$ có $G$ là trọng tâm, $AM$ là đường trung tuyến ($M \\in BC$). Biết $AM = 9\\text{cm}$. Tính độ dài $AG$ và $GM$.",
+      "hint": "Sử dụng tính chất trọng tâm: $AG = \\frac{2}{3} AM$ và $GM = \\frac{1}{3} AM$.",
+      "solution": "Theo tính chất trọng tâm của tam giác, khoảng cách từ đỉnh đến trọng tâm bằng $\\frac{2}{3}$ độ dài đường trung tuyến đi qua đỉnh đó.\n- Tính $AG$:\n$$AG = \\frac{2}{3} \\cdot AM = \\frac{2}{3} \\cdot 9 = 6 \\text{ (cm)}$$\n- Tính $GM$:\n$GM = AM - AG = 9 - 6 = 3 \\text{ (cm)}$\n(Hoặc dùng $GM = \\frac{1}{3} AM = \\frac{1}{3} \\cdot 9 = 3 \\text{ cm}$)."
+    },
+    {
+      "question": "Cho đoạn thẳng $AB$. Điểm $M$ nằm trên đường trung trực của $AB$. Chứng minh rằng $MA = MB$.",
+      "hint": "Kẻ đường trung trực d cắt $AB$ tại $H$. Chứng minh $\\triangle MHA = \\triangle MHB$.",
+      "solution": "Gọi $d$ là đường trung trực của $AB$, cắt $AB$ tại trung điểm $H$.\nVì $M$ nằm trên đường trung trực $d$ nên $MH \\perp AB$ tại $H$.\nXét $\\triangle MHA$ và $\\triangle MHB$ (đều vuông tại $H$) có:\n- $MH$ là cạnh chung.\n- $HA = HB$ (do $H$ là trung điểm $AB$).\n\nVậy $\\triangle MHA = \\triangle MHB$ (theo trường hợp hai cạnh góc vuông).\n$\\Rightarrow MA = MB$ (hai cạnh tương ứng).\n*(Đây chính là chứng minh cho định lý: Mọi điểm nằm trên đường trung trực thì cách đều hai đầu mút của đoạn thẳng).* "
+    },
+    {
+      "question": "Cho $\\triangle ABC$ có hai đường cao $BD$ và $CE$ cắt nhau tại $H$. Nối $A$ với $H$ cắt $BC$ tại $F$. Chứng minh $AF \\perp BC$.",
+      "hint": "Sử dụng tính chất 3 đường cao đồng quy (trực tâm).",
+      "solution": "Trong $\\triangle ABC$, hai đường cao $BD$ và $CE$ cắt nhau tại $H$.\nDo đó, $H$ chính là **trực tâm** của $\\triangle ABC$.\nTheo tính chất 3 đường cao của tam giác (đồng quy tại trực tâm), đường thẳng đi qua đỉnh thứ ba và trực tâm sẽ phải là đường cao thứ ba.\n\nVì đường thẳng $AF$ đi qua đỉnh $A$ và trực tâm $H$, nên $AF$ là đường cao tương ứng với cạnh $BC$.\n$\\Rightarrow AF \\perp BC$."
+    },
+    {
+      "question": "Cho $\\triangle ABC$ có $\\widehat{A} = 90^\\circ$ (vuông tại $A$). Cạnh $AB = 6\\text{cm}$, $AC = 8\\text{cm}$. Tính cạnh $BC$.",
+      "hint": "Áp dụng định lý Pythagore trong tam giác vuông.",
+      "solution": "Xét $\\triangle ABC$ vuông tại $A$, áp dụng định lý Pythagore ta có:\n$$BC^2 = AB^2 + AC^2$$\nThay số vào:\n$$BC^2 = 6^2 + 8^2$$\n$$BC^2 = 36 + 64 = 100$$\n$$\\Rightarrow BC = \\sqrt{100} = 10 \\text{ (cm)}$$\nVậy cạnh $BC$ dài $10\\text{cm}$."
+    },
+    {
+      "question": "Trong một tam giác cân, giao điểm của 3 đường phân giác (tâm nội tiếp) và giao điểm của 3 đường trung trực (tâm ngoại tiếp) có nằm trên cùng một đường thẳng không? Giải thích.",
+      "hint": "Xét tính chất đặc biệt của đường hạ từ đỉnh của tam giác cân.",
+      "solution": "Có, chúng luôn nằm trên cùng một đường thẳng.\n\n**Giải thích:** \nTrong tam giác cân, đường phân giác xuất phát từ đỉnh cân cũng đồng thời là đường trung trực của cạnh đáy.\nTâm đường tròn nội tiếp (giao của 3 đường phân giác) chắc chắn nằm trên đường phân giác xuất phát từ đỉnh cân.\nTâm đường tròn ngoại tiếp (giao của 3 đường trung trực) chắc chắn nằm trên đường trung trực của cạnh đáy.\n\nVì đường phân giác từ đỉnh cân và đường trung trực của cạnh đáy là trùng nhau, nên cả hai điểm tâm này đều nằm trên đường thẳng đó."
     }
   ]
 }

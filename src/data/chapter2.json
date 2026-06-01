@@ -1,67 +1,279 @@
 {
   "id": 2,
   "title": "Chương 2: Số thực",
-  "summary": "### 1. Số vô tỉ ($\\mathbb{I}$)\nLà số thập phân vô hạn không tuần hoàn. VD: số $\\pi$, $\\sqrt{2}$.\n\n> **Ví dụ:** $\\sqrt{2} \\approx 1.4142...$ là số vô tỉ.\n\n### 2. Số thực ($\\mathbb{R}$)\nGồm số hữu tỉ và số vô tỉ.\n\n> **Ví dụ:** Số $3$ và số $\\sqrt{5}$ đều là số thực.\n\n### 3. Căn bậc hai số học\nCăn bậc hai số học của số $a$ không âm là số $x$ không âm sao cho $x^2 = a$. Kí hiệu $\\sqrt{a}$.\n\n> **Ví dụ:** $\\sqrt{25} = 5$ vì $5^2 = 25$.\n\n### 4. Làm tròn số\nXác định chữ số hàng làm tròn. Nếu chữ số bên phải $\\ge 5$ thì cộng 1 vào hàng làm tròn. Nếu $< 5$ thì giữ nguyên.\n\n> **Ví dụ:** Làm tròn $3.1415$ đến hàng phần trăm ta được $3.14$.",
+  "summary": "Tiếp tục từ tập hợp số hữu tỉ $\\mathbb{Q}$, để hoàn thiện bức tranh về hệ thống số trong toán học, chúng ta sẽ mở rộng sang các khái niệm: **Số vô tỉ**, **Số thực**, **Căn bậc hai số học** và kỹ năng **Làm tròn số**.\n\n---\n\n## 1. Số vô tỉ (Ký hiệu: $\\mathbb{I}$)\n\nNgược lại với số hữu tỉ, **số vô tỉ** là số **không thể** viết được dưới dạng phân số $\\frac{a}{b}$ (với $a, b \\in \\mathbb{Z}, b \\neq 0$).\n\n* **Bản chất:** Khi viết dưới dạng số thập phân, số vô tỉ là các **số thập phân vô hạn không tuần hoàn** (các chữ số sau dấu phẩy kéo dài mãi mãi mà không xuất hiện chu kỳ lặp lại).\n* **Ví dụ kinh điển:**\n  * Số $\\pi$ (Pi): $\\pi = 3.1415926535...$\n  * Số $e$ (số Euler): $e = 2.7182818284...$\n  * Căn bậc hai của các số không phải là số chính phương: $\\sqrt{2} = 1.41421356...$, $\\sqrt{3} = 1.73205080...$\n\n---\n\n## 2. Số thực (Ký hiệu: $\\mathbb{R}$)\n\n**Tập hợp số thực** bao gồm cả **số hữu tỉ** và **số vô tỉ**. Có thể nói, tất cả các số mà bạn thường gặp trong chương trình toán phổ thông (ngoại trừ số phức ở cấp 3) đều là số thực.\n\n$$\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{I}$$\n\n### Sơ đồ tư duy về các tập hợp số:\n\nMối quan hệ bao hàm giữa các tập hợp số được mở rộng hoàn chỉnh như sau:\n\n$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$\n\n(và $\\mathbb{I} \\subset \\mathbb{R}$)\n\n> **Trục số thực:** Mỗi số thực được biểu diễn bởi một điểm trên trục số và ngược lại, mỗi điểm trên trục số đều biểu diễn một số thực. Vì vậy, trục số còn được gọi là trục số thực.\n\n---\n\n## 3. Căn bậc hai số học\n\nVới một số thực $a$ không âm ($a \\geq 0$), **căn bậc hai số học** của $a$ là một số $x$ không âm sao cho $x^2 = a$.\n\n* Ký hiệu là: $\\sqrt{a}$\n\n**Các quy tắc cần nhớ:**\n\n* Số dương $a$ có đúng một căn bậc hai số học là $\\sqrt{a}$. (Ví dụ: Căn bậc hai số học của $9$ là $\\sqrt{9} = 3$).\n* Số $0$ có căn bậc hai số học là chính nó: $\\sqrt{0} = 0$.\n* **Số âm không có căn bậc hai số học** (vì bình phương của mọi số thực đều không âm).\n\n> **Phân biệt định nghĩa:** Nhiều bạn dễ nhầm lẫn giữa *\"Căn bậc hai\"* và *\"Căn bậc hai số học\"*.\n> * Số $16$ có **hai căn bậc hai** là $4$ và $-4$ (vì $4^2 = 16$ và $(-4)^2 = 16$).\n> * Nhưng số $16$ chỉ có **một căn bậc hai số học** duy nhất là $\\sqrt{16} = 4$.\n\n---\n\n## 4. Làm tròn số\n\nLàm tròn số là việc biến đổi một số thành một số khác gần bằng nó nhưng ngắn gọn, dễ nhớ hoặc phù hợp với yêu cầu thực tế hơn.\n\n### Quy tắc làm tròn số chung:\n\nNhìn vào **chữ số ngay sau hàng cần làm tròn** (chữ số đầu tiên bỏ đi):\n\n* **Trường hợp 1:** Nếu chữ số đó **nhỏ hơn 5** ($0, 1, 2, 3, 4$) $\\rightarrow$ **Giữ nguyên** chữ số hàng cần làm tròn.\n* **Trường hợp 2:** Nếu chữ số đó **lớn hơn hoặc bằng 5** ($5, 6, 7, 8, 9$) $\\rightarrow$ **Cộng thêm 1** vào chữ số hàng cần làm tròn.\n\n*Lưu ý về các chữ số còn lại:*\n\n* Ở phần thập phân: Bỏ hẳn đi.\n* Ở phần số nguyên: Thay thế bằng các số $0$.\n\n### Ví dụ minh họa:\n\n* **Ví dụ 1 (Làm tròn số thập phân):** Làm tròn số $4.372$ đến hàng phần mười.\n  * Chữ số ngay sau hàng phần mười (chữ số $3$) là $7$ (lớn hơn hoặc bằng 5).\n  * Kết quả: $4.4$\n\n* **Ví dụ 2 (Làm tròn số nguyên):** Làm tròn số $73{,}460$ đến hàng nghìn.\n  * Chữ số ngay sau hàng nghìn (chữ số $3$) là $4$ (nhỏ hơn 5).\n  * Giữ nguyên $3$ và thay các số sau bằng $0$ $\\rightarrow$ Kết quả: $73{,}000$",
   "quizzes": [
     {
       "question": "Số nào sau đây là số vô tỉ?",
       "options": [
-        "0",
-        "1.5",
-        "√2",
-        "3/4"
+        "$0$",
+        "$1.5$",
+        "$\\sqrt{2}$",
+        "$\\frac{3}{4}$"
       ],
       "answer": 2,
-      "explanation": "√2 là số thập phân vô hạn không tuần hoàn, do đó là số vô tỉ."
+      "explanation": "$\\sqrt{2} = 1.41421356...$ là số thập phân vô hạn không tuần hoàn, do đó là số vô tỉ."
     },
     {
-      "question": "Căn bậc hai số học của 25 là:",
+      "question": "Căn bậc hai số học của $25$ là:",
       "options": [
-        "5",
-        "-5",
-        "5 và -5",
-        "25"
+        "$5$",
+        "$-5$",
+        "$5$ và $-5$",
+        "$25$"
       ],
       "answer": 0,
-      "explanation": "Căn bậc hai số học của một số luôn không âm. √25 = 5."
+      "explanation": "Căn bậc hai số học của một số luôn không âm. $\\sqrt{25} = 5$ (không phải $-5$)."
     },
     {
-      "question": "Làm tròn số 3.14159 đến chữ số thập phân thứ hai:",
+      "question": "Mệnh đề nào sau đây là **đúng**?",
       "options": [
-        "3.14",
-        "3.15",
-        "3.10",
-        "3.142"
+        "Mọi số thực đều là số hữu tỉ.",
+        "$\\mathbb{Q} \\subset \\mathbb{R}$ và $\\mathbb{I} \\subset \\mathbb{R}$.",
+        "Số vô tỉ là số thập phân vô hạn tuần hoàn.",
+        "$\\mathbb{R} = \\mathbb{Q} \\cap \\mathbb{I}$"
+      ],
+      "answer": 1,
+      "explanation": "$\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{I}$, tức là tập số thực gồm cả số hữu tỉ và số vô tỉ, cả hai đều là tập con của $\\mathbb{R}$."
+    },
+    {
+      "question": "Làm tròn số $3.14159$ đến chữ số thập phân thứ hai, ta được:",
+      "options": [
+        "$3.14$",
+        "$3.15$",
+        "$3.10$",
+        "$3.142$"
       ],
       "answer": 0,
-      "explanation": "Chữ số thập phân thứ 3 là 1 < 5 nên giữ nguyên chữ số thập phân thứ hai là 4. Kết quả: 3.14."
+      "explanation": "Chữ số thập phân thứ ba là $1 < 5$ nên giữ nguyên chữ số thập phân thứ hai là $4$. Kết quả: $3.14$."
+    },
+    {
+      "question": "Số $16$ có bao nhiêu căn bậc hai số học?",
+      "options": [
+        "Không có",
+        "Một ($\\sqrt{16} = 4$)",
+        "Hai ($4$ và $-4$)",
+        "Vô số"
+      ],
+      "answer": 1,
+      "explanation": "Căn bậc hai số học luôn là số không âm. Số $16$ chỉ có một căn bậc hai số học duy nhất là $\\sqrt{16} = 4$. (Còn $-4$ là căn bậc hai nhưng không phải căn bậc hai **số học**)."
+    },
+    {
+      "question": "Số nào sau đây không có căn bậc hai số học?",
+      "options": [
+        "$0$",
+        "$\\frac{1}{4}$",
+        "$-9$",
+        "$100$"
+      ],
+      "answer": 2,
+      "explanation": "Số âm không có căn bậc hai số học, vì bình phương của mọi số thực đều không âm. $-9$ là số âm nên không có $\\sqrt{-9}$."
+    },
+    {
+      "question": "Quan hệ nào sau đây là đúng giữa các tập hợp số?",
+      "options": [
+        "$\\mathbb{Z} \\subset \\mathbb{N} \\subset \\mathbb{Q}$",
+        "$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$",
+        "$\\mathbb{Q} \\subset \\mathbb{Z} \\subset \\mathbb{N}$",
+        "$\\mathbb{R} \\subset \\mathbb{Q}$"
+      ],
+      "answer": 1,
+      "explanation": "Mối quan hệ bao hàm đúng là $\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$."
+    },
+    {
+      "question": "Làm tròn số $73{,}460$ đến hàng nghìn, ta được:",
+      "options": [
+        "$74{,}000$",
+        "$73{,}000$",
+        "$73{,}500$",
+        "$70{,}000$"
+      ],
+      "answer": 1,
+      "explanation": "Chữ số hàng trăm (ngay sau hàng nghìn) là $4 < 5$, nên giữ nguyên chữ số hàng nghìn là $3$ và thay các số sau bằng $0$. Kết quả: $73{,}000$."
+    },
+    {
+      "question": "Giá trị của $\\sqrt{49} + \\sqrt{0} - \\sqrt{1}$ là:",
+      "options": [
+        "$6$",
+        "$7$",
+        "$8$",
+        "$5$"
+      ],
+      "answer": 0,
+      "explanation": "$\\sqrt{49} = 7$, $\\sqrt{0} = 0$, $\\sqrt{1} = 1$. Vậy $7 + 0 - 1 = 6$."
+    },
+    {
+      "question": "Số $\\pi = 3.1415926...$ thuộc tập hợp nào?",
+      "options": [
+        "Số hữu tỉ ($\\mathbb{Q}$)",
+        "Số nguyên ($\\mathbb{Z}$)",
+        "Số vô tỉ ($\\mathbb{I}$)",
+        "Số tự nhiên ($\\mathbb{N}$)"
+      ],
+      "answer": 2,
+      "explanation": "$\\pi = 3.1415926...$ là số thập phân vô hạn không tuần hoàn, do đó $\\pi$ là số vô tỉ ($\\pi \\in \\mathbb{I}$)."
+    },
+    {
+      "question": "Làm tròn $4.372$ đến hàng phần mười, ta được:",
+      "options": [
+        "$4.3$",
+        "$4.4$",
+        "$4.37$",
+        "$4.0$"
+      ],
+      "answer": 1,
+      "explanation": "Chữ số ngay sau hàng phần mười là $7 \\geq 5$, nên cộng thêm $1$ vào chữ số hàng phần mười ($3 + 1 = 4$). Kết quả: $4.4$."
+    },
+    {
+      "question": "So sánh $\\sqrt{5}$ và $2$:",
+      "options": [
+        "$\\sqrt{5} < 2$",
+        "$\\sqrt{5} = 2$",
+        "$\\sqrt{5} > 2$",
+        "Không thể so sánh"
+      ],
+      "answer": 2,
+      "explanation": "$2 = \\sqrt{4}$. Vì $5 > 4$ nên $\\sqrt{5} > \\sqrt{4} = 2$."
+    },
+    {
+      "question": "Kết quả của $\\sqrt{0.25}$ là:",
+      "options": [
+        "$0.5$",
+        "$0.05$",
+        "$5$",
+        "$0.025$"
+      ],
+      "answer": 0,
+      "explanation": "$0.25 = \\frac{1}{4}$, nên $\\sqrt{0.25} = \\sqrt{\\frac{1}{4}} = \\frac{1}{2} = 0.5$. Kiểm tra: $0.5^2 = 0.25$. ✓"
+    },
+    {
+      "question": "Làm tròn số $8.953$ đến hàng phần mười, ta được:",
+      "options": [
+        "$8.9$",
+        "$9.0$",
+        "$8.95$",
+        "$8.10$"
+      ],
+      "answer": 1,
+      "explanation": "Chữ số hàng phần trăm (ngay sau phần mười) là $5 \\geq 5$, nên cộng $1$: $9 + 1 = 10$, chữ số phần mười trở thành $0$ và nhớ $1$ vào hàng đơn vị: $8 + 1 = 9$. Kết quả: $9.0$."
+    },
+    {
+      "question": "Số nào sau đây là số thực nhưng không phải số hữu tỉ?",
+      "options": [
+        "$\\frac{22}{7}$",
+        "$-3$",
+        "$\\sqrt{3}$",
+        "$0.\\overline{6}$"
+      ],
+      "answer": 2,
+      "explanation": "$\\sqrt{3} = 1.7320508...$ là số thập phân vô hạn không tuần hoàn, nên là số vô tỉ — thuộc $\\mathbb{R}$ nhưng không thuộc $\\mathbb{Q}$. Các đáp án khác đều là số hữu tỉ."
+    },
+    {
+      "question": "Giá trị của $\\sqrt{(\\sqrt{81})}$ là:",
+      "options": [
+        "$3$",
+        "$9$",
+        "$81$",
+        "$\\sqrt{3}$"
+      ],
+      "answer": 0,
+      "explanation": "Tính từ trong ra ngoài: $\\sqrt{81} = 9$, sau đó $\\sqrt{9} = 3$. Vậy $\\sqrt{\\sqrt{81}} = 3$."
+    },
+    {
+      "question": "Làm tròn $4{,}567{,}832$ đến hàng trăm nghìn, ta được:",
+      "options": [
+        "$4{,}500{,}000$",
+        "$4{,}600{,}000$",
+        "$4{,}567{,}000$",
+        "$5{,}000{,}000$"
+      ],
+      "answer": 1,
+      "explanation": "Chữ số hàng chục nghìn (ngay sau hàng trăm nghìn) là $6 \\geq 5$, nên cộng $1$ vào hàng trăm nghìn: $5 + 1 = 6$, các chữ số sau thay bằng $0$. Kết quả: $4{,}600{,}000$."
+    },
+    {
+      "question": "Tìm $x$ không âm, biết $x^2 = \\frac{9}{16}$:",
+      "options": [
+        "$x = \\frac{3}{4}$",
+        "$x = \\frac{9}{16}$",
+        "$x = \\frac{3}{16}$",
+        "$x = \\frac{9}{4}$"
+      ],
+      "answer": 0,
+      "explanation": "$x = \\sqrt{\\frac{9}{16}} = \\frac{\\sqrt{9}}{\\sqrt{16}} = \\frac{3}{4}$. Kiểm tra: $\\left(\\frac{3}{4}\\right)^2 = \\frac{9}{16}$. ✓"
+    },
+    {
+      "question": "Khẳng định nào sau đây là **sai**?",
+      "options": [
+        "$\\sqrt{a^2} = a$ với mọi số thực $a \\geq 0$.",
+        "$\\sqrt{4} = 2$.",
+        "Số $0$ có căn bậc hai số học bằng $0$.",
+        "$\\sqrt{-4} = -2$."
+      ],
+      "answer": 3,
+      "explanation": "$\\sqrt{-4}$ không xác định trong tập số thực vì không tồn tại số thực nào bình phương lên cho ra số âm. Các khẳng định còn lại đều đúng."
+    },
+    {
+      "question": "Một hình vuông có cạnh $\\sqrt{7}$ cm. Diện tích hình vuông là:",
+      "options": [
+        "$7$ cm²",
+        "$\\sqrt{7}$ cm²",
+        "$49$ cm²",
+        "$2\\sqrt{7}$ cm²"
+      ],
+      "answer": 0,
+      "explanation": "Diện tích hình vuông $S = a^2 = (\\sqrt{7})^2 = 7$ cm²."
     }
   ],
   "essays": [
     {
-      "question": "Tính giá trị biểu thức: A = √36 - √9 + √16",
-      "hint": "Tính căn bậc hai của từng số trước rồi cộng trừ.",
-      "solution": "A = 6 - 3 + 4 = 7"
+      "question": "Tính giá trị biểu thức: $A = \\sqrt{36} - \\sqrt{9} + \\sqrt{16}$",
+      "hint": "Tính căn bậc hai số học của từng số trước rồi cộng trừ theo thứ tự.",
+      "solution": "$\\sqrt{36} = 6$; $\\sqrt{9} = 3$; $\\sqrt{16} = 4$.\nVậy $A = 6 - 3 + 4 = 7$."
     },
     {
-      "question": "So sánh: √15 và 4",
-      "hint": "Đưa 4 về dạng căn bậc hai.",
-      "solution": "4 = √16. Vì 15 < 16 nên √15 < √16. Vậy √15 < 4."
+      "question": "So sánh: $\\sqrt{15}$ và $4$",
+      "hint": "Đưa số $4$ về dạng căn bậc hai để dễ so sánh.",
+      "solution": "Ta có $4 = \\sqrt{16}$. Vì $15 < 16$ nên $\\sqrt{15} < \\sqrt{16}$. Vậy $\\sqrt{15} < 4$."
     },
     {
-      "question": "Làm tròn số 123.4567 đến hàng phần trăm.",
-      "hint": "Xem xét chữ số ở hàng phần nghìn.",
-      "solution": "Chữ số hàng phần nghìn là 6 >= 5, nên cộng 1 vào hàng phần trăm (5+1=6). Kết quả: 123.46"
+      "question": "Làm tròn số $123.4567$ đến hàng phần trăm.",
+      "hint": "Xem xét chữ số ở hàng phần nghìn (chữ số ngay sau hàng phần trăm).",
+      "solution": "Chữ số hàng phần nghìn là $6 \\geq 5$, nên cộng $1$ vào chữ số hàng phần trăm: $5 + 1 = 6$.\nKết quả: $123.46$."
     },
     {
-      "question": "Tìm x, biết x^2 = 49 (x > 0)",
-      "hint": "x là căn bậc hai số học của 49.",
-      "solution": "Vì x > 0 và x^2 = 49 nên x = √49 = 7."
+      "question": "Tìm $x$, biết $x^2 = 49$ với $x > 0$.",
+      "hint": "$x$ là căn bậc hai số học của $49$.",
+      "solution": "Vì $x > 0$ và $x^2 = 49$ nên $x = \\sqrt{49} = 7$."
     },
     {
-      "question": "Tính chu vi hình tròn có bán kính R = 5cm. (Làm tròn đến chữ số thập phân thứ nhất, lấy pi = 3.1415...)",
-      "hint": "Công thức chu vi C = 2 * pi * R.",
-      "solution": "C = 2 * 3.1415... * 5 = 10 * 3.1415... = 31.415... Làm tròn đến chữ số thập phân thứ nhất: 31.4 cm."
+      "question": "Tính chu vi hình tròn có bán kính $R = 5$ cm. Làm tròn kết quả đến chữ số thập phân thứ nhất (lấy $\\pi \\approx 3.14159...$).",
+      "hint": "Áp dụng công thức chu vi hình tròn $C = 2\\pi R$, sau đó làm tròn.",
+      "solution": "$C = 2 \\times \\pi \\times 5 = 10\\pi \\approx 10 \\times 3.14159... = 31.4159...$\nChữ số thập phân thứ hai là $1 < 5$ nên giữ nguyên.\nKết quả: $C \\approx 31.4$ cm."
+    },
+    {
+      "question": "Chứng minh rằng $\\sqrt{2}$ là số vô tỉ (không thể viết dưới dạng $\\frac{a}{b}$ với $a, b \\in \\mathbb{Z}$, $b \\neq 0$). Giải thích tại sao $\\sqrt{2} \\approx 1.41421356...$ không phải là số hữu tỉ.",
+      "hint": "Số hữu tỉ khi viết dưới dạng thập phân sẽ hữu hạn hoặc vô hạn tuần hoàn. Hãy nhận xét phần thập phân của $\\sqrt{2}$.",
+      "solution": "Số hữu tỉ khi viết dưới dạng số thập phân hoặc là hữu hạn (như $0.25$) hoặc là vô hạn tuần hoàn (như $0.333...$). Ngược lại, $\\sqrt{2} = 1.41421356237...$: phần thập phân kéo dài vô tận mà không có chu kỳ lặp lại. Do đó $\\sqrt{2}$ không thể viết được dưới dạng phân số $\\frac{a}{b}$, nghĩa là $\\sqrt{2}$ là số vô tỉ."
+    },
+    {
+      "question": "Một mảnh đất hình vuông có diện tích $S = 50$ m². Hãy tính độ dài cạnh của mảnh đất, làm tròn đến hàng phần mười (biết $\\sqrt{50} \\approx 7.071...$).",
+      "hint": "Cạnh hình vuông $a = \\sqrt{S}$. Sau đó làm tròn $\\sqrt{50}$ đến hàng phần mười.",
+      "solution": "Cạnh hình vuông: $a = \\sqrt{50} \\approx 7.071...$\nChữ số thập phân thứ hai là $7 \\geq 5$, nên cộng $1$ vào chữ số phần mười: $0 + 1 = 1$.\nVậy $a \\approx 7.1$ m."
+    },
+    {
+      "question": "Tính giá trị biểu thức: $B = \\sqrt{\\frac{1}{9}} + \\sqrt{\\frac{4}{9}} - \\sqrt{\\frac{9}{9}}$",
+      "hint": "Tính căn bậc hai của từng phân số: $\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$.",
+      "solution": "$\\sqrt{\\frac{1}{9}} = \\frac{1}{3}$; $\\sqrt{\\frac{4}{9}} = \\frac{2}{3}$; $\\sqrt{\\frac{9}{9}} = \\sqrt{1} = 1$.\n$B = \\frac{1}{3} + \\frac{2}{3} - 1 = 1 - 1 = 0$."
+    },
+    {
+      "question": "Trong một cuộc khảo sát, số người tham gia là $3{,}847$. Hãy làm tròn số liệu này đến hàng trăm để báo cáo gần đúng. Sau đó làm tròn đến hàng nghìn và so sánh hai kết quả.",
+      "hint": "Áp dụng quy tắc làm tròn cho từng trường hợp, nhìn vào chữ số ngay sau hàng cần làm tròn.",
+      "solution": "**Làm tròn đến hàng trăm:** Chữ số hàng chục là $4 < 5$, giữ nguyên hàng trăm ($8$), thay chữ số sau bằng $0$. Kết quả: $3{,}800$.\n**Làm tròn đến hàng nghìn:** Chữ số hàng trăm là $8 \\geq 5$, cộng $1$ vào hàng nghìn ($3 + 1 = 4$), thay các chữ số sau bằng $0$. Kết quả: $4{,}000$.\n**So sánh:** $3{,}800$ gần với giá trị gốc $3{,}847$ hơn so với $4{,}000$."
+    },
+    {
+      "question": "So sánh ba số: $\\sqrt{10}$, $3$ và $\\pi$ (biết $\\pi \\approx 3.14159$). Sắp xếp theo thứ tự tăng dần.",
+      "hint": "Đưa số $3$ về dạng căn bậc hai ($3 = \\sqrt{9}$) để so sánh với $\\sqrt{10}$. Sau đó so sánh với $\\pi$.",
+      "solution": "Ta có $3 = \\sqrt{9}$. Vì $9 < 10$ nên $\\sqrt{9} < \\sqrt{10}$, tức là $3 < \\sqrt{10}$.\nMặt khác $\\sqrt{10} \\approx 3.1623$ và $\\pi \\approx 3.1416$.\nVì $3.1416 < 3.1623$ nên $\\pi < \\sqrt{10}$.\nVậy thứ tự tăng dần là: $3 < \\pi < \\sqrt{10}$."
     }
   ]
 }

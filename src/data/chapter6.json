@@ -1,67 +1,179 @@
 {
   "id": 6,
   "title": "Chương 6: Các đại lượng tỉ lệ",
-  "summary": "1. Tỉ lệ thức: Là đẳng thức của hai tỉ số a/b = c/d. Tính chất: a.d = b.c.\nVí dụ: 2/3 = 4/6 suy ra 2.6 = 3.4.\n2. Tính chất dãy tỉ số bằng nhau: a/b = c/d = (a+c)/(b+d) = (a-c)/(b-d).\nVí dụ: Nếu x/2 = y/3 và x+y = 10 thì x/2 = y/3 = 10/5 = 2.\n3. Đại lượng tỉ lệ thuận: Hai đại lượng y và x liên hệ theo công thức y = k.x (k ≠ 0). k gọi là hệ số tỉ lệ.\nVí dụ: Quãng đường tỉ lệ thuận với thời gian (khi vận tốc không đổi).\n4. Đại lượng tỉ lệ nghịch: Hai đại lượng y và x liên hệ theo công thức y = a/x hay x.y = a (a ≠ 0). a gọi là hệ số tỉ lệ.\nVí dụ: Vận tốc tỉ lệ nghịch với thời gian (khi quãng đường không đổi).",
+  "summary": "Dưới đây là toàn bộ kiến thức trọng tâm, công thức và cách phân biệt dễ nhớ nhất về **Các đại lượng tỉ lệ** trong toán học đại số:\n\n---\n\n## 1. Tỉ lệ thức\n\n### Định nghĩa:\n\nTỉ lệ thức là đẳng thức của hai tỉ số $\\frac{a}{b}$ và $\\frac{c}{d}$.\n\n* Ký hiệu: $\\frac{a}{b} = \\frac{c}{d}$ (hoặc $a : b = c : d$)\n* Trong đó: $a, b, c, d$ là các số hạng; $a$ và $d$ là *ngoại tỷ*; $b$ và $c$ là *trung tỷ*.\n\n### Tính chất cốt lõi:\n\n* **Tính chất cơ bản:** Nếu $\\frac{a}{b} = \\frac{c}{d}$ thì tích chéo bằng nhau:\n\n$$a \\cdot d = b \\cdot c$$\n\n* **Tính chất hoán vị:** Từ đẳng thức $a \\cdot d = b \\cdot c$ (với $a, b, c, d \\neq 0$), ta có thể suy ra 4 tỉ lệ thức sau:\n\n$$\\frac{a}{b} = \\frac{c}{d}; \\quad \\frac{a}{c} = \\frac{b}{d}; \\quad \\frac{d}{b} = \\frac{c}{a}; \\quad \\frac{d}{c} = \\frac{b}{a}$$\n\n---\n\n## 2. Tính chất của dãy tỉ số bằng nhau\n\nTừ tỉ lệ thức, ta có thể mở rộng ra cho nhiều tỉ số bằng nhau. Đây là công cụ cực kỳ mạnh mẽ để giải các bài toán tìm $x, y, z$.\n\n### Công thức:\n\n* **Với hai tỉ số:**\n\n$$\\frac{a}{b} = \\frac{c}{d} = \\frac{a + c}{b + d} = \\frac{a - c}{b - d} \\quad (\\text{với } b \\neq \\pm d)$$\n\n* **Với ba tỉ số (mở rộng):**\n\n$$\\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{a + c + e}{b + d + f} = \\frac{a - c + e}{b - d + f}$$\n\n> **Lưu ý:** Khi có dãy tỉ số $\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{5}$, ta cũng có thể viết gọn là các số $a, b, c$ tỉ lệ với các số $2, 3, 5$ (hoặc viết $a : b : c = 2 : 3 : 5$).\n\n---\n\n## 3. Đại lượng tỉ lệ thuận\n\n![Đại lượng tỉ lệ thuận](/images/ti_le_thuan.png)\n\n### Định nghĩa:\n\nNếu đại lượng $y$ liên hệ với đại lượng $x$ theo công thức:\n\n$$y = k \\cdot x \\quad (\\text{với } k \\text{ là hằng số khác } 0)$$\n\nthì ta nói **$y$ tỉ lệ thuận với $x$** theo hệ số tỉ lệ $k$.\n\n### Tính chất đặc trưng:\n\nKhi hai đại lượng tỉ lệ thuận với nhau, ta có:\n\n* Tỉ số hai giá trị tương ứng của chúng **luôn không đổi**:\n\n$$\\frac{y_1}{x_1} = \\frac{y_2}{x_2} = \\frac{y_3}{x_3} = ... = k$$\n\n* Tỉ số hai giá trị bất kỳ của đại lượng này bằng tỉ số hai giá trị tương ứng của đại lượng kia:\n\n$$\\frac{x_1}{x_2} = \\frac{y_1}{y_2}; \\quad \\frac{x_1}{x_3} = \\frac{y_1}{y_3}$$\n\n* **Ví dụ thực tế:** Chu vi hình vuông ($C$) tỉ lệ thuận với độ dài cạnh ($a$) của nó qua công thức $C = 4a$. (Cạnh càng tăng thì chu vi càng tăng).\n\n---\n\n## 4. Đại lượng tỉ lệ nghịch\n\n![Đại lượng tỉ lệ nghịch](/images/ti_le_nghich.png)\n\n### Định nghĩa:\n\nNếu đại lượng $y$ liên hệ với đại lượng $x$ theo công thức:\n\n$$y = \\frac{a}{x} \\quad \\text{hay } \\quad x \\cdot y = a \\quad (\\text{với } a \\text{ là hằng số khác } 0)$$\n\nthì ta nói **$y$ tỉ lệ nghịch với $x$** theo hệ số tỉ lệ $a$.\n\n### Tính chất đặc trưng:\n\nKhi hai đại lượng tỉ lệ nghịch với nhau, ta có:\n\n* Tích hai giá trị tương ứng của chúng **luôn không đổi** (bằng hệ số tỉ lệ):\n\n$$x_1 \\cdot y_1 = x_2 \\cdot y_2 = x_3 \\cdot y_3 = ... = a$$\n\n* Tỉ số hai giá trị bất kỳ của đại lượng này bằng **nghịch đảo** của tỉ số hai giá trị tương ứng của đại lượng kia:\n\n$$\\frac{x_1}{x_2} = \\frac{y_2}{y_1}; \\quad \\frac{x_1}{x_3} = \\frac{y_3}{y_1}$$\n\n* **Ví dụ thực tế:** Vận tốc ($v$) và thời gian ($t$) trên cùng một quãng đường cố định $S$ là hai đại lượng tỉ lệ nghịch ($v \\cdot t = S$). (Đi càng nhanh thì thời gian càng giảm).\n\n---\n\n### Mẹo phân biệt nhanh Tỉ lệ thuận và Tỉ lệ nghịch:\n\n| Đặc điểm so sánh | Đại lượng tỉ lệ thuận | Đại lượng tỉ lệ nghịch |\n| --- | --- | --- |\n| **Công thức tổng quát** | $y = k \\cdot x$ | $y = \\frac{a}{x}$ hoặc $x \\cdot y = a$ |\n| **Xu hướng giá trị** | $x$ tăng $\\rightarrow$ $y$ **tăng** theo tỉ lệ.<br>$x$ giảm $\\rightarrow$ $y$ **giảm** theo tỉ lệ. | $x$ tăng $\\rightarrow$ $y$ **giảm** theo tỉ lệ.<br>$x$ giảm $\\rightarrow$ $y$ **tăng** theo tỉ lệ. |\n| **Công thức làm bài** | Lập phép tính **Chia**: $\\frac{y_1}{x_1} = \\frac{y_2}{x_2}$ | Lập phép tính **Nhân**: $x_1 \\cdot y_1 = x_2 \\cdot y_2$ |",
   "quizzes": [
     {
-      "question": "Từ đẳng thức 2 . 6 = 3 . 4, ta lập được tỉ lệ thức nào?",
-      "options": [
-        "2/3 = 4/6",
-        "2/6 = 3/4",
-        "3/2 = 6/4",
-        "4/3 = 6/2"
-      ],
-      "answer": 0,
-      "explanation": "2.6 = 3.4 suy ra 2/3 = 4/6."
-    },
-    {
-      "question": "Nếu y tỉ lệ thuận với x theo hệ số tỉ lệ k = 3, công thức biểu diễn y theo x là:",
-      "options": [
-        "y = x + 3",
-        "y = 3/x",
-        "y = 3x",
-        "x = 3y"
-      ],
+      "question": "Trong tỉ lệ thức $\\frac{a}{b} = \\frac{c}{d}$, đẳng thức nào sau đây luôn đúng?",
+      "options": ["$a \\cdot c = b \\cdot d$", "$a + d = b + c$", "$a \\cdot d = b \\cdot c$", "$a - d = b - c$"],
       "answer": 2,
-      "explanation": "Công thức tỉ lệ thuận: y = kx => y = 3x."
+      "explanation": "Tính chất cơ bản của tỉ lệ thức: tích hai ngoại tỷ bằng tích hai trung tỷ ($a \\cdot d = b \\cdot c$)."
     },
     {
-      "question": "Một người đi xe đạp với vận tốc v và thời gian t để đi hết quãng đường S. v và t là hai đại lượng:",
-      "options": [
-        "Tỉ lệ thuận",
-        "Tỉ lệ nghịch",
-        "Không liên quan",
-        "Cộng gộp"
-      ],
+      "question": "Từ đẳng thức $2 \\cdot 6 = 3 \\cdot 4$, ta CÓ THỂ lập được tỉ lệ thức nào sau đây?",
+      "options": ["$\\frac{2}{3} = \\frac{4}{6}$", "$\\frac{2}{4} = \\frac{6}{3}$", "$\\frac{2}{6} = \\frac{3}{4}$", "$\\frac{3}{2} = \\frac{6}{4}$"],
+      "answer": 0,
+      "explanation": "Từ $2 \\cdot 6 = 3 \\cdot 4$, theo tính chất hoán vị ta lập được $\\frac{2}{3} = \\frac{4}{6}$ vì $2 \\cdot 6 = 12$ và $3 \\cdot 4 = 12$."
+    },
+    {
+      "question": "Cho dãy tỉ số bằng nhau: $\\frac{x}{2} = \\frac{y}{3} = \\frac{x+y}{?}$. Điền vào dấu hỏi chấm:",
+      "options": ["$5$", "$1$", "$6$", "$-1$"],
+      "answer": 0,
+      "explanation": "Theo tính chất dãy tỉ số bằng nhau: $\\frac{x}{2} = \\frac{y}{3} = \\frac{x+y}{2+3} = \\frac{x+y}{5}$."
+    },
+    {
+      "question": "Tìm $x$ biết: $\\frac{x}{5} = \\frac{6}{10}$.",
+      "options": ["$2$", "$3$", "$12$", "$30$"],
       "answer": 1,
-      "explanation": "v.t = S (hằng số), nên v và t tỉ lệ nghịch với nhau."
+      "explanation": "$x = \\frac{5 \\cdot 6}{10} = \\frac{30}{10} = 3$."
+    },
+    {
+      "question": "Đại lượng $y$ tỉ lệ thuận với đại lượng $x$ theo hệ số tỉ lệ $k = 3$. Công thức biểu diễn $y$ theo $x$ là:",
+      "options": ["$y = \\frac{3}{x}$", "$x = 3y$", "$y = 3x$", "$y = x + 3$"],
+      "answer": 2,
+      "explanation": "Định nghĩa tỉ lệ thuận: $y = kx$. Thay $k = 3$ ta được $y = 3x$."
+    },
+    {
+      "question": "Đại lượng $y$ tỉ lệ nghịch với đại lượng $x$ theo hệ số tỉ lệ $a = 12$. Công thức nào sau đây đúng?",
+      "options": ["$y = 12x$", "$x \\cdot y = 12$", "$\\frac{y}{x} = 12$", "$y = x - 12$"],
+      "answer": 1,
+      "explanation": "Định nghĩa tỉ lệ nghịch: $x \\cdot y = a$. Thay $a = 12$ ta được $x \\cdot y = 12$ (hoặc $y = \\frac{12}{x}$)."
+    },
+    {
+      "question": "Nếu hai đại lượng $x$ và $y$ tỉ lệ thuận với nhau, khi $x$ tăng lên 2 lần thì $y$ sẽ:",
+      "options": ["Giảm đi 2 lần", "Tăng lên 2 lần", "Không thay đổi", "Tăng lên 4 lần"],
+      "answer": 1,
+      "explanation": "Đại lượng tỉ lệ thuận có xu hướng: $x$ tăng bao nhiêu lần thì $y$ tăng bấy nhiêu lần."
+    },
+    {
+      "question": "Nếu $x$ và $y$ tỉ lệ nghịch với nhau, khi $x$ tăng lên 3 lần thì $y$ sẽ:",
+      "options": ["Tăng lên 3 lần", "Giảm đi 3 lần", "Tăng lên 9 lần", "Không thay đổi"],
+      "answer": 1,
+      "explanation": "Đại lượng tỉ lệ nghịch có xu hướng: $x$ tăng lên bao nhiêu lần thì $y$ giảm đi bấy nhiêu lần để tích $x \\cdot y$ luôn không đổi."
+    },
+    {
+      "question": "Cho $x$ và $y$ là hai đại lượng tỉ lệ thuận. Biết khi $x = 2$ thì $y = 8$. Hệ số tỉ lệ $k$ của $y$ đối với $x$ là:",
+      "options": ["$4$", "$\\frac{1}{4}$", "$16$", "$10$"],
+      "answer": 0,
+      "explanation": "Hệ số tỉ lệ thuận $k = \\frac{y}{x} = \\frac{8}{2} = 4$."
+    },
+    {
+      "question": "Cho $x$ và $y$ là hai đại lượng tỉ lệ nghịch. Biết khi $x = 4$ thì $y = 5$. Hệ số tỉ lệ $a$ là:",
+      "options": ["$\\frac{5}{4}$", "$\\frac{4}{5}$", "$9$", "$20$"],
+      "answer": 3,
+      "explanation": "Hệ số tỉ lệ nghịch $a = x \\cdot y = 4 \\cdot 5 = 20$."
+    },
+    {
+      "question": "Một ô tô đi quãng đường $S$ không đổi với vận tốc $v$ và thời gian $t$. Mối quan hệ giữa $v$ và $t$ là:",
+      "options": ["Tỉ lệ thuận", "Tỉ lệ nghịch", "Không tỉ lệ", "Bằng nhau"],
+      "answer": 1,
+      "explanation": "Vận tốc và thời gian trên quãng đường không đổi là hai đại lượng tỉ lệ nghịch vì $v \\cdot t = S$ (không đổi)."
+    },
+    {
+      "question": "Số tiền mua một số quyển vở cùng loại và số quyển vở là hai đại lượng:",
+      "options": ["Tỉ lệ thuận", "Tỉ lệ nghịch", "Không tỉ lệ", "Độc lập"],
+      "answer": 0,
+      "explanation": "Mua càng nhiều vở thì số tiền phải trả càng nhiều (tỉ số Số tiền / Số vở = Giá 1 quyển vở không đổi). Do đó chúng tỉ lệ thuận."
+    },
+    {
+      "question": "Tìm hai số $x, y$ biết $\\frac{x}{3} = \\frac{y}{4}$ và $x + y = 14$.",
+      "options": ["$x = 4, y = 10$", "$x = 3, y = 4$", "$x = 6, y = 8$", "$x = 8, y = 6$"],
+      "answer": 2,
+      "explanation": "Áp dụng dãy tỉ số bằng nhau: $\\frac{x}{3} = \\frac{y}{4} = \\frac{x+y}{3+4} = \\frac{14}{7} = 2$. Do đó $x = 3 \\cdot 2 = 6$; $y = 4 \\cdot 2 = 8$."
+    },
+    {
+      "question": "Biết $x$ và $y$ tỉ lệ thuận, khi $x_1 = 3$ thì $y_1 = 15$. Tính $y_2$ khi $x_2 = 5$.",
+      "options": ["$25$", "$9$", "$15$", "$75$"],
+      "answer": 0,
+      "explanation": "Hệ số $k = \\frac{15}{3} = 5$. Khi $x_2 = 5$ thì $y_2 = 5 \\cdot 5 = 25$."
+    },
+    {
+      "question": "Biết $x$ và $y$ tỉ lệ nghịch, khi $x_1 = 2$ thì $y_1 = 10$. Tính $y_2$ khi $x_2 = 4$.",
+      "options": ["$20$", "$5$", "$8$", "$40$"],
+      "answer": 1,
+      "explanation": "Hệ số $a = 2 \\cdot 10 = 20$. Khi $x_2 = 4$ thì $y_2 = \\frac{20}{4} = 5$."
+    },
+    {
+      "question": "Từ đẳng thức $m \\cdot n = p \\cdot q$, tỉ lệ thức nào sau đây SAI?",
+      "options": ["$\\frac{m}{p} = \\frac{q}{n}$", "$\\frac{m}{q} = \\frac{p}{n}$", "$\\frac{n}{p} = \\frac{q}{m}$", "$\\frac{m}{n} = \\frac{p}{q}$"],
+      "answer": 3,
+      "explanation": "Nhân chéo đáp án D ta có $m \\cdot q = n \\cdot p$, khác với đẳng thức ban đầu ($m \\cdot n = p \\cdot q$). Do đó D sai."
+    },
+    {
+      "question": "Ba số $a, b, c$ tỉ lệ với các số $2, 3, 5$. Cách viết nào sau đây đúng?",
+      "options": ["$2a = 3b = 5c$", "$\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{5}$", "$\\frac{2}{a} = \\frac{3}{b} = \\frac{5}{c}$", "$a \\cdot 2 = b \\cdot 3 = c \\cdot 5$"],
+      "answer": 1,
+      "explanation": "$a, b, c$ tỉ lệ với $2, 3, 5$ nghĩa là $\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{5}$."
+    },
+    {
+      "question": "Cho $\\frac{x}{y} = \\frac{3}{4}$, tỉ số $\\frac{x}{x+y}$ bằng:",
+      "options": ["$\\frac{3}{7}$", "$\\frac{4}{7}$", "$\\frac{3}{4}$", "$\\frac{1}{7}$"],
+      "answer": 0,
+      "explanation": "Từ $\\frac{x}{y} = \\frac{3}{4} \\Rightarrow \\frac{x}{3} = \\frac{y}{4} = \\frac{x+y}{7} = k$. Suy ra $x = 3k, x+y = 7k$. Vậy tỉ số là $\\frac{3k}{7k} = \\frac{3}{7}$."
+    },
+    {
+      "question": "Một đội công nhân 10 người làm xong một công việc trong 6 ngày. Hỏi 15 người (cùng năng suất) làm xong công việc đó trong bao nhiêu ngày?",
+      "options": ["$9$ ngày", "$4$ ngày", "$3$ ngày", "$10$ ngày"],
+      "answer": 1,
+      "explanation": "Số người và số ngày làm xong công việc là hai đại lượng tỉ lệ nghịch. Gọi $x$ là số ngày, ta có: $10 \\cdot 6 = 15 \\cdot x \\Rightarrow 60 = 15x \\Rightarrow x = 4$."
+    },
+    {
+      "question": "Tính chất của hai đại lượng tỉ lệ thuận $y$ và $x$ là:",
+      "options": ["$x \\cdot y$ không đổi", "$\\frac{y}{x}$ không đổi", "$x+y$ không đổi", "$y-x$ không đổi"],
+      "answer": 1,
+      "explanation": "Đối với đại lượng tỉ lệ thuận, tỉ số hai giá trị tương ứng của chúng luôn không đổi: $\\frac{y_1}{x_1} = \\frac{y_2}{x_2} = ... = k$."
     }
   ],
   "essays": [
     {
-      "question": "Tìm x trong tỉ lệ thức: x/4 = 5/2",
-      "hint": "Sử dụng tính chất nhân chéo: x.2 = 4.5",
-      "solution": "2x = 20 => x = 10."
+      "question": "Tìm hai số $x$ và $y$ biết $\\frac{x}{4} = \\frac{y}{7}$ và $x + y = 55$.",
+      "hint": "Sử dụng tính chất của dãy tỉ số bằng nhau: $\\frac{x}{a} = \\frac{y}{b} = \\frac{x+y}{a+b}$.",
+      "solution": "Theo tính chất dãy tỉ số bằng nhau, ta có:\n$$\\frac{x}{4} = \\frac{y}{7} = \\frac{x + y}{4 + 7} = \\frac{55}{11} = 5$$\n* Từ $\\frac{x}{4} = 5 \\Rightarrow x = 5 \\cdot 4 = 20$\n* Từ $\\frac{y}{7} = 5 \\Rightarrow y = 5 \\cdot 7 = 35$\nVậy $x = 20, y = 35$."
     },
     {
-      "question": "Tìm hai số x và y biết x/3 = y/5 và x + y = 32.",
-      "hint": "Áp dụng tính chất dãy tỉ số bằng nhau.",
-      "solution": "x/3 = y/5 = (x+y)/(3+5) = 32/8 = 4. Do đó x = 3*4 = 12, y = 5*4 = 20."
+      "question": "Tìm ba số $a, b, c$ biết chúng tỉ lệ với $2, 3, 5$ và $a + b + c = 50$.",
+      "hint": "Lập dãy tỉ số bằng nhau từ tỉ lệ $2:3:5$ và tính tổng.",
+      "solution": "Vì $a, b, c$ tỉ lệ với $2, 3, 5$ nên:\n$$\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{5}$$\nÁp dụng tính chất dãy tỉ số bằng nhau:\n$$\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{5} = \\frac{a + b + c}{2 + 3 + 5} = \\frac{50}{10} = 5$$\n* $\\frac{a}{2} = 5 \\Rightarrow a = 10$\n* $\\frac{b}{3} = 5 \\Rightarrow b = 15$\n* $\\frac{c}{5} = 5 \\Rightarrow c = 25$\nVậy $a=10, b=15, c=25$."
     },
     {
-      "question": "Biết x và y là hai đại lượng tỉ lệ thuận. Khi x = 2 thì y = 8. Tìm hệ số tỉ lệ k và biểu diễn y theo x.",
-      "hint": "y = kx.",
-      "solution": "8 = k.2 => k = 4. Biểu diễn: y = 4x."
+      "question": "Tìm $x, y$ biết $\\frac{x}{5} = \\frac{y}{2}$ và $x - y = 12$.",
+      "hint": "Sử dụng tính chất dãy tỉ số bằng nhau với hiệu: $\\frac{x - y}{5 - 2}$.",
+      "solution": "Áp dụng tính chất dãy tỉ số bằng nhau:\n$$\\frac{x}{5} = \\frac{y}{2} = \\frac{x - y}{5 - 2} = \\frac{12}{3} = 4$$\n* Từ $\\frac{x}{5} = 4 \\Rightarrow x = 4 \\cdot 5 = 20$\n* Từ $\\frac{y}{2} = 4 \\Rightarrow y = 4 \\cdot 2 = 8$\nVậy $x = 20, y = 8$."
     },
     {
-      "question": "Một công việc cần 10 công nhân làm trong 12 ngày. Hỏi 15 công nhân (cùng năng suất) thì làm xong trong bao nhiêu ngày?",
-      "hint": "Số công nhân và số ngày là hai đại lượng tỉ lệ nghịch.",
-      "solution": "Gọi x là số ngày. Ta có 15.x = 10.12 => 15x = 120 => x = 8 ngày."
+      "question": "Biết $x$ và $y$ là hai đại lượng tỉ lệ thuận. Khi $x = 6$ thì $y = -18$.\n1. Tìm hệ số tỉ lệ $k$ của $y$ đối với $x$.\n2. Biểu diễn $y$ theo $x$.\n3. Tính $y$ khi $x = -4$.",
+      "hint": "1. $k = \\frac{y}{x}$. 2. Lập công thức $y = kx$. 3. Thay $x = -4$ vào công thức.",
+      "solution": "1. Vì $y$ tỉ lệ thuận với $x$ nên hệ số tỉ lệ $k = \\frac{y}{x} = \\frac{-18}{6} = -3$.\n2. Biểu diễn $y$ theo $x$: $y = -3x$.\n3. Khi $x = -4$, ta có $y = -3 \\cdot (-4) = 12$."
     },
     {
-      "question": "Chia số 90 thành 3 phần tỉ lệ với 2, 3, 4. Tìm 3 phần đó.",
-      "hint": "Gọi 3 phần là a,b,c. a/2 = b/3 = c/4 và a+b+c = 90.",
-      "solution": "a/2 = b/3 = c/4 = (a+b+c)/(2+3+4) = 90/9 = 10. Vậy a=20, b=30, c=40."
+      "question": "Biết $x$ và $y$ là hai đại lượng tỉ lệ nghịch. Khi $x = 8$ thì $y = 3$.\n1. Tìm hệ số tỉ lệ $a$.\n2. Biểu diễn $y$ theo $x$.\n3. Tính $y$ khi $x = 6$.",
+      "hint": "1. $a = x \\cdot y$. 2. Lập công thức $y = \\frac{a}{x}$. 3. Thay $x = 6$ vào công thức.",
+      "solution": "1. Vì $y$ tỉ lệ nghịch với $x$ nên hệ số tỉ lệ $a = x \\cdot y = 8 \\cdot 3 = 24$.\n2. Biểu diễn $y$ theo $x$: $y = \\frac{24}{x}$.\n3. Khi $x = 6$, ta có $y = \\frac{24}{6} = 4$."
+    },
+    {
+      "question": "Học sinh 3 lớp 7A, 7B, 7C tham gia trồng cây. Biết số cây trồng được của ba lớp lần lượt tỉ lệ với các số $3, 4, 5$ và tổng số cây trồng được của cả 3 lớp là $120$ cây. Hỏi mỗi lớp trồng được bao nhiêu cây?",
+      "hint": "Gọi số cây của 3 lớp là $a, b, c$. Ta có $\\frac{a}{3} = \\frac{b}{4} = \\frac{c}{5}$ và $a + b + c = 120$.",
+      "solution": "Gọi số cây trồng được của lớp 7A, 7B, 7C lần lượt là $a, b, c$ (cây). ($a, b, c \\in \\mathbb{N}^*$)\nTheo đề bài ta có: $\\frac{a}{3} = \\frac{b}{4} = \\frac{c}{5}$ và $a + b + c = 120$.\nÁp dụng tính chất dãy tỉ số bằng nhau:\n$$\\frac{a}{3} = \\frac{b}{4} = \\frac{c}{5} = \\frac{a + b + c}{3 + 4 + 5} = \\frac{120}{12} = 10$$\n* $a = 10 \\cdot 3 = 30$ (cây)\n* $b = 10 \\cdot 4 = 40$ (cây)\n* $c = 10 \\cdot 5 = 50$ (cây)\nVậy lớp 7A, 7B, 7C trồng được lần lượt 30, 40, 50 cây."
+    },
+    {
+      "question": "Ba người góp vốn kinh doanh theo tỉ lệ $2 : 3 : 4$. Tổng số tiền lãi là $180$ triệu đồng được chia theo tỉ lệ góp vốn. Hỏi mỗi người nhận được bao nhiêu tiền lãi?",
+      "hint": "Tương tự bài toán trồng cây, chia 180 theo tỉ lệ $2, 3, 4$.",
+      "solution": "Gọi số tiền lãi của 3 người lần lượt là $x, y, z$ (triệu đồng).\nTa có: $\\frac{x}{2} = \\frac{y}{3} = \\frac{z}{4}$ và $x + y + z = 180$.\nÁp dụng tính chất dãy tỉ số bằng nhau:\n$$\\frac{x}{2} = \\frac{y}{3} = \\frac{z}{4} = \\frac{x + y + z}{2 + 3 + 4} = \\frac{180}{9} = 20$$\n* $x = 20 \\cdot 2 = 40$ (triệu)\n* $y = 20 \\cdot 3 = 60$ (triệu)\n* $z = 20 \\cdot 4 = 80$ (triệu)\nVậy mỗi người nhận được 40 triệu, 60 triệu và 80 triệu đồng."
+    },
+    {
+      "question": "Một đội thợ xây gồm 12 người làm xong một ngôi nhà trong 20 ngày. Nếu chỉ có 8 người (cùng năng suất) thì làm xong ngôi nhà đó trong bao nhiêu ngày?",
+      "hint": "Số người và số ngày làm xong công việc là đại lượng tỉ lệ nghịch. Tính tích (Số người $\\times$ Số ngày) = hằng số.",
+      "solution": "Gọi $x$ (ngày) là thời gian để 8 người làm xong ngôi nhà. Do khối lượng công việc không đổi, số người và số ngày làm xong công việc tỉ lệ nghịch với nhau.\nTa có: $12 \\cdot 20 = 8 \\cdot x$\n$\\Rightarrow 240 = 8x$\n$\\Rightarrow x = \\frac{240}{8} = 30$ (ngày)\nVậy 8 người sẽ làm xong ngôi nhà trong 30 ngày."
+    },
+    {
+      "question": "Biết $5$ lít nước biển chứa $175$ gam muối. Hỏi $12$ lít nước biển (cùng nồng độ) chứa bao nhiêu gam muối?",
+      "hint": "Thể tích nước biển và lượng muối trong đó là đại lượng tỉ lệ thuận.",
+      "solution": "Gọi $x$ (gam) là lượng muối có trong $12$ lít nước biển. Thể tích nước biển và khối lượng muối tỉ lệ thuận với nhau.\nTheo tính chất tỉ lệ thuận, ta có:\n$$\\frac{175}{5} = \\frac{x}{12}$$\n$$\\Rightarrow x = \\frac{175 \\cdot 12}{5} = 35 \\cdot 12 = 420 \\text{ (gam)}$$\nVậy $12$ lít nước biển chứa $420$ gam muối."
+    },
+    {
+      "question": "Cho ba số $x, y, z$ biết $\\frac{x}{2} = \\frac{y}{3}$, $\\frac{y}{4} = \\frac{z}{5}$ và $x + y - z = 10$. Tìm $x, y, z$.",
+      "hint": "Quy đồng mẫu số cho $y$ để nối hai tỉ lệ thức thành một dãy tỉ số bằng nhau ($y$ có mẫu 3 và 4, BCNN là 12).",
+      "solution": "Từ $\\frac{x}{2} = \\frac{y}{3} \\Rightarrow \\frac{x}{8} = \\frac{y}{12}$ (nhân hai vế với $\\frac{1}{4}$)\nTừ $\\frac{y}{4} = \\frac{z}{5} \\Rightarrow \\frac{y}{12} = \\frac{z}{15}$ (nhân hai vế với $\\frac{1}{3}$)\nDo đó, ta có dãy tỉ số bằng nhau: $\\frac{x}{8} = \\frac{y}{12} = \\frac{z}{15}$\nÁp dụng tính chất dãy tỉ số bằng nhau:\n$$\\frac{x}{8} = \\frac{y}{12} = \\frac{z}{15} = \\frac{x + y - z}{8 + 12 - 15} = \\frac{10}{5} = 2$$\n* $x = 2 \\cdot 8 = 16$\n* $y = 2 \\cdot 12 = 24$\n* $z = 2 \\cdot 15 = 30$\nVậy $x=16, y=24, z=30$."
     }
   ]
 }

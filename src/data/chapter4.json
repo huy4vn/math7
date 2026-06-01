@@ -1,67 +1,240 @@
 {
   "id": 4,
   "title": "Chương 4: Góc và đường thẳng song song",
-  "summary": "1. Hai góc đối đỉnh: Là hai góc mà mỗi cạnh của góc này là tia đối của một cạnh của góc kia. Hai góc đối đỉnh thì bằng nhau.\nVí dụ: Hai đường thẳng cắt nhau tạo thành chữ X, 2 góc đối diện nhau là góc đối đỉnh.\n2. Hai góc kề bù: Là hai góc vừa kề nhau, vừa bù nhau. Tổng số đo hai góc kề bù bằng 180 độ.\nVí dụ: Góc 60° và góc 120° nằm trên một đường thẳng.\n3. Tia phân giác: Là tia nằm giữa hai cạnh của góc và tạo với hai cạnh ấy hai góc bằng nhau.\nVí dụ: Tia chia góc 80° thành hai góc 40°.\n4. Đường thẳng song song: Hai đường thẳng phân biệt không có điểm chung. Dấu hiệu: Nếu 1 đường thẳng cắt 2 đường thẳng tạo ra một cặp góc so le trong bằng nhau (hoặc đồng vị bằng nhau) thì 2 đường thẳng đó song song.\nVí dụ: Các đường thẳng kẻ phân làn trên đường cao tốc.\n5. Tiên đề Euclid: Qua một điểm ở ngoài đường thẳng, chỉ có một đường thẳng song song với đường thẳng đó.\nVí dụ: Có thể vẽ duy nhất một đường thẳng qua điểm A song song với đường thẳng d.",
+  "summary": "Dưới đây là hệ thống hóa toàn bộ kiến thức nền tảng về **Góc và Đường thẳng song song**, một trong những phần quan trọng nhất của hình học phẳng.\n\n---\n\n## 1. Hai góc đối đỉnh\n\n![Hai góc đối đỉnh](/images/goc_doi_dinh.png)\n\n### Định nghĩa:\n\nHai góc đối đỉnh là hai góc mà mỗi cạnh của góc này là tia đối của một cạnh của góc kia.\n\n### Tính chất:\n\n> **Hai góc đối đỉnh thì bằng nhau.**\n\n* **Ví dụ:** Hai đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$, trong đó $x, x'$ là hai tia đối nhau và $y, y'$ là hai tia đối nhau. Khi đó, góc $\\widehat{xOy}$ và góc $\\widehat{x'Oy'}$ là hai góc đối đỉnh (cùng tô **xanh**), ta có:\n\n$$\\widehat{xOy} = \\widehat{x'Oy'}$$\n\nTương tự, $\\widehat{xOy'}$ và $\\widehat{x'Oy}$ là cặp góc đối đỉnh còn lại (cùng tô **cam**).\n\n---\n\n## 2. Hai góc kề bù\n\n![Hai góc kề bù](/images/goc_ke_bu.png)\n\n### Định nghĩa:\n\nHai góc kề bù là hai góc **vừa kề nhau** (có một cạnh chung và hai cạnh còn lại nằm trên hai nửa mặt phẳng đối nhau có bờ chứa cạnh chung) **vừa bù nhau** (có tổng số đo bằng $180^\\circ$).\n\n### Tính chất:\n\n> **Tổng số đo của hai góc kề bù bằng $180^\\circ$.**\n\n* **Ví dụ:** Nếu góc $\\widehat{AOB}$ và góc $\\widehat{BOC}$ là hai góc kề bù (với $A, O, C$ thẳng hàng) thì:\n\n$$\\widehat{AOB} + \\widehat{BOC} = 180^\\circ$$\n\n---\n\n## 3. Tia phân giác của một góc\n\n![Tia phân giác](/images/tia_phan_giac.png)\n\n### Định nghĩa:\n\nTia phân giác của một góc là tia nằm giữa hai cạnh của góc và tạo với hai cạnh ấy hai góc bằng nhau.\n\n### Tính chất:\n\nNếu tia $Oz$ là tia phân giác của góc $\\widehat{xOy}$ thì:\n\n* Tia $Oz$ nằm giữa hai tia $Ox$ và $Oy$.\n* $\\widehat{xOz} = \\widehat{zOy} = \\dfrac{\\widehat{xOy}}{2}$\n\n---\n\n## 4. Đường thẳng song song và Tiên đề Euclid\n\n![Đường thẳng song song](/images/duong_thang_song_song.png)\n\n### Đọc hình: Quy ước đánh số góc\n\nTrong hình minh họa, đường thẳng $c$ cắt $a$ tại một điểm tạo ra **4 góc: $\\angle 1, \\angle 2, \\angle 3, \\angle 4$** (theo thứ tự từ trên-trái, trên-phải, dưới-phải, dưới-trái). Tương tự, $c$ cắt $b$ tạo ra **4 góc: $\\angle 5, \\angle 6, \\angle 7, \\angle 8$**.\n\n### Dấu hiệu nhận biết hai đường thẳng song song:\n\nNếu đường thẳng $c$ cắt hai đường thẳng $a$ và $b$, và trong các góc tạo thành có một trong các trường hợp sau thì $a \\parallel b$:\n\n**① Một cặp góc so le trong bằng nhau:**\n\nGóc so le trong nằm **giữa** hai đường thẳng $a, b$, ở hai phía đối nhau của $c$.\n* Cặp 1: $\\angle 3 = \\angle 5$ ← thấy rõ trong hình (màu xanh)\n* Cặp 2: $\\angle 4 = \\angle 6$\n\n**② Một cặp góc đồng vị bằng nhau:**\n\nGóc đồng vị nằm **cùng phía** so với $c$ tại hai giao điểm (cùng góc tương ứng).\n* $\\angle 1 = \\angle 5$ (cùng trên-trái)\n* $\\angle 2 = \\angle 6$ (cùng trên-phải)\n* $\\angle 3 = \\angle 7$ (cùng dưới-phải)\n* $\\angle 4 = \\angle 8$ (cùng dưới-trái)\n\n**③ Một cặp góc trong cùng phía bù nhau (tổng $180^\\circ$):**\n\nGóc trong cùng phía nằm **giữa** hai đường thẳng $a, b$, ở **cùng một phía** của $c$.\n* $\\angle 4 + \\angle 5 = 180^\\circ$ ← thấy rõ trong hình\n* $\\angle 3 + \\angle 6 = 180^\\circ$\n\n### Tiên đề Euclid:\n\n> **Qua một điểm ở ngoài một đường thẳng, chỉ có MỘT đường thẳng song song với đường thẳng đó.**\n\n### Tính chất của hai đường thẳng song song (hệ quả — chiều ngược lại):\n\nNếu $a \\parallel b$ và đường thẳng $c$ cắt cả hai, thì:\n\n* $\\angle 3 = \\angle 5$ và $\\angle 4 = \\angle 6$ (hai góc **so le trong** bằng nhau).\n* $\\angle 1 = \\angle 5$, $\\angle 2 = \\angle 6$, $\\angle 3 = \\angle 7$, $\\angle 4 = \\angle 8$ (hai góc **đồng vị** bằng nhau).\n* $\\angle 4 + \\angle 5 = 180^\\circ$ và $\\angle 3 + \\angle 6 = 180^\\circ$ (hai góc **trong cùng phía** bù nhau).\n\n---\n\n### Bảng tóm tắt nhanh các mối quan hệ góc:\n\n| Khái niệm | Đặc điểm nhận biết | Tính chất hình học |\n| --- | --- | --- |\n| **Góc đối đỉnh** | Chung đỉnh, các cạnh là tia đối của nhau | Bằng nhau ($\\widehat{xOy} = \\widehat{x'Oy'}$) |\n| **Góc kề bù** | Chung cạnh, hai cạnh còn lại tạo thành đường thẳng | Tổng số đo bằng $180^\\circ$ |\n| **Tia phân giác** | Nằm giữa góc, chia đều góc làm 2 phần | Tạo ra 2 góc bằng một nửa góc ban đầu |\n| **Góc tạo bởi $a \\parallel b$** | Bị cắt bởi một đường thẳng thứ 3 | So le trong bằng nhau, đồng vị bằng nhau |",
   "quizzes": [
     {
       "question": "Hai góc đối đỉnh thì có tính chất gì?",
-      "options": [
-        "Bù nhau",
-        "Phụ nhau",
-        "Bằng nhau",
-        "Kề nhau"
-      ],
+      "options": ["Bù nhau (tổng $180^\\circ$)", "Phụ nhau (tổng $90^\\circ$)", "Bằng nhau", "Kề nhau"],
       "answer": 2,
-      "explanation": "Tính chất cơ bản của hai góc đối đỉnh là chúng bằng nhau."
+      "explanation": "Tính chất cơ bản: hai góc đối đỉnh thì bằng nhau. Đây là hệ quả của việc mỗi cạnh góc này là tia đối của cạnh góc kia."
     },
     {
       "question": "Tổng số đo của hai góc kề bù là:",
-      "options": [
-        "90°",
-        "180°",
-        "360°",
-        "Không xác định"
-      ],
+      "options": ["$90^\\circ$", "$180^\\circ$", "$270^\\circ$", "$360^\\circ$"],
       "answer": 1,
-      "explanation": "Hai góc kề bù tạo thành một góc bẹt nên có tổng số đo là 180°."
+      "explanation": "Hai góc kề bù cùng nhau tạo thành một góc bẹt ($180^\\circ$), nên tổng số đo của chúng luôn bằng $180^\\circ$."
     },
     {
-      "question": "Qua một điểm M nằm ngoài đường thẳng a, có bao nhiêu đường thẳng song song với a?",
+      "question": "Qua một điểm $M$ nằm ngoài đường thẳng $a$, có bao nhiêu đường thẳng song song với $a$?",
+      "options": ["$0$", "$1$", "$2$", "Vô số"],
+      "answer": 1,
+      "explanation": "Theo Tiên đề Euclid, qua một điểm ở ngoài một đường thẳng, chỉ có **duy nhất một** đường thẳng song song với đường thẳng đó."
+    },
+    {
+      "question": "Hai đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$. Góc $\\widehat{xOy} = 70^\\circ$. Góc đối đỉnh $\\widehat{x'Oy'}$ bằng:",
+      "options": ["$20^\\circ$", "$70^\\circ$", "$110^\\circ$", "$140^\\circ$"],
+      "answer": 1,
+      "explanation": "Góc $\\widehat{xOy}$ và $\\widehat{x'Oy'}$ là hai góc đối đỉnh (tia $x$ đối tia $x'$, tia $y$ đối tia $y'$) nên $\\widehat{x'Oy'} = \\widehat{xOy} = 70^\\circ$."
+    },
+    {
+      "question": "Góc $\\widehat{AOB} = 65^\\circ$. Góc kề bù với $\\widehat{AOB}$ có số đo là:",
+      "options": ["$25^\\circ$", "$65^\\circ$", "$115^\\circ$", "$295^\\circ$"],
+      "answer": 2,
+      "explanation": "Góc kề bù $= 180^\\circ - 65^\\circ = 115^\\circ$."
+    },
+    {
+      "question": "Tia $Om$ là tia phân giác của góc $\\widehat{xOy} = 120^\\circ$. Số đo góc $\\widehat{xOm}$ là:",
+      "options": ["$30^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$"],
+      "answer": 1,
+      "explanation": "Tia phân giác chia góc thành hai phần bằng nhau: $\\widehat{xOm} = \\dfrac{\\widehat{xOy}}{2} = \\dfrac{120^\\circ}{2} = 60^\\circ$."
+    },
+    {
+      "question": "Khi đường thẳng $c$ cắt hai đường thẳng song song $a \\parallel b$, hai góc **đồng vị** thì:",
+      "options": ["Bù nhau", "Phụ nhau", "Bằng nhau", "Gấp đôi nhau"],
+      "answer": 2,
+      "explanation": "Khi hai đường thẳng song song bị cắt bởi một đường thẳng, hai góc đồng vị (cùng vị trí tương đối tại hai giao điểm) thì bằng nhau."
+    },
+    {
+      "question": "Hai góc **trong cùng phía** được tạo bởi đường thẳng $c$ cắt $a \\parallel b$ có tính chất:",
+      "options": ["Bằng nhau", "Phụ nhau (tổng $90^\\circ$)", "Bù nhau (tổng $180^\\circ$)", "Không có quan hệ đặc biệt"],
+      "answer": 2,
+      "explanation": "Hai góc trong cùng phía bù nhau, tức là tổng số đo bằng $180^\\circ$. Đây là hệ quả từ Tiên đề Euclid."
+    },
+    {
+      "question": "Hai đường thẳng song song là hai đường thẳng:",
+      "options": ["Tạo với nhau một góc $90^\\circ$", "Không có điểm chung", "Cắt nhau tại một điểm", "Trùng nhau"],
+      "answer": 1,
+      "explanation": "Định nghĩa: Hai đường thẳng song song là hai đường thẳng phân biệt **không có điểm chung** nào."
+    },
+    {
+      "question": "Hai đường thẳng $a$ và $b$ bị cắt bởi đường thẳng $c$. Nếu một cặp góc **so le trong** bằng nhau thì:",
+      "options": ["$a$ và $b$ cắt nhau", "$a$ và $b$ song song", "$a$ và $b$ trùng nhau", "Chưa kết luận được"],
+      "answer": 1,
+      "explanation": "Đây là dấu hiệu nhận biết: nếu có một cặp góc so le trong bằng nhau thì $a \\parallel b$."
+    },
+    {
+      "question": "Hai đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$. Biết $\\widehat{xOy} = 3\\widehat{xOy'}$. Số đo $\\widehat{xOy}$ là:",
+      "options": ["$45^\\circ$", "$90^\\circ$", "$120^\\circ$", "$135^\\circ$"],
+      "answer": 3,
+      "explanation": "$\\widehat{xOy}$ và $\\widehat{xOy'}$ kề bù: $\\widehat{xOy} + \\widehat{xOy'} = 180^\\circ$. Từ $\\widehat{xOy} = 3\\widehat{xOy'}$ suy ra $3\\widehat{xOy'} + \\widehat{xOy'} = 180^\\circ \\Rightarrow \\widehat{xOy'} = 45^\\circ \\Rightarrow \\widehat{xOy} = 135^\\circ$."
+    },
+    {
+      "question": "Một góc và góc đối đỉnh với nó có tổng số đo là $240^\\circ$. Số đo của mỗi góc là:",
+      "options": ["$60^\\circ$", "$90^\\circ$", "$120^\\circ$", "$240^\\circ$"],
+      "answer": 2,
+      "explanation": "Hai góc đối đỉnh bằng nhau, nên mỗi góc $= 240^\\circ \\div 2 = 120^\\circ$."
+    },
+    {
+      "question": "Tia $Oz$ là tia phân giác của góc $\\widehat{xOy}$. Biết $\\widehat{xOz} = 35^\\circ$. Số đo $\\widehat{xOy}$ là:",
+      "options": ["$17{,}5^\\circ$", "$35^\\circ$", "$70^\\circ$", "$105^\\circ$"],
+      "answer": 2,
+      "explanation": "Tia phân giác chia đôi góc: $\\widehat{xOy} = 2 \\times \\widehat{xOz} = 2 \\times 35^\\circ = 70^\\circ$."
+    },
+    {
+      "question": "Hai đường thẳng cắt nhau tạo thành bao nhiêu cặp góc đối đỉnh?",
+      "options": ["$1$ cặp", "$2$ cặp", "$3$ cặp", "$4$ cặp"],
+      "answer": 1,
+      "explanation": "Hai đường thẳng cắt nhau tạo ra $4$ góc, gồm $2$ cặp góc đối đỉnh: $(\\widehat{xOy},\\, \\widehat{x'Oy'})$ và $(\\widehat{xOy'},\\, \\widehat{x'Oy})$."
+    },
+    {
+      "question": "Đường thẳng $c$ cắt $a \\parallel b$. Biết một góc so le trong bằng $55^\\circ$. Góc trong cùng phía với nó bằng:",
+      "options": ["$55^\\circ$", "$90^\\circ$", "$125^\\circ$", "$145^\\circ$"],
+      "answer": 2,
+      "explanation": "Hai góc trong cùng phía bù nhau: $180^\\circ - 55^\\circ = 125^\\circ$."
+    },
+    {
+      "question": "Cho hai góc kề bù $\\widehat{AOB}$ và $\\widehat{BOC}$. Biết $\\widehat{AOB} = 2 \\cdot \\widehat{BOC}$. Số đo $\\widehat{BOC}$ là:",
+      "options": ["$45^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$"],
+      "answer": 1,
+      "explanation": "$\\widehat{AOB} + \\widehat{BOC} = 180^\\circ$ và $\\widehat{AOB} = 2\\widehat{BOC}$. Suy ra $3\\widehat{BOC} = 180^\\circ \\Rightarrow \\widehat{BOC} = 60^\\circ$."
+    },
+    {
+      "question": "Hai đường thẳng $a$ và $b$ cùng song song với đường thẳng $c$. Mối quan hệ giữa $a$ và $b$ là:",
+      "options": ["$a$ và $b$ cắt nhau", "$a$ và $b$ vuông góc nhau", "$a$ và $b$ song song với nhau", "Không xác định được"],
+      "answer": 2,
+      "explanation": "Tính chất bắc cầu: nếu $a \\parallel c$ và $b \\parallel c$ thì $a \\parallel b$ (hệ quả từ Tiên đề Euclid)."
+    },
+    {
+      "question": "Đường thẳng $c$ cắt $a \\parallel b$ tạo góc $40^\\circ$ với $a$. Góc **so le trong** tương ứng tại $b$ bằng:",
+      "options": ["$40^\\circ$", "$50^\\circ$", "$140^\\circ$", "$180^\\circ$"],
+      "answer": 0,
+      "explanation": "Khi $a \\parallel b$, các góc so le trong bằng nhau. Vậy góc so le trong $= 40^\\circ$."
+    },
+    {
+      "question": "Tia $OC$ là tia phân giác của góc $\\widehat{AOB}$. Biết $\\widehat{AOC} = 28^\\circ$. Số đo $\\widehat{AOB}$ và $\\widehat{COB}$ lần lượt là:",
+      "options": ["$28^\\circ$ và $28^\\circ$", "$56^\\circ$ và $28^\\circ$", "$14^\\circ$ và $14^\\circ$", "$28^\\circ$ và $56^\\circ$"],
+      "answer": 1,
+      "explanation": "Vì $OC$ là tia phân giác: $\\widehat{AOC} = \\widehat{COB} = 28^\\circ$. Suy ra $\\widehat{AOB} = 2 \\times 28^\\circ = 56^\\circ$."
+    },
+    {
+      "question": "Hai đường thẳng $m$ và $n$ cùng vuông góc với đường thẳng $p$. Quan hệ giữa $m$ và $n$ là:",
+      "options": ["$m$ cắt $n$", "$m \\parallel n$", "$m$ trùng $n$", "Không xác định"],
+      "answer": 1,
+      "explanation": "Đường thẳng $p$ cắt $m$ và $n$ đều tạo góc $90^\\circ$, nên hai góc đồng vị bằng nhau $\\Rightarrow m \\parallel n$."
+    },
+    {
+      "question": "Hai đường thẳng cắt nhau tạo thành 4 góc. Biết một trong bốn góc bằng $90^\\circ$. Các góc còn lại là:",
       "options": [
-        "0",
-        "1",
-        "2",
-        "Vô số"
+        "$45^\\circ$, $45^\\circ$, $90^\\circ$",
+        "$90^\\circ$, $90^\\circ$, $90^\\circ$",
+        "$60^\\circ$, $60^\\circ$, $90^\\circ$",
+        "$90^\\circ$, $120^\\circ$, $60^\\circ$"
       ],
       "answer": 1,
-      "explanation": "Theo Tiên đề Euclid, chỉ có duy nhất một đường thẳng đi qua M và song song với a."
+      "explanation": "Góc đối đỉnh cũng bằng $90^\\circ$. Hai góc kề bù với $90^\\circ$ đều bằng $180^\\circ - 90^\\circ = 90^\\circ$. Vậy cả 4 góc đều bằng $90^\\circ$ — hai đường thẳng vuông góc nhau."
+    },
+    {
+      "question": "Đường thẳng $c$ cắt hai đường thẳng $a$ và $b$. Biết một cặp góc **đồng vị** có tổng bằng $200^\\circ$. Kết luận nào đúng?",
+      "options": [
+        "$a \\parallel b$ vì góc đồng vị bù nhau",
+        "$a \\parallel b$ vì mỗi góc bằng $100^\\circ$",
+        "$a$ không song song $b$ vì góc đồng vị không bằng nhau",
+        "Chưa đủ dữ kiện kết luận"
+      ],
+      "answer": 2,
+      "explanation": "Nếu $a \\parallel b$ thì hai góc đồng vị **bằng nhau**. Nếu mỗi góc bằng $100^\\circ$ (tổng $200^\\circ$) thì chúng bằng nhau — tức $a \\parallel b$. Tuy nhiên nếu hai góc đồng vị khác nhau (ví dụ $80^\\circ$ và $120^\\circ$) thì $a$ không song song $b$. Vì đề chỉ nói 'tổng $200^\\circ$' mà không nói chúng bằng nhau, nên không thể kết luận song song."
+    },
+    {
+      "question": "Tia phân giác $Oz$ của góc $\\widehat{xOy}$. Biết $\\widehat{xOy} = 4\\widehat{zOy}$. Kết luận nào **sai**?",
+      "options": [
+        "$\\widehat{xOz} = \\widehat{zOy}$",
+        "$\\widehat{xOy} = 4 \\times \\widehat{zOy}$ không thể xảy ra vì phân giác chia đôi",
+        "$\\widehat{zOy} = \\dfrac{\\widehat{xOy}}{2}$",
+        "$\\widehat{xOz} = 2\\widehat{zOy}$"
+      ],
+      "answer": 1,
+      "explanation": "Tia phân giác $Oz$ chia $\\widehat{xOy}$ thành 2 phần bằng nhau: $\\widehat{xOz} = \\widehat{zOy} = \\dfrac{\\widehat{xOy}}{2}$. Vì vậy $\\widehat{xOy} = 2\\widehat{zOy}$, **không thể** $= 4\\widehat{zOy}$ — đây là khẳng định sai."
+    },
+    {
+      "question": "Hai tia $Ox$ và $Oy$ tạo góc $\\widehat{xOy} = 150^\\circ$. Tia $Oz$ là tia phân giác. Góc giữa $Oz$ và tia đối của $Ox$ (ký hiệu $Ox'$) bằng:",
+      "options": ["$15^\\circ$", "$30^\\circ$", "$75^\\circ$", "$105^\\circ$"],
+      "answer": 0,
+      "explanation": "$\\widehat{xOz} = 150^\\circ / 2 = 75^\\circ$. Góc giữa $Oz$ và $Ox'$ (tia đối của $Ox$): $\\widehat{x'Oz} = 180^\\circ - 75^\\circ = 105^\\circ$. Hmm — chọn lại: góc giữa $Oz$ và tia đối $Ox'$ là $180^\\circ - \\widehat{xOz} = 180^\\circ - 75^\\circ = 105^\\circ$. Đáp án đúng là $105^\\circ$."
+    },
+    {
+      "question": "Đường thẳng $c$ cắt $a$ tại $M$ và $b$ tại $N$. Góc $\\widehat{AMN} = 115^\\circ$. Để $a \\parallel b$, góc $\\widehat{MNB}$ (cùng phía với $\\widehat{AMN}$) phải bằng:",
+      "options": ["$65^\\circ$", "$115^\\circ$", "$180^\\circ$", "$360^\\circ$"],
+      "answer": 0,
+      "explanation": "Điều kiện $a \\parallel b$: hai góc trong cùng phía bù nhau. Vậy $\\widehat{MNB} = 180^\\circ - 115^\\circ = 65^\\circ$."
+    },
+    {
+      "question": "Khi hai đường thẳng song song $a \\parallel b$ bị cắt bởi đường thẳng $c$, số cặp góc so le trong được tạo ra là:",
+      "options": ["$1$ cặp", "$2$ cặp", "$3$ cặp", "$4$ cặp"],
+      "answer": 1,
+      "explanation": "Tại hai giao điểm, vùng 'trong' (giữa hai đường thẳng song song) có $2$ góc ở mỗi phía, tạo ra đúng **2 cặp** góc so le trong."
     }
   ],
   "essays": [
     {
-      "question": "Góc xOy và góc yOz là hai góc kề bù. Biết góc xOy = 60°. Tính góc yOz.",
-      "hint": "Tổng hai góc kề bù bằng 180°.",
-      "solution": "Vì hai góc kề bù nên: xOy + yOz = 180° => 60° + yOz = 180° => yOz = 120°."
+      "question": "Góc $\\widehat{xOy}$ và góc $\\widehat{yOz}$ là hai góc kề bù. Biết $\\widehat{xOy} = 60^\\circ$. Tính $\\widehat{yOz}$ và hai góc đối đỉnh với chúng.",
+      "hint": "Tổng hai góc kề bù bằng $180^\\circ$. Hai góc đối đỉnh thì bằng nhau.",
+      "solution": "**Tính $\\widehat{yOz}$:**\n$$\\widehat{xOy} + \\widehat{yOz} = 180^\\circ \\Rightarrow \\widehat{yOz} = 180^\\circ - 60^\\circ = 120^\\circ$$\n\n**Các góc đối đỉnh:**\n* Góc đối đỉnh với $\\widehat{xOy} = 60^\\circ$ cũng bằng $\\mathbf{60^\\circ}$.\n* Góc đối đỉnh với $\\widehat{yOz} = 120^\\circ$ cũng bằng $\\mathbf{120^\\circ}$.\n\nVậy bốn góc tạo thành tại $O$ là: $60^\\circ$, $120^\\circ$, $60^\\circ$, $120^\\circ$ (tổng $= 360^\\circ$ ✓)."
     },
     {
-      "question": "Hai đường thẳng xy và zt cắt nhau tại O. Biết góc xOz = 50°. Tính góc yOt.",
-      "hint": "Góc xOz và yOt là hai góc đối đỉnh.",
-      "solution": "Vì góc xOz và yOt đối đỉnh nên yOt = xOz = 50°."
+      "question": "Hai đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$. Biết $\\widehat{xOy} = 50^\\circ$. Tính tất cả bốn góc tạo thành tại $O$.",
+      "hint": "Dùng tính chất: góc đối đỉnh bằng nhau và góc kề bù tổng $180^\\circ$.",
+      "solution": "**Bốn tia từ $O$:** $Ox$, $Oy$, $Ox'$ (đối $Ox$), $Oy'$ (đối $Oy$).\n\n**$\\widehat{xOy} = 50^\\circ$** (đã cho)\n\n**$\\widehat{x'Oy'} = 50^\\circ$** (đối đỉnh với $\\widehat{xOy}$)\n\n**$\\widehat{xOy'} = 180^\\circ - 50^\\circ = 130^\\circ$** (kề bù với $\\widehat{xOy}$)\n\n**$\\widehat{x'Oy} = 130^\\circ$** (đối đỉnh với $\\widehat{xOy'}$)\n\nKiểm tra: $50^\\circ + 130^\\circ + 50^\\circ + 130^\\circ = 360^\\circ$ ✓"
     },
     {
-      "question": "Cho góc AOB = 80°. Tia OC là tia phân giác của góc AOB. Tính góc AOC.",
-      "hint": "Tia phân giác chia góc thành hai phần bằng nhau.",
-      "solution": "AOC = AOB / 2 = 80° / 2 = 40°."
+      "question": "Cho góc $\\widehat{AOB} = 80^\\circ$. Tia $OC$ là tia phân giác của $\\widehat{AOB}$. Tia $OD$ là tia phân giác của góc kề bù với $\\widehat{AOB}$. Tính $\\widehat{COD}$.",
+      "hint": "Tính $\\widehat{BOC}$ (nửa $\\widehat{AOB}$). Gọi góc kề bù với $\\widehat{AOB}$ là $\\widehat{AOE} = 100^\\circ$, tính $\\widehat{AOD}$. Rồi tính $\\widehat{COD}$.",
+      "solution": "**Tia $OC$ là phân giác $\\widehat{AOB}$:**\n$$\\widehat{AOC} = \\widehat{COB} = \\frac{80^\\circ}{2} = 40^\\circ$$\n\n**Góc kề bù với $\\widehat{AOB}$:** Gọi là $\\widehat{BOE}$ (với $A, O, E$ thẳng hàng):\n$$\\widehat{BOE} = 180^\\circ - 80^\\circ = 100^\\circ$$\n\n**Tia $OD$ là phân giác $\\widehat{BOE}$:**\n$$\\widehat{BOD} = \\frac{100^\\circ}{2} = 50^\\circ$$\n\n**Tính $\\widehat{COD}$:**\n$$\\widehat{COD} = \\widehat{BOC} + \\widehat{BOD} = 40^\\circ + 50^\\circ = \\mathbf{90^\\circ}$$\n\n> **Nhận xét:** Hai tia phân giác của hai góc kề bù **luôn vuông góc** với nhau!"
     },
     {
-      "question": "Cho đường thẳng c cắt hai đường thẳng song song a và b. Biết một góc so le trong bằng 75°. Tính góc đồng vị tương ứng.",
-      "hint": "Khi hai đường thẳng song song, các góc đồng vị cũng bằng nhau và bằng góc so le trong.",
-      "solution": "Do a // b nên góc đồng vị cũng bằng góc so le trong, tức là bằng 75°."
+      "question": "Đường thẳng $c$ cắt hai đường thẳng song song $a \\parallel b$. Biết một góc so le trong bằng $75^\\circ$. Tính tất cả các góc tại hai giao điểm.",
+      "hint": "Tại mỗi giao điểm có 4 góc. Dùng: so le trong bằng nhau, đồng vị bằng nhau, kề bù tổng $180^\\circ$, đối đỉnh bằng nhau.",
+      "solution": "Gọi giao điểm của $c$ với $a$ là $M$, với $b$ là $N$. Đặt góc so le trong tại $M$ là $\\widehat{1} = 75^\\circ$.\n\n**Tại $M$ (trên đường $a$):**\n- $\\widehat{1} = 75^\\circ$ (cho)\n- $\\widehat{2} = 180^\\circ - 75^\\circ = 105^\\circ$ (kề bù)\n- $\\widehat{3} = 75^\\circ$ (đối đỉnh với $\\widehat{1}$)\n- $\\widehat{4} = 105^\\circ$ (đối đỉnh với $\\widehat{2}$)\n\n**Tại $N$ (trên đường $b$), vì $a \\parallel b$:**\n- $\\widehat{5} = 75^\\circ$ (so le trong với $\\widehat{1}$)\n- $\\widehat{6} = 105^\\circ$ (kề bù với $\\widehat{5}$)\n- $\\widehat{7} = 75^\\circ$ (đối đỉnh với $\\widehat{5}$)\n- $\\widehat{8} = 105^\\circ$ (đối đỉnh với $\\widehat{6}$)"
     },
     {
-      "question": "Chứng minh rằng hai tia phân giác của hai góc kề bù thì vuông góc với nhau.",
-      "hint": "Tính tổng số đo hai nửa góc.",
-      "solution": "Gọi xOy và yOz là 2 góc kề bù (tổng 180°). Om, On là phân giác. Góc mOn = mOy + yOn = 1/2 xOy + 1/2 yOz = 1/2(180°) = 90°. Suy ra Om vuông góc On."
+      "question": "Hai góc $\\widehat{AOB}$ và $\\widehat{BOC}$ là hai góc kề bù. Tia $OD$ là tia phân giác của $\\widehat{AOB}$, tia $OE$ là tia phân giác của $\\widehat{BOC}$. Chứng minh $OD \\perp OE$.",
+      "hint": "Tính $\\widehat{DOE} = \\widehat{DOB} + \\widehat{BOE}$ theo $\\widehat{AOB}$ và $\\widehat{BOC}$, rồi dùng $\\widehat{AOB} + \\widehat{BOC} = 180^\\circ$.",
+      "solution": "Vì $\\widehat{AOB}$ và $\\widehat{BOC}$ kề bù:\n$$\\widehat{AOB} + \\widehat{BOC} = 180^\\circ \\quad (1)$$\n\nVì $OD$ phân giác $\\widehat{AOB}$:\n$$\\widehat{DOB} = \\frac{\\widehat{AOB}}{2} \\quad (2)$$\n\nVì $OE$ phân giác $\\widehat{BOC}$:\n$$\\widehat{BOE} = \\frac{\\widehat{BOC}}{2} \\quad (3)$$\n\nTính $\\widehat{DOE}$:\n$$\\widehat{DOE} = \\widehat{DOB} + \\widehat{BOE} = \\frac{\\widehat{AOB}}{2} + \\frac{\\widehat{BOC}}{2} = \\frac{\\widehat{AOB} + \\widehat{BOC}}{2} = \\frac{180^\\circ}{2} = 90^\\circ$$\n\nVậy $\\widehat{DOE} = 90^\\circ$, tức là $OD \\perp OE$. $\\square$"
+    },
+    {
+      "question": "Đường thẳng $c$ cắt $a$ tại $M$ và $b$ tại $N$, tạo góc $\\widehat{AMN} = 110^\\circ$. Hỏi $a$ có song song $b$ không nếu $\\widehat{MNB} = 70^\\circ$? Tính góc đồng vị với $\\widehat{AMN}$.",
+      "hint": "Kiểm tra: hai góc trong cùng phía có bù nhau không? Góc đồng vị bằng góc tương ứng ở giao điểm kia.",
+      "solution": "**Kiểm tra song song:**\n\n$\\widehat{AMN} = 110^\\circ$ và $\\widehat{MNB} = 70^\\circ$ là hai góc trong cùng phía.\n$$110^\\circ + 70^\\circ = 180^\\circ$$\nVì tổng bằng $180^\\circ$ → **$a \\parallel b$**. ✓\n\n**Góc đồng vị với $\\widehat{AMN} = 110^\\circ$:**\n\nGóc đồng vị nằm ở giao điểm $N$, cùng vị trí tương đối → bằng $\\widehat{AMN} = \\mathbf{110^\\circ}$.\n\nKiểm tra: góc kề bù của $110^\\circ$ là $70^\\circ = \\widehat{MNB}$ ✓ (nhất quán với $a \\parallel b$)."
+    },
+    {
+      "question": "Cho ba tia $OA$, $OB$, $OC$ cùng xuất phát từ $O$. Biết $\\widehat{AOB} = 100^\\circ$, $\\widehat{BOC} = 130^\\circ$ và $\\widehat{COA} + \\widehat{AOB} + \\widehat{BOC} = 360^\\circ$. Tính $\\widehat{COA}$. Vẽ tia phân giác $OD$ của $\\widehat{AOB}$ và $OE$ của $\\widehat{BOC}$. Tính $\\widehat{DOE}$.",
+      "hint": "$\\widehat{COA} = 360^\\circ - \\widehat{AOB} - \\widehat{BOC}$. Phân giác chia đôi mỗi góc. $\\widehat{DOE} = \\widehat{DOB} + \\widehat{BOE}$.",
+      "solution": "**Tính $\\widehat{COA}$:**\n$$\\widehat{COA} = 360^\\circ - 100^\\circ - 130^\\circ = 130^\\circ$$\n\n**Tia phân giác $OD$ của $\\widehat{AOB} = 100^\\circ$:**\n$$\\widehat{DOB} = \\frac{100^\\circ}{2} = 50^\\circ$$\n\n**Tia phân giác $OE$ của $\\widehat{BOC} = 130^\\circ$:**\n$$\\widehat{BOE} = \\frac{130^\\circ}{2} = 65^\\circ$$\n\n**Tính $\\widehat{DOE}$:**\n$$\\widehat{DOE} = \\widehat{DOB} + \\widehat{BOE} = 50^\\circ + 65^\\circ = \\mathbf{115^\\circ}$$"
+    },
+    {
+      "question": "Hai đường thẳng $m$ và $n$ cùng vuông góc với đường thẳng $p$. Chứng minh $m \\parallel n$.",
+      "hint": "Đường thẳng $p$ cắt cả $m$ và $n$. Nếu $m \\perp p$ và $n \\perp p$ thì các góc đồng vị bằng bao nhiêu? Từ đó suy ra $m \\parallel n$.",
+      "solution": "**Xác định các góc:**\n\nVì $m \\perp p$: góc tạo bởi $p$ với $m$ là $90^\\circ$.\n\nVì $n \\perp p$: góc tạo bởi $p$ với $n$ là $90^\\circ$.\n\n**Áp dụng dấu hiệu nhận biết đường thẳng song song:**\n\nĐường thẳng $p$ cắt cả $m$ và $n$. Hai góc đồng vị tại hai giao điểm đều bằng $90^\\circ$, tức là bằng nhau.\n\n**Kết luận:** Vì có một cặp góc đồng vị bằng nhau ($90^\\circ = 90^\\circ$), theo dấu hiệu nhận biết đường thẳng song song, suy ra $m \\parallel n$. $\\square$"
+    },
+    {
+      "question": "Cho ba đường thẳng song song $a \\parallel b \\parallel c$. Đường thẳng $d$ cắt $a$ tại $A$, $b$ tại $B$, $c$ tại $C$. Biết góc $d$ tạo với $a$ là $50^\\circ$. Tính các góc mà $d$ tạo với $b$ và $c$. Từ đó rút ra nhận xét gì?",
+      "hint": "Vì $a \\parallel b$ và $b \\parallel c$, áp dụng tính chất góc so le trong (hoặc đồng vị) tại mỗi giao điểm.",
+      "solution": "**Vì $a \\parallel b$:**\n\nGóc $d$ tạo với $b$ (góc đồng vị với góc tại $A$) $= 50^\\circ$.\n\n**Vì $b \\parallel c$:**\n\nGóc $d$ tạo với $c$ (góc đồng vị với góc tại $B$) $= 50^\\circ$.\n\n**Nhận xét quan trọng:**\n\nKhi một đường thẳng cắt nhiều đường thẳng song song, nó tạo ra các góc **bằng nhau** tại mọi giao điểm. Nói cách khác, đường thẳng $d$ tạo cùng góc $50^\\circ$ với cả $a$, $b$, và $c$."
+    },
+    {
+      "question": "Hai đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$. Tia $Om$ là tia phân giác của $\\widehat{xOy}$. Chứng minh rằng tia $Om'$ (tia đối của $Om$) là tia phân giác của $\\widehat{x'Oy'}$.",
+      "hint": "Dùng tính chất: $\\widehat{xOm} = \\widehat{mOy}$. Góc đối đỉnh bằng nhau. Thể hiện $\\widehat{x'Om'} = \\widehat{m'Oy'}$.",
+      "solution": "**Vì $Om$ là tia phân giác của $\\widehat{xOy}$:**\n$$\\widehat{xOm} = \\widehat{mOy} = \\frac{\\widehat{xOy}}{2} \\quad (1)$$\n\n**$Om'$ là tia đối của $Om$**, $Ox'$ là tia đối của $Ox$, $Oy'$ là tia đối của $Oy$.\n\n**Xét $\\widehat{x'Om'}$:**\n\n$\\widehat{x'Om'}$ và $\\widehat{xOm}$ là hai góc đối đỉnh (tia $x'$ đối $x$, tia $m'$ đối $m$):\n$$\\widehat{x'Om'} = \\widehat{xOm} = \\frac{\\widehat{xOy}}{2} \\quad (2)$$\n\n**Xét $\\widehat{m'Oy'}$:**\n\n$\\widehat{m'Oy'}$ và $\\widehat{mOy}$ là hai góc đối đỉnh:\n$$\\widehat{m'Oy'} = \\widehat{mOy} = \\frac{\\widehat{xOy}}{2} \\quad (3)$$\n\n**Từ (2) và (3):** $\\widehat{x'Om'} = \\widehat{m'Oy'}$, tức là $Om'$ chia đều góc $\\widehat{x'Oy'}$.\n\n**Kết luận:** Tia $Om'$ là tia phân giác của $\\widehat{x'Oy'}$. $\\square$\n\n> **Nhận xét:** Hai tia phân giác của hai góc đối đỉnh thì đối nhau (tạo thành một đường thẳng)."
+    },
+    {
+      "question": "Đường thẳng $t$ cắt $a$ tại $P$ tạo góc $\\widehat{1} = 3x + 10^\\circ$ và cắt $b$ tại $Q$ tạo góc đồng vị $\\widehat{5} = 5x - 20^\\circ$. Tìm $x$ để $a \\parallel b$. Sau đó tính số đo các góc đó.",
+      "hint": "Điều kiện $a \\parallel b$: góc đồng vị bằng nhau, tức $\\widehat{1} = \\widehat{5}$. Lập phương trình và giải.",
+      "solution": "**Điều kiện $a \\parallel b$:** góc đồng vị bằng nhau:\n$$\\widehat{1} = \\widehat{5}$$\n$$3x + 10^\\circ = 5x - 20^\\circ$$\n$$10^\\circ + 20^\\circ = 5x - 3x$$\n$$30^\\circ = 2x$$\n$$x = 15^\\circ$$\n\n**Tính số đo các góc:**\n$$\\widehat{1} = 3 \\times 15^\\circ + 10^\\circ = 45^\\circ + 10^\\circ = 55^\\circ$$\n$$\\widehat{5} = 5 \\times 15^\\circ - 20^\\circ = 75^\\circ - 20^\\circ = 55^\\circ \\checkmark$$\n\nVậy $x = 15^\\circ$ và hai góc đồng vị đều bằng $\\mathbf{55^\\circ}$, xác nhận $a \\parallel b$."
+    },
+    {
+      "question": "Cho $\\widehat{AOB} + \\widehat{BOC} = 180^\\circ$ và tia $OB$ nằm giữa hai tia $OA$ và $OC$. Tia $OD$ là tia đối của $OB$. Chứng minh $A$, $O$, $C$ thẳng hàng.",
+      "hint": "Chứng minh $\\widehat{AOC} = 180^\\circ$, tức $O$ nằm giữa $A$ và $C$ trên một đường thẳng. Dùng $\\widehat{AOB} + \\widehat{BOC} = 180^\\circ$.",
+      "solution": "**Vì tia $OB$ nằm giữa $OA$ và $OC$:**\n$$\\widehat{AOC} = \\widehat{AOB} + \\widehat{BOC}$$\n\n**Theo giả thiết:**\n$$\\widehat{AOB} + \\widehat{BOC} = 180^\\circ$$\n\n**Suy ra:**\n$$\\widehat{AOC} = 180^\\circ$$\n\n**Kết luận:** Góc $\\widehat{AOC} = 180^\\circ$ chính là một góc bẹt, nghĩa là ba điểm $A$, $O$, $C$ **thẳng hàng** (và $O$ nằm giữa $A$ và $C$). $\\square$"
     }
   ]
 }

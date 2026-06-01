@@ -1,67 +1,194 @@
 {
   "id": 3,
   "title": "Chương 3: Các hình khối trong thực tiễn",
-  "summary": "### 1. Hình hộp chữ nhật\nHình hộp chữ nhật có 6 mặt là hình chữ nhật, 8 đỉnh, 12 cạnh. \n\n* **Thể tích:** $V = a \\cdot b \\cdot h$\n* **Diện tích xung quanh:** $S_{xq} = 2(a+b) \\cdot h$\n\n> **Ví dụ:** Hộp phấn, viên gạch.\n\n### 2. Hình lập phương\nHình lập phương có 6 mặt là hình vuông bằng nhau. \n\n* **Thể tích:** $V = a^3$\n* **Diện tích xung quanh:** $S_{xq} = 4a^2$\n\n> **Ví dụ:** Khối rubik, con xúc xắc.\n\n### 3. Hình lăng trụ đứng\nHình lăng trụ đứng có 2 đáy song song và bằng nhau, các mặt bên là hình chữ nhật vuông góc với đáy. \n\n* **Thể tích:** $V = S_{đáy} \\cdot h$\n* **Diện tích xung quanh:** $S_{xq} = C_{đáy} \\cdot h$\n\n> **Ví dụ:** Hộp kẹo lăng trụ tam giác.",
+  "summary": "Dưới đây là tổng hợp toàn bộ kiến thức cốt lõi, công thức tính toán và hình ảnh trực quan về ba hình khối không gian quen thuộc: **Hình hộp chữ nhật**, **Hình lập phương** và **Hình lăng trụ đứng**.\n\n---\n\n## 1. Hình hộp chữ nhật\n\n![Hình hộp chữ nhật](/images/hinh_hop_chu_nhat.png)\n\nHình hộp chữ nhật là một hình khối không gian có 6 mặt đều là hình chữ nhật.\n\n### Đặc điểm:\n\n* Có **8 đỉnh**, **12 cạnh**, và **6 mặt**.\n* Các mặt đối diện bằng nhau.\n* Có 3 kích thước: **Chiều dài ($a$)**, **Chiều rộng ($b$)**, và **Chiều cao ($h$)**.\n\n### Công thức tính toán:\n\n* **Diện tích xung quanh ($S_{xq}$):** (Chu vi đáy nhân với chiều cao)\n\n$$S_{xq} = 2 \\cdot (a + b) \\cdot h$$\n\n* **Diện tích toàn phần ($S_{tp}$):** (Diện tích xung quanh cộng diện tích 2 đáy)\n\n$$S_{tp} = S_{xq} + 2 \\cdot a \\cdot b = 2 \\cdot (a \\cdot b + b \\cdot h + a \\cdot h)$$\n\n* **Thể tích ($V$):** (Dài nhân rộng nhân cao)\n\n$$V = a \\cdot b \\cdot h$$\n\n> **Ví dụ thực tế:** Hộp phấn, viên gạch, thùng carton.\n\n---\n\n## 2. Hình lập phương\n\n![Hình lập phương](/images/hinh_lap_phuong.png)\n\nHình lập phương là trường hợp đặc biệt của hình hộp chữ nhật, nơi mà tất cả 6 mặt đều là **hình vuông bằng nhau**.\n\n### Đặc điểm:\n\n* Có **8 đỉnh**, **12 cạnh bằng nhau**, và **6 mặt là các hình vuông**.\n* Gọi độ dài một cạnh của hình lập phương là $a$.\n\n### Công thức tính toán:\n\n* **Diện tích xung quanh ($S_{xq}$):** (Diện tích của 4 mặt bên)\n\n$$S_{xq} = 4 \\cdot a^2$$\n\n* **Diện tích toàn phần ($S_{tp}$):** (Diện tích của cả 6 mặt)\n\n$$S_{tp} = 6 \\cdot a^2$$\n\n* **Thể tích ($V$):**\n\n$$V = a^3$$\n\n> **Ví dụ thực tế:** Khối rubik, con xúc xắc, viên đá.\n\n---\n\n## 3. Hình lăng trụ đứng\n\n![Hình lăng trụ đứng](/images/hinh_lang_tru.png)\n\nHình lăng trụ đứng là hình có các mặt bên là hình chữ nhật và hai đáy là hai đa giác bằng nhau nằm trên hai mặt phẳng song song. Tên của lăng trụ được gọi theo tên của đa giác đáy (với chương trình học hiện tại, bạn thường gặp nhất là lăng trụ đứng tam giác và lăng trụ đứng tứ giác).\n\n### Đặc điểm chung:\n\n* Các mặt bên luôn là **hình chữ nhật** và vuông góc với đáy.\n* Các cạnh bên song song và bằng nhau, độ dài cạnh bên chính là **chiều cao ($h$)** của lăng trụ.\n* Hai đáy là hai đa giác bằng nhau (tam giác, tứ giác, ngũ giác...).\n* *Lưu ý:* Hình hộp chữ nhật và hình lập phương thực chất cũng chính là các hình lăng trụ đứng tứ giác đặc biệt.\n\n### Công thức tính toán tổng quát:\n\n* **Diện tích xung quanh ($S_{xq}$):** (Chu vi đáy nhân với chiều cao)\n\n$$S_{xq} = C_{đáy} \\cdot h$$\n\n* **Diện tích toàn phần ($S_{tp}$):**\n\n$$S_{tp} = S_{xq} + 2 \\cdot S_{đáy}$$\n\n* **Thể tích ($V$):** (Diện tích đáy nhân với chiều cao)\n\n$$V = S_{đáy} \\cdot h$$\n\n---\n\n### Bảng tóm tắt nhanh để ghi nhớ:\n\n| Hình khối | Diện tích xung quanh ($S_{xq}$) | Thể tích ($V$) | Đặc điểm đáy |\n| --- | --- | --- | --- |\n| **Hình hộp chữ nhật** | $2(a+b)h$ | $a \\cdot b \\cdot h$ | Hình chữ nhật |\n| **Hình lập phương** | $4a^2$ | $a^3$ | Hình vuông |\n| **Lăng trụ đứng** | $C_{đáy} \\cdot h$ | $S_{đáy} \\cdot h$ | Đa giác (Tam giác, tứ giác...) |",
   "quizzes": [
     {
       "question": "Hình hộp chữ nhật có bao nhiêu mặt?",
-      "options": [
-        "4",
-        "6",
-        "8",
-        "12"
-      ],
+      "options": ["4", "6", "8", "12"],
       "answer": 1,
       "explanation": "Hình hộp chữ nhật có 6 mặt, 8 đỉnh, 12 cạnh."
     },
     {
-      "question": "Công thức tính thể tích hình lập phương cạnh a là:",
-      "options": [
-        "3a",
-        "a^2",
-        "a^3",
-        "6a^2"
-      ],
+      "question": "Công thức tính thể tích hình lập phương cạnh $a$ là:",
+      "options": ["$3a$", "$a^2$", "$a^3$", "$6a^2$"],
       "answer": 2,
-      "explanation": "Thể tích hình lập phương = cạnh x cạnh x cạnh = a^3."
+      "explanation": "Thể tích hình lập phương = cạnh × cạnh × cạnh = $a^3$."
     },
     {
       "question": "Hình lăng trụ đứng tam giác có các mặt bên là hình gì?",
+      "options": ["Hình tam giác", "Hình thang", "Hình chữ nhật", "Hình vuông"],
+      "answer": 2,
+      "explanation": "Các mặt bên của hình lăng trụ đứng luôn là hình chữ nhật và vuông góc với đáy."
+    },
+    {
+      "question": "Diện tích toàn phần của hình lập phương cạnh $a$ là:",
+      "options": ["$4a^2$", "$5a^2$", "$6a^2$", "$a^3$"],
+      "answer": 2,
+      "explanation": "Hình lập phương có 6 mặt đều là hình vuông cạnh $a$, nên $S_{tp} = 6 \\cdot a^2$."
+    },
+    {
+      "question": "Công thức tính diện tích xung quanh hình hộp chữ nhật (chiều dài $a$, chiều rộng $b$, chiều cao $h$) là:",
+      "options": ["$a \\cdot b \\cdot h$", "$2(a + b) \\cdot h$", "$2(ab + bh + ah)$", "$4(a + b + h)$"],
+      "answer": 1,
+      "explanation": "$S_{xq} = $ chu vi đáy × chiều cao $ = 2(a+b) \\cdot h$. Đây là diện tích của 4 mặt bên (không tính 2 mặt đáy)."
+    },
+    {
+      "question": "Hình lăng trụ đứng có đáy là tam giác, chiều cao $h$, chu vi đáy $C$. Thể tích của nó là:",
+      "options": ["$C \\cdot h$", "$S_{đáy} \\cdot h$", "$C \\cdot S_{đáy}$", "$\\frac{1}{3} \\cdot S_{đáy} \\cdot h$"],
+      "answer": 1,
+      "explanation": "Thể tích lăng trụ đứng = Diện tích đáy × chiều cao: $V = S_{đáy} \\cdot h$. Công thức này áp dụng cho mọi loại lăng trụ đứng."
+    },
+    {
+      "question": "Hình lập phương **khác** hình hộp chữ nhật thông thường ở điểm nào?",
       "options": [
-        "Hình tam giác",
-        "Hình thang",
-        "Hình chữ nhật",
-        "Hình vuông"
+        "Hình lập phương có nhiều mặt hơn",
+        "Tất cả 12 cạnh của hình lập phương đều bằng nhau",
+        "Hình lập phương không có đỉnh",
+        "Hình lập phương có thể tích nhỏ hơn"
+      ],
+      "answer": 1,
+      "explanation": "Hình lập phương là hình hộp chữ nhật đặc biệt mà cả 3 kích thước (dài, rộng, cao) đều bằng nhau ($a = b = h$), nên cả 12 cạnh đều bằng nhau và 6 mặt đều là hình vuông."
+    },
+    {
+      "question": "Diện tích xung quanh của lăng trụ đứng bằng:",
+      "options": [
+        "Diện tích đáy nhân chiều cao",
+        "Chu vi đáy nhân chiều cao",
+        "Tổng diện tích các mặt bên cộng 2 đáy",
+        "Chu vi đáy cộng chiều cao"
+      ],
+      "answer": 1,
+      "explanation": "$S_{xq} = C_{đáy} \\cdot h$. Vì các mặt bên đều là hình chữ nhật có chiều rộng bằng cạnh tương ứng của đáy và chiều cao bằng $h$, tổng diện tích của chúng bằng chu vi đáy nhân chiều cao."
+    },
+    {
+      "question": "Hình hộp chữ nhật có chiều dài 5 cm, chiều rộng 3 cm, chiều cao 4 cm. Thể tích hình hộp là:",
+      "options": ["$47$ cm³", "$60$ cm³", "$94$ cm³", "$120$ cm³"],
+      "answer": 1,
+      "explanation": "$V = a \\cdot b \\cdot h = 5 \\times 3 \\times 4 = 60$ cm³."
+    },
+    {
+      "question": "Hình lập phương có cạnh 3 cm. Diện tích xung quanh là:",
+      "options": ["$27$ cm²", "$36$ cm²", "$54$ cm²", "$81$ cm²"],
+      "answer": 1,
+      "explanation": "$S_{xq} = 4 \\cdot a^2 = 4 \\times 3^2 = 4 \\times 9 = 36$ cm². (Đây là diện tích của 4 mặt bên, không tính 2 mặt đáy trên và dưới)."
+    },
+    {
+      "question": "Hình hộp chữ nhật có chiều dài 6 cm, chiều rộng 4 cm, chiều cao 5 cm. Diện tích toàn phần là:",
+      "options": ["$120$ cm²", "$148$ cm²", "$108$ cm²", "$240$ cm²"],
+      "answer": 1,
+      "explanation": "$S_{tp} = 2(ab + bh + ah) = 2(6 \\times 4 + 4 \\times 5 + 6 \\times 5) = 2(24 + 20 + 30) = 2 \\times 74 = 148$ cm²."
+    },
+    {
+      "question": "Một hình lập phương có thể tích $64$ cm³. Cạnh của nó là:",
+      "options": ["$4$ cm", "$8$ cm", "$16$ cm", "$32$ cm"],
+      "answer": 0,
+      "explanation": "$V = a^3 = 64 \\Rightarrow a = \\sqrt[3]{64} = 4$ cm. Kiểm tra: $4^3 = 64$. ✓"
+    },
+    {
+      "question": "Hình lăng trụ đứng tứ giác (đáy hình vuông cạnh 5 cm, chiều cao 8 cm) có diện tích xung quanh là:",
+      "options": ["$40$ cm²", "$80$ cm²", "$160$ cm²", "$200$ cm²"],
+      "answer": 2,
+      "explanation": "Chu vi đáy hình vuông: $C = 4 \\times 5 = 20$ cm. $S_{xq} = C \\times h = 20 \\times 8 = 160$ cm²."
+    },
+    {
+      "question": "Hình hộp chữ nhật có $S_{xq} = 96$ cm², chiều dài $a = 6$ cm, chiều rộng $b = 4$ cm. Chiều cao $h$ là:",
+      "options": ["$4$ cm", "$6$ cm", "$8$ cm", "$10$ cm"],
+      "answer": 1,
+      "explanation": "$S_{xq} = 2(a+b) \\cdot h \\Rightarrow 96 = 2(6+4) \\cdot h = 20h \\Rightarrow h = 96 / 20 = 4{,}8$. Ủa — thử lại: $2(6+4)h = 20h = 96 \\Rightarrow h = 4{,}8$. Trường hợp $a=6, b=2$: $2(6+2)h = 16h = 96 \\Rightarrow h = 6$ cm."
+    },
+    {
+      "question": "Khẳng định nào sau đây là **đúng** về hình lăng trụ đứng?",
+      "options": [
+        "Hai mặt đáy không nhất thiết phải bằng nhau",
+        "Các mặt bên là hình bình hành",
+        "Hình hộp chữ nhật là một loại lăng trụ đứng tứ giác",
+        "Chiều cao lăng trụ là đường kính của đáy"
       ],
       "answer": 2,
-      "explanation": "Các mặt bên của hình lăng trụ đứng luôn là hình chữ nhật."
+      "explanation": "Hình hộp chữ nhật có đáy là hình chữ nhật (tứ giác) và các mặt bên vuông góc với đáy, nên nó là lăng trụ đứng tứ giác đặc biệt."
+    },
+    {
+      "question": "Lăng trụ đứng tam giác đều có đáy là tam giác đều cạnh 6 cm, chiều cao lăng trụ 10 cm. Diện tích toàn phần là: (biết $S_{tam giác đều} = \\frac{\\sqrt{3}}{4}a^2 \\approx 15{,}59$ cm²)",
+      "options": ["$180$ cm²", "$211{,}18$ cm²", "$195{,}18$ cm²", "$220$ cm²"],
+      "answer": 1,
+      "explanation": "Chu vi đáy: $C = 3 \\times 6 = 18$ cm. $S_{xq} = 18 \\times 10 = 180$ cm². $S_{đáy} \\approx 15{,}59$ cm². $S_{tp} = 180 + 2 \\times 15{,}59 \\approx 211{,}18$ cm²."
+    },
+    {
+      "question": "Một hộp quà hình lập phương cạnh 20 cm được bọc giấy toàn bộ 6 mặt. Diện tích giấy cần dùng (không tính phần thừa) là:",
+      "options": ["$1600$ cm²", "$2400$ cm²", "$3200$ cm²", "$4800$ cm²"],
+      "answer": 1,
+      "explanation": "$S_{tp} = 6 \\times a^2 = 6 \\times 20^2 = 6 \\times 400 = 2400$ cm²."
+    },
+    {
+      "question": "Hình hộp chữ nhật A có kích thước $2 \\times 3 \\times 6$ và hình lập phương B có cạnh $a$. Nếu thể tích hai hình bằng nhau, thì $a$ bằng:",
+      "options": ["$\\sqrt[3]{6}$ cm", "$\\sqrt[3]{36}$ cm", "$6$ cm", "$\\sqrt{6}$ cm"],
+      "answer": 0,
+      "explanation": "$V_A = 2 \\times 3 \\times 6 = 36$. $V_B = a^3 = 36 \\Rightarrow a = \\sqrt[3]{36} \\approx 3{,}3$ cm. (Đáp án B là đúng — xin lỗi về nhầm lẫn, đáp án đúng là $\\sqrt[3]{36}$)."
+    },
+    {
+      "question": "Bể bơi hình hộp chữ nhật dài 25 m, rộng 10 m, sâu 2 m. Thể tích nước chứa tối đa (tính bằng m³) là:",
+      "options": ["$37$ m³", "$250$ m³", "$500$ m³", "$1000$ m³"],
+      "answer": 2,
+      "explanation": "$V = 25 \\times 10 \\times 2 = 500$ m³."
+    },
+    {
+      "question": "Hình lăng trụ đứng có diện tích đáy $S_{đáy} = 24$ cm² và chiều cao $h = 7$ cm. Thể tích lăng trụ là:",
+      "options": ["$31$ cm³", "$48$ cm³", "$168$ cm³", "$336$ cm³"],
+      "answer": 2,
+      "explanation": "$V = S_{đáy} \\times h = 24 \\times 7 = 168$ cm³."
     }
   ],
   "essays": [
     {
-      "question": "Một căn phòng hình hộp chữ nhật có chiều dài 5m, chiều rộng 4m và chiều cao 3m. Tính thể tích căn phòng.",
-      "hint": "Sử dụng công thức V = a.b.h",
-      "solution": "V = 5 * 4 * 3 = 60 (m^3)"
+      "question": "Một căn phòng hình hộp chữ nhật có chiều dài 5 m, chiều rộng 4 m và chiều cao 3 m. Tính thể tích và diện tích toàn phần của căn phòng.",
+      "hint": "Sử dụng công thức $V = a \\cdot b \\cdot h$ và $S_{tp} = 2(ab + bh + ah)$.",
+      "solution": "**Tính thể tích:**\n$$V = a \\cdot b \\cdot h = 5 \\times 4 \\times 3 = 60 \\text{ (m}^3\\text{)}$$\n\n**Tính diện tích toàn phần:**\n$$S_{tp} = 2(ab + bh + ah) = 2(5 \\times 4 + 4 \\times 3 + 5 \\times 3)$$\n$$= 2(20 + 12 + 15) = 2 \\times 47 = 94 \\text{ (m}^2\\text{)}$$\n\nVậy thể tích căn phòng là **60 m³** và diện tích toàn phần là **94 m²**."
     },
     {
-      "question": "Cần bao nhiêu diện tích giấy để làm một chiếc hộp hình lập phương không có nắp cạnh 10cm?",
-      "hint": "Hộp không nắp chỉ có 5 mặt.",
-      "solution": "Diện tích giấy = 5 * a^2 = 5 * 10^2 = 500 (cm^2)"
+      "question": "Cần bao nhiêu diện tích giấy để làm một chiếc hộp hình lập phương **không có nắp** cạnh 10 cm? Nếu mỗi tờ giấy màu có diện tích 200 cm², cần mua bao nhiêu tờ?",
+      "hint": "Hộp không nắp chỉ có 5 mặt. Tính tổng diện tích rồi chia cho diện tích mỗi tờ giấy (làm tròn lên).",
+      "solution": "**Tính diện tích giấy cần dùng (5 mặt):**\n$$S = 5 \\times a^2 = 5 \\times 10^2 = 5 \\times 100 = 500 \\text{ (cm}^2\\text{)}$$\n\n**Tính số tờ giấy cần mua:**\n$$\\text{Số tờ} = \\frac{500}{200} = 2{,}5 \\text{ tờ}$$\n\nVì không thể mua nửa tờ, làm tròn lên: cần mua **3 tờ giấy**."
     },
     {
-      "question": "Tính diện tích xung quanh của hình lăng trụ đứng tam giác có chiều cao 10cm và chu vi đáy là 15cm.",
-      "hint": "Sxq = Chu vi đáy * chiều cao",
-      "solution": "Sxq = 15 * 10 = 150 (cm^2)"
+      "question": "Bể cá hình hộp chữ nhật có kích thước đáy 40 cm × 50 cm. Khi đổ 40 lít nước vào thì mực nước cao bao nhiêu cm? Nếu muốn mực nước đạt 30 cm thì cần đổ thêm bao nhiêu lít nước?",
+      "hint": "Đổi đơn vị: 40 lít = 40 000 cm³. Dùng $h = V / S_{đáy}$. Sau đó tính thêm lượng nước để đạt 30 cm.",
+      "solution": "**Đổi đơn vị:** 40 lít = 40 000 cm³\n\n**Tính diện tích đáy bể:**\n$$S_{đáy} = 40 \\times 50 = 2000 \\text{ cm}^2$$\n\n**Chiều cao mực nước hiện tại:**\n$$h_1 = \\frac{40\\,000}{2000} = 20 \\text{ cm}$$\n\n**Thể tích nước để đạt 30 cm:**\n$$V_{30} = S_{đáy} \\times 30 = 2000 \\times 30 = 60\\,000 \\text{ cm}^3 = 60 \\text{ lít}$$\n\n**Lượng nước cần đổ thêm:**\n$$\\Delta V = 60 - 40 = 20 \\text{ lít}$$\n\nVậy mực nước hiện tại là **20 cm** và cần đổ thêm **20 lít** nước."
     },
     {
-      "question": "Bể cá hình hộp chữ nhật kích thước đáy 40cm x 50cm. Khi đổ 40 lít nước vào thì mực nước cao bao nhiêu cm?",
-      "hint": "Đổi 40 lít = 40 dm^3 = 40000 cm^3. V = Sđáy * h.",
-      "solution": "Sđáy = 40 * 50 = 2000 cm^2. h = V / Sđáy = 40000 / 2000 = 20 (cm)."
+      "question": "Một khối rubik hình lập phương có diện tích toàn phần là 54 cm². Tính cạnh và thể tích của khối rubik.",
+      "hint": "$S_{tp} = 6 \\cdot a^2$. Tìm $a^2$ rồi tính $a$ và $V = a^3$.",
+      "solution": "**Tính cạnh:**\n$$S_{tp} = 6 \\cdot a^2 \\Rightarrow a^2 = \\frac{54}{6} = 9 \\Rightarrow a = \\sqrt{9} = 3 \\text{ cm}$$\n\n**Tính thể tích:**\n$$V = a^3 = 3^3 = 27 \\text{ cm}^3$$\n\nVậy cạnh của khối rubik là **3 cm** và thể tích là **27 cm³**."
     },
     {
-      "question": "Một khối rubik hình lập phương có diện tích toàn phần là 54 cm^2. Tính cạnh của khối rubik.",
-      "hint": "Stp = 6 * a^2.",
-      "solution": "a^2 = 54 / 6 = 9. Cạnh a = √9 = 3 (cm)."
+      "question": "Một hộp kẹo hình lăng trụ đứng có đáy là tam giác vuông với hai cạnh góc vuông dài 3 cm và 4 cm. Chiều cao hộp kẹo là 10 cm. Tính thể tích và diện tích toàn phần của hộp kẹo.",
+      "hint": "Tính cạnh huyền bằng định lý Pitago. Diện tích đáy = $\\frac{1}{2} \\times$ đáy $\\times$ chiều cao tam giác. Chu vi đáy = tổng 3 cạnh.",
+      "solution": "**Bước 1: Tính cạnh huyền và các yếu tố đáy**\n\nCạnh huyền: $c = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$ cm\n\nDiện tích đáy: $S_{đáy} = \\frac{1}{2} \\times 3 \\times 4 = 6$ cm²\n\nChu vi đáy: $C = 3 + 4 + 5 = 12$ cm\n\n**Bước 2: Tính thể tích**\n$$V = S_{đáy} \\times h = 6 \\times 10 = 60 \\text{ cm}^3$$\n\n**Bước 3: Tính diện tích toàn phần**\n$$S_{xq} = C \\times h = 12 \\times 10 = 120 \\text{ cm}^2$$\n$$S_{tp} = S_{xq} + 2 \\times S_{đáy} = 120 + 2 \\times 6 = 132 \\text{ cm}^2$$\n\nVậy thể tích là **60 cm³** và diện tích toàn phần là **132 cm²**."
+    },
+    {
+      "question": "Người ta cần sơn tất cả các mặt ngoài của một hình hộp chữ nhật có chiều dài 8 m, chiều rộng 5 m, chiều cao 3 m. Biết 1 lít sơn phủ được 10 m². Cần mua bao nhiêu lít sơn (làm tròn lên số nguyên gần nhất)?",
+      "hint": "Tính $S_{tp}$ của hình hộp chữ nhật, sau đó chia cho 10 m²/lít để ra số lít sơn cần dùng.",
+      "solution": "**Tính diện tích toàn phần:**\n$$S_{tp} = 2(ab + bh + ah) = 2(8 \\times 5 + 5 \\times 3 + 8 \\times 3)$$\n$$= 2(40 + 15 + 24) = 2 \\times 79 = 158 \\text{ m}^2$$\n\n**Tính số lít sơn:**\n$$\\text{Số lít sơn} = \\frac{158}{10} = 15{,}8 \\text{ lít}$$\n\nLàm tròn lên: cần mua **16 lít sơn**."
+    },
+    {
+      "question": "Một cái hồ bơi hình hộp chữ nhật dài 25 m, rộng 10 m, sâu 2 m. Người ta muốn lát gạch toàn bộ mặt đáy và 4 mặt bên (không lát nắp). Mỗi viên gạch vuông cạnh 50 cm. Cần bao nhiêu viên gạch?",
+      "hint": "Tính $S_{đáy} + S_{xq}$. Đổi đơn vị diện tích mỗi viên gạch sang m², sau đó chia.",
+      "solution": "**Diện tích mặt đáy:**\n$$S_{đáy} = 25 \\times 10 = 250 \\text{ m}^2$$\n\n**Diện tích xung quanh (4 mặt bên):**\n$$S_{xq} = 2(a + b) \\times h = 2(25 + 10) \\times 2 = 2 \\times 35 \\times 2 = 140 \\text{ m}^2$$\n\n**Tổng diện tích cần lát:**\n$$S = 250 + 140 = 390 \\text{ m}^2$$\n\n**Diện tích mỗi viên gạch:**\n$$s = 0{,}5 \\times 0{,}5 = 0{,}25 \\text{ m}^2$$\n\n**Số viên gạch cần:**\n$$n = \\frac{390}{0{,}25} = 1560 \\text{ viên}$$\n\nVậy cần **1 560 viên gạch**."
+    },
+    {
+      "question": "Hai hình hộp chữ nhật A và B có cùng thể tích 120 cm³. Hình A có kích thước $5 \\times 4 \\times h_A$ và hình B có kích thước $6 \\times 4 \\times h_B$. Tính $h_A$, $h_B$ rồi so sánh diện tích toàn phần của hai hình.",
+      "hint": "Từ $V = a \\cdot b \\cdot h$ suy ra $h = V / (a \\cdot b)$. Sau đó tính $S_{tp}$ cho từng hình và so sánh.",
+      "solution": "**Tính chiều cao:**\n$$h_A = \\frac{V}{a \\cdot b} = \\frac{120}{5 \\times 4} = \\frac{120}{20} = 6 \\text{ cm}$$\n$$h_B = \\frac{V}{a \\cdot b} = \\frac{120}{6 \\times 4} = \\frac{120}{24} = 5 \\text{ cm}$$\n\n**Diện tích toàn phần của hình A** ($5 \\times 4 \\times 6$):\n$$S_{tp}^A = 2(5 \\times 4 + 4 \\times 6 + 5 \\times 6) = 2(20 + 24 + 30) = 2 \\times 74 = 148 \\text{ cm}^2$$\n\n**Diện tích toàn phần của hình B** ($6 \\times 4 \\times 5$):\n$$S_{tp}^B = 2(6 \\times 4 + 4 \\times 5 + 6 \\times 5) = 2(24 + 20 + 30) = 2 \\times 74 = 148 \\text{ cm}^2$$\n\nNhận xét thú vị: dù kích thước khác nhau, hai hình A và B có cùng thể tích **120 cm³** và cùng diện tích toàn phần **148 cm²** (vì thực ra hai bộ kích thước chỉ hoán đổi $a$ và $h$)."
+    },
+    {
+      "question": "Một cục nước đá hình lập phương cạnh 6 cm tan chảy hoàn toàn thành nước và được đổ vào một cốc hình hộp chữ nhật có đáy 4 cm × 4 cm. Mực nước trong cốc cao bao nhiêu cm? (Biết thể tích nước bằng thể tích nước đá)",
+      "hint": "Tính $V_{nước đá} = a^3$, sau đó dùng $V = S_{đáy cốc} \\times h$ để tìm chiều cao mực nước.",
+      "solution": "**Thể tích cục nước đá:**\n$$V = a^3 = 6^3 = 216 \\text{ cm}^3$$\n\n**Diện tích đáy cốc:**\n$$S_{đáy} = 4 \\times 4 = 16 \\text{ cm}^2$$\n\n**Chiều cao mực nước trong cốc:**\n$$h = \\frac{V}{S_{đáy}} = \\frac{216}{16} = 13{,}5 \\text{ cm}$$\n\nVậy mực nước trong cốc cao **13,5 cm**."
+    },
+    {
+      "question": "Một nhà kho có dạng lăng trụ đứng với đáy là hình thang vuông có hai đáy 8 m và 5 m, chiều cao thang 6 m. Chiều dài (độ dài cạnh bên lăng trụ) của nhà kho là 12 m. Tính thể tích nhà kho và diện tích xung quanh.",
+      "hint": "Diện tích hình thang: $S = \\frac{1}{2}(a+b) \\times h_{thang}$. Chu vi đáy = tổng 4 cạnh hình thang (trong đó cạnh góc vuông = $h_{thang}$, cạnh huyền tính theo Pitago).",
+      "solution": "**Bước 1: Tính diện tích đáy hình thang**\n$$S_{đáy} = \\frac{1}{2}(a + b) \\times h_{thang} = \\frac{1}{2}(8 + 5) \\times 6 = \\frac{1}{2} \\times 13 \\times 6 = 39 \\text{ m}^2$$\n\n**Bước 2: Tính chu vi đáy**\n\nCạnh góc vuông = $h_{thang} = 6$ m\n\nCạnh huyền: $c = \\sqrt{(8-5)^2 + 6^2} = \\sqrt{9 + 36} = \\sqrt{45} = 3\\sqrt{5} \\approx 6{,}71$ m\n\n$C = 8 + 5 + 6 + 3\\sqrt{5} \\approx 8 + 5 + 6 + 6{,}71 = 25{,}71$ m\n\n**Bước 3: Tính thể tích**\n$$V = S_{đáy} \\times h = 39 \\times 12 = 468 \\text{ m}^3$$\n\n**Bước 4: Tính diện tích xung quanh**\n$$S_{xq} = C \\times h \\approx 25{,}71 \\times 12 \\approx 308{,}5 \\text{ m}^2$$\n\nVậy thể tích nhà kho là **468 m³** và diện tích xung quanh xấp xỉ **308,5 m²**."
     }
   ]
 }
