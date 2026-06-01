@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       const { blobs } = await list({ prefix: FILE_NAME, limit: 1, token });
       
       if (blobs.length > 0) {
-        const res = await fetch(blobs[0].downloadUrl);
+        const res = await fetch(blobs[0].url, { headers: { Authorization: `Bearer ${token}` } });
         if (res.ok) {
           existingData = await res.json();
         }
