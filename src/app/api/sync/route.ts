@@ -39,44 +39,40 @@ export async function POST(request: Request) {
     
     // Append or replace new record
     if (newRecord.type === 'image_upload' && newRecord.chapterId) {
-      const existingIdx = existingData.findIndex((r: any) => r.type === 'image_upload' && r.chapterId === newRecord.chapterId);
+      const existingIdx = existingData.findIndex((r: any) => r.type === 'image_upload' && Number(r.chapterId || 1) === Number(newRecord.chapterId));
       if (existingIdx > -1) {
         existingData[existingIdx].imageUrls = newRecord.imageUrls;
         existingData[existingIdx].timestamp = new Date().toISOString();
+        existingData[existingIdx].chapterId = Number(newRecord.chapterId);
       } else {
-        existingData.push({ id: Date.now().toString(), timestamp: new Date().toISOString(), ...newRecord });
+        existingData.push({ id: Date.now().toString(), timestamp: new Date().toISOString(), ...newRecord, chapterId: Number(newRecord.chapterId) });
       }
     } else if (newRecord.type === 'essay' && newRecord.chapterId && newRecord.essayIndex !== undefined) {
-      const existingIdx = existingData.findIndex((r: any) => r.type === 'essay' && r.chapterId === newRecord.chapterId && r.essayIndex === newRecord.essayIndex);
+      const existingIdx = existingData.findIndex((r: any) => r.type === 'essay' && Number(r.chapterId || 1) === Number(newRecord.chapterId) && r.essayIndex === newRecord.essayIndex);
       if (existingIdx > -1) {
         existingData[existingIdx].studentAnswer = newRecord.studentAnswer;
         existingData[existingIdx].timestamp = new Date().toISOString();
       } else {
-        existingData.push({ id: Date.now().toString(), timestamp: new Date().toISOString(), ...newRecord });
+        existingData.push({ id: Date.now().toString(), timestamp: new Date().toISOString(), ...newRecord, chapterId: Number(newRecord.chapterId) });
       }
     } else {
       existingData.push({ id: Date.now().toString(), timestamp: new Date().toISOString(), ...newRecord });
     }
 
-    let blob;
     try {
+      blob = await put(FILE_NAME, JSON.stringify(existingData), {
+        access: 'private',
+        addRandomSuffix: false,
+        token,
+        contentType: 'application/json',
+      });
+    } catch (e: any) {
       blob = await put(FILE_NAME, JSON.stringify(existingData), {
         access: 'public',
         addRandomSuffix: false,
         token,
         contentType: 'application/json',
       });
-    } catch (e: any) {
-      if (e.message?.includes('private store')) {
-        blob = await put(FILE_NAME, JSON.stringify(existingData), {
-          access: 'private',
-          addRandomSuffix: false,
-          token,
-          contentType: 'application/json',
-        });
-      } else {
-        throw e;
-      }
     }
 
     return NextResponse.json({ success: true, url: blob.url });

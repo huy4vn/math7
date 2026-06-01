@@ -16,9 +16,10 @@ interface QuizProps {
     answer: number;
     explanation: string;
   }[];
+  chapterId?: number;
 }
 
-export default function QuizComponent({ quizzes }: QuizProps) {
+export default function QuizComponent({ quizzes, chapterId }: QuizProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,9 +47,11 @@ export default function QuizComponent({ quizzes }: QuizProps) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'quiz',
+          chapterId: chapterId || 1,
           score,
           total: quizzes.length,
-          answers: selectedAnswers
+          answers: selectedAnswers,
+          correctAnswers: Object.fromEntries(quizzes.map((q, i) => [i, q.answer]))
         })
       });
     } catch (e) {
