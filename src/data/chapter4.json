@@ -1,0 +1,67 @@
+{
+  "id": 4,
+  "title": "Chương 4: Góc và đường thẳng song song",
+  "summary": "1. Hai góc đối đỉnh: Là hai góc mà mỗi cạnh của góc này là tia đối của một cạnh của góc kia. Hai góc đối đỉnh thì bằng nhau.\nVí dụ: Hai đường thẳng cắt nhau tạo thành chữ X, 2 góc đối diện nhau là góc đối đỉnh.\n2. Hai góc kề bù: Là hai góc vừa kề nhau, vừa bù nhau. Tổng số đo hai góc kề bù bằng 180 độ.\nVí dụ: Góc 60° và góc 120° nằm trên một đường thẳng.\n3. Tia phân giác: Là tia nằm giữa hai cạnh của góc và tạo với hai cạnh ấy hai góc bằng nhau.\nVí dụ: Tia chia góc 80° thành hai góc 40°.\n4. Đường thẳng song song: Hai đường thẳng phân biệt không có điểm chung. Dấu hiệu: Nếu 1 đường thẳng cắt 2 đường thẳng tạo ra một cặp góc so le trong bằng nhau (hoặc đồng vị bằng nhau) thì 2 đường thẳng đó song song.\nVí dụ: Các đường thẳng kẻ phân làn trên đường cao tốc.\n5. Tiên đề Euclid: Qua một điểm ở ngoài đường thẳng, chỉ có một đường thẳng song song với đường thẳng đó.\nVí dụ: Có thể vẽ duy nhất một đường thẳng qua điểm A song song với đường thẳng d.",
+  "quizzes": [
+    {
+      "question": "Hai góc đối đỉnh thì có tính chất gì?",
+      "options": [
+        "Bù nhau",
+        "Phụ nhau",
+        "Bằng nhau",
+        "Kề nhau"
+      ],
+      "answer": 2,
+      "explanation": "Tính chất cơ bản của hai góc đối đỉnh là chúng bằng nhau."
+    },
+    {
+      "question": "Tổng số đo của hai góc kề bù là:",
+      "options": [
+        "90°",
+        "180°",
+        "360°",
+        "Không xác định"
+      ],
+      "answer": 1,
+      "explanation": "Hai góc kề bù tạo thành một góc bẹt nên có tổng số đo là 180°."
+    },
+    {
+      "question": "Qua một điểm M nằm ngoài đường thẳng a, có bao nhiêu đường thẳng song song với a?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "Vô số"
+      ],
+      "answer": 1,
+      "explanation": "Theo Tiên đề Euclid, chỉ có duy nhất một đường thẳng đi qua M và song song với a."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Góc xOy và góc yOz là hai góc kề bù. Biết góc xOy = 60°. Tính góc yOz.",
+      "hint": "Tổng hai góc kề bù bằng 180°.",
+      "solution": "Vì hai góc kề bù nên: xOy + yOz = 180° => 60° + yOz = 180° => yOz = 120°."
+    },
+    {
+      "question": "Hai đường thẳng xy và zt cắt nhau tại O. Biết góc xOz = 50°. Tính góc yOt.",
+      "hint": "Góc xOz và yOt là hai góc đối đỉnh.",
+      "solution": "Vì góc xOz và yOt đối đỉnh nên yOt = xOz = 50°."
+    },
+    {
+      "question": "Cho góc AOB = 80°. Tia OC là tia phân giác của góc AOB. Tính góc AOC.",
+      "hint": "Tia phân giác chia góc thành hai phần bằng nhau.",
+      "solution": "AOC = AOB / 2 = 80° / 2 = 40°."
+    },
+    {
+      "question": "Cho đường thẳng c cắt hai đường thẳng song song a và b. Biết một góc so le trong bằng 75°. Tính góc đồng vị tương ứng.",
+      "hint": "Khi hai đường thẳng song song, các góc đồng vị cũng bằng nhau và bằng góc so le trong.",
+      "solution": "Do a // b nên góc đồng vị cũng bằng góc so le trong, tức là bằng 75°."
+    },
+    {
+      "question": "Chứng minh rằng hai tia phân giác của hai góc kề bù thì vuông góc với nhau.",
+      "hint": "Tính tổng số đo hai nửa góc.",
+      "solution": "Gọi xOy và yOz là 2 góc kề bù (tổng 180°). Om, On là phân giác. Góc mOn = mOy + yOn = 1/2 xOy + 1/2 yOz = 1/2(180°) = 90°. Suy ra Om vuông góc On."
+    }
+  ]
+}

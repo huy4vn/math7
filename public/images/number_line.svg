@@ -1,0 +1,52 @@
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrow marker for both ends -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+        markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#fff" />
+    </marker>
+  </defs>
+
+  <!-- Number line axis (white color to match the dark theme) -->
+  <line x1="40" y1="90" x2="560" y2="90" stroke="#fff" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)" />
+
+  <!-- Zero -->
+  <line x1="300" y1="80" x2="300" y2="100" stroke="#fff" stroke-width="2" />
+  <text x="300" y="125" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#fff">0</text>
+
+  <!-- One (160px = 1 unit) -->
+  <line x1="460" y1="80" x2="460" y2="100" stroke="#fff" stroke-width="2" />
+  <text x="460" y="125" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#fff">1</text>
+
+  <!-- Minus One -->
+  <line x1="140" y1="80" x2="140" y2="100" stroke="#fff" stroke-width="2" />
+  <text x="140" y="125" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#fff">-1</text>
+
+  <!-- 1/4 intervals -->
+  <!-- 1/4 -->
+  <line x1="340" y1="85" x2="340" y2="95" stroke="#aaa" stroke-width="1.5" />
+  <!-- 2/4 -->
+  <line x1="380" y1="85" x2="380" y2="95" stroke="#aaa" stroke-width="1.5" />
+  <!-- 3/4 -->
+  <line x1="420" y1="85" x2="420" y2="95" stroke="#aaa" stroke-width="1.5" />
+
+  <!-- -1/4 -->
+  <line x1="260" y1="85" x2="260" y2="95" stroke="#aaa" stroke-width="1.5" />
+  <!-- -2/4 -->
+  <line x1="220" y1="85" x2="220" y2="95" stroke="#aaa" stroke-width="1.5" />
+  <!-- -3/4 -->
+  <line x1="180" y1="85" x2="180" y2="95" stroke="#aaa" stroke-width="1.5" />
+
+  <!-- Highlight 3/4 -->
+  <circle cx="420" cy="90" r="6" fill="#ef4444" />
+  <text x="420" y="65" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ef4444">3/4</text>
+  <line x1="420" y1="90" x2="420" y2="70" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="2,2" />
+  
+  <!-- Highlight -3/4 -->
+  <circle cx="180" cy="90" r="6" fill="#3b82f6" />
+  <text x="180" y="65" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#3b82f6">-3/4</text>
+  <line x1="180" y1="90" x2="180" y2="70" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="2,2" />
+  
+  <!-- Title / Legend -->
+  <text x="300" y="30" font-family="sans-serif" font-size="16" font-style="italic" text-anchor="middle" fill="#ccc">Biểu diễn các số hữu tỉ 3/4 và -3/4 trên trục số</text>
+</svg>

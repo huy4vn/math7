@@ -1,0 +1,67 @@
+{
+  "id": 2,
+  "title": "Chương 2: Số thực",
+  "summary": "### 1. Số vô tỉ ($\\mathbb{I}$)\nLà số thập phân vô hạn không tuần hoàn. VD: số $\\pi$, $\\sqrt{2}$.\n\n> **Ví dụ:** $\\sqrt{2} \\approx 1.4142...$ là số vô tỉ.\n\n### 2. Số thực ($\\mathbb{R}$)\nGồm số hữu tỉ và số vô tỉ.\n\n> **Ví dụ:** Số $3$ và số $\\sqrt{5}$ đều là số thực.\n\n### 3. Căn bậc hai số học\nCăn bậc hai số học của số $a$ không âm là số $x$ không âm sao cho $x^2 = a$. Kí hiệu $\\sqrt{a}$.\n\n> **Ví dụ:** $\\sqrt{25} = 5$ vì $5^2 = 25$.\n\n### 4. Làm tròn số\nXác định chữ số hàng làm tròn. Nếu chữ số bên phải $\\ge 5$ thì cộng 1 vào hàng làm tròn. Nếu $< 5$ thì giữ nguyên.\n\n> **Ví dụ:** Làm tròn $3.1415$ đến hàng phần trăm ta được $3.14$.",
+  "quizzes": [
+    {
+      "question": "Số nào sau đây là số vô tỉ?",
+      "options": [
+        "0",
+        "1.5",
+        "√2",
+        "3/4"
+      ],
+      "answer": 2,
+      "explanation": "√2 là số thập phân vô hạn không tuần hoàn, do đó là số vô tỉ."
+    },
+    {
+      "question": "Căn bậc hai số học của 25 là:",
+      "options": [
+        "5",
+        "-5",
+        "5 và -5",
+        "25"
+      ],
+      "answer": 0,
+      "explanation": "Căn bậc hai số học của một số luôn không âm. √25 = 5."
+    },
+    {
+      "question": "Làm tròn số 3.14159 đến chữ số thập phân thứ hai:",
+      "options": [
+        "3.14",
+        "3.15",
+        "3.10",
+        "3.142"
+      ],
+      "answer": 0,
+      "explanation": "Chữ số thập phân thứ 3 là 1 < 5 nên giữ nguyên chữ số thập phân thứ hai là 4. Kết quả: 3.14."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Tính giá trị biểu thức: A = √36 - √9 + √16",
+      "hint": "Tính căn bậc hai của từng số trước rồi cộng trừ.",
+      "solution": "A = 6 - 3 + 4 = 7"
+    },
+    {
+      "question": "So sánh: √15 và 4",
+      "hint": "Đưa 4 về dạng căn bậc hai.",
+      "solution": "4 = √16. Vì 15 < 16 nên √15 < √16. Vậy √15 < 4."
+    },
+    {
+      "question": "Làm tròn số 123.4567 đến hàng phần trăm.",
+      "hint": "Xem xét chữ số ở hàng phần nghìn.",
+      "solution": "Chữ số hàng phần nghìn là 6 >= 5, nên cộng 1 vào hàng phần trăm (5+1=6). Kết quả: 123.46"
+    },
+    {
+      "question": "Tìm x, biết x^2 = 49 (x > 0)",
+      "hint": "x là căn bậc hai số học của 49.",
+      "solution": "Vì x > 0 và x^2 = 49 nên x = √49 = 7."
+    },
+    {
+      "question": "Tính chu vi hình tròn có bán kính R = 5cm. (Làm tròn đến chữ số thập phân thứ nhất, lấy pi = 3.1415...)",
+      "hint": "Công thức chu vi C = 2 * pi * R.",
+      "solution": "C = 2 * 3.1415... * 5 = 10 * 3.1415... = 31.415... Làm tròn đến chữ số thập phân thứ nhất: 31.4 cm."
+    }
+  ]
+}

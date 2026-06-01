@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Chương 1: Số hữu tỉ",
+    "description": "Tìm hiểu về tập hợp số hữu tỉ, các phép tính và tính chất của chúng."
+  },
+  {
+    "id": 2,
+    "title": "Chương 2: Số thực",
+    "description": "Số vô tỉ, căn bậc hai số học, làm tròn số và tập hợp số thực."
+  },
+  {
+    "id": 3,
+    "title": "Chương 3: Các hình khối trong thực tiễn",
+    "description": "Hình hộp chữ nhật, hình lập phương, hình lăng trụ đứng tam giác và tứ giác."
+  },
+  {
+    "id": 4,
+    "title": "Chương 4: Góc và đường thẳng song song",
+    "description": "Các góc ở vị trí đặc biệt, tia phân giác và hai đường thẳng song song."
+  },
+  {
+    "id": 5,
+    "title": "Chương 5: Một số yếu tố thống kê",
+    "description": "Thu thập, phân loại dữ liệu, biểu đồ hình quạt tròn và biểu đồ đoạn thẳng."
+  },
+  {
+    "id": 6,
+    "title": "Chương 6: Các đại lượng tỉ lệ",
+    "description": "Tỉ lệ thức, đại lượng tỉ lệ thuận và đại lượng tỉ lệ nghịch."
+  },
+  {
+    "id": 7,
+    "title": "Chương 7: Biểu thức đại số",
+    "description": "Biểu thức số, biểu thức đại số, đa thức một biến và các phép tính."
+  },
+  {
+    "id": 8,
+    "title": "Chương 8: Tam giác",
+    "description": "Góc và cạnh của tam giác, các trường hợp bằng nhau, các đường đồng quy."
+  },
+  {
+    "id": 9,
+    "title": "Chương 9: Một số yếu tố xác suất",
+    "description": "Làm quen với biến cố ngẫu nhiên và xác suất của biến cố."
+  }
+]

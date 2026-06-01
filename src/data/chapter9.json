@@ -1,0 +1,67 @@
+{
+  "id": 9,
+  "title": "Chương 9: Một số yếu tố xác suất",
+  "summary": "1. Biến cố: Các sự kiện xảy ra trong một trò chơi, thí nghiệm.\nVí dụ: Biến cố 'Gieo xúc xắc ra mặt 3 chấm'.\n2. Biến cố chắc chắn: Biến cố luôn luôn xảy ra.\nVí dụ: Gieo xúc xắc ra số chấm nhỏ hơn 7.\n3. Biến cố không thể: Biến cố không bao giờ xảy ra.\nVí dụ: Gieo xúc xắc ra mặt 8 chấm.\n4. Biến cố ngẫu nhiên: Biến cố có thể xảy ra hoặc không xảy ra.\nVí dụ: Rút được lá bài bích từ bộ bài.\n5. Xác suất của biến cố: Thể hiện khả năng xảy ra của biến cố. Ví dụ: Gieo xúc xắc cân đối, xác suất xuất hiện mỗi mặt là 1/6.\nVí dụ: Tung đồng xu, xác suất ra mặt sấp là 1/2.",
+  "quizzes": [
+    {
+      "question": "Gieo một con xúc xắc 6 mặt, biến cố 'Xuất hiện mặt 7 chấm' là:",
+      "options": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên",
+        "Tất cả đều sai"
+      ],
+      "answer": 1,
+      "explanation": "Xúc xắc chỉ có mặt từ 1 đến 6, không có mặt 7 nên biến cố này không thể xảy ra."
+    },
+    {
+      "question": "Tung một đồng xu cân đối, xác suất để xuất hiện mặt sấp là:",
+      "options": [
+        "1",
+        "0",
+        "1/2",
+        "1/4"
+      ],
+      "answer": 2,
+      "explanation": "Đồng xu có 2 mặt (sấp, ngửa) khả năng xuất hiện như nhau nên xác suất là 1/2."
+    },
+    {
+      "question": "Rút ngẫu nhiên một lá bài từ bộ bài tú lơ khơ 52 lá. Biến cố 'Rút được lá bài màu đỏ' có phải là biến cố ngẫu nhiên không?",
+      "options": [
+        "Phải",
+        "Không",
+        "Là biến cố chắc chắn",
+        "Là biến cố không thể"
+      ],
+      "answer": 0,
+      "explanation": "Bạn có thể rút được lá màu đỏ hoặc màu đen nên đây là biến cố ngẫu nhiên."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Trong hộp có 3 quả bóng xanh và 1 quả bóng đỏ. Lấy ngẫu nhiên 1 quả bóng. Xác suất lấy được quả bóng đỏ là bao nhiêu?",
+      "hint": "Tính tổng số quả bóng. Xác suất = số bóng đỏ / tổng số bóng.",
+      "solution": "Tổng số bóng là 3 + 1 = 4. Xác suất lấy được bóng đỏ là 1/4."
+    },
+    {
+      "question": "Gieo một con xúc xắc cân đối 6 mặt. Tính xác suất của biến cố 'Xuất hiện mặt có số chấm là số chẵn'.",
+      "hint": "Các mặt chẵn là 2, 4, 6.",
+      "solution": "Có 3 mặt chẵn (2, 4, 6) trong tổng số 6 mặt. Xác suất = 3/6 = 1/2."
+    },
+    {
+      "question": "Quay vòng quay có 4 ô với các màu: Xanh, Đỏ, Tím, Vàng với diện tích bằng nhau. Tính xác suất quay vào ô màu Xanh.",
+      "hint": "Các ô có diện tích bằng nhau nên khả năng như nhau.",
+      "solution": "Vòng quay có 4 ô bằng nhau, nên xác suất mũi tên chỉ vào ô màu Xanh là 1/4."
+    },
+    {
+      "question": "Một hộp chứa các tấm thẻ đánh số từ 1 đến 10. Chọn ngẫu nhiên một thẻ. Biến cố 'Rút được thẻ mang số nhỏ hơn 15' là biến cố gì?",
+      "hint": "Tất cả các số từ 1 đến 10 đều nhỏ hơn 15.",
+      "solution": "Đây là biến cố chắc chắn, vì thẻ nào rút ra cũng có số nhỏ hơn 15."
+    },
+    {
+      "question": "Gieo đồng xu 2 lần liên tiếp. Liệt kê các kết quả có thể xảy ra.",
+      "hint": "Sấp (S), Ngửa (N).",
+      "solution": "Có 4 kết quả có thể xảy ra: (S, S), (S, N), (N, S), (N, N)."
+    }
+  ]
+}

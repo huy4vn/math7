@@ -1,0 +1,67 @@
+{
+  "id": 8,
+  "title": "Chương 8: Tam giác",
+  "summary": "1. Tổng 3 góc của tam giác: Luôn bằng 180°.\nVí dụ: Nếu 2 góc là 60° và 50°, góc còn lại là 180° - 110° = 70°.\n2. Các trường hợp bằng nhau của tam giác: c-c-c, c-g-c, g-c-g. Đối với tam giác vuông: cạnh huyền-góc nhọn, cạnh huyền-cạnh góc vuông.\nVí dụ: Cạnh-cạnh-cạnh (hai tam giác có 3 cạnh tương ứng bằng nhau).\n3. Tam giác cân: Tam giác có 2 cạnh bằng nhau. Hai góc ở đáy bằng nhau.\nVí dụ: Tam giác có 2 cạnh cùng bằng 5cm.\n4. Quan hệ giữa đường vuông góc và đường xiên: Đường vuông góc ngắn hơn mọi đường xiên.\nVí dụ: Từ 1 điểm đến 1 đường thẳng, đường vuông góc là đoạn ngắn nhất.\n5. Các đường đồng quy trong tam giác: 3 đường trung tuyến (cắt nhau tại trọng tâm), 3 đường phân giác, 3 đường trung trực, 3 đường cao (trực tâm).\nVí dụ: Giao điểm 3 đường trung tuyến gọi là trọng tâm.",
+  "quizzes": [
+    {
+      "question": "Tổng ba góc trong một tam giác bằng bao nhiêu?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer": 1,
+      "explanation": "Định lí cơ bản: Tổng 3 góc của một tam giác luôn là 180°."
+    },
+    {
+      "question": "Tam giác có hai cạnh bằng nhau gọi là tam giác gì?",
+      "options": [
+        "Tam giác nhọn",
+        "Tam giác vuông",
+        "Tam giác cân",
+        "Tam giác đều"
+      ],
+      "answer": 2,
+      "explanation": "Tam giác cân là tam giác có hai cạnh bằng nhau."
+    },
+    {
+      "question": "Giao điểm của 3 đường trung tuyến trong tam giác được gọi là:",
+      "options": [
+        "Trực tâm",
+        "Trọng tâm",
+        "Tâm đường tròn nội tiếp",
+        "Tâm đường tròn ngoại tiếp"
+      ],
+      "answer": 1,
+      "explanation": "Ba đường trung tuyến cắt nhau tại một điểm gọi là trọng tâm của tam giác."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Cho tam giác ABC có góc A = 50°, góc B = 60°. Tính góc C.",
+      "hint": "Góc A + Góc B + Góc C = 180°.",
+      "solution": "Góc C = 180° - (50° + 60°) = 180° - 110° = 70°."
+    },
+    {
+      "question": "Tam giác MNP cân tại M. Biết góc ở đỉnh M = 80°. Tính góc N và góc P.",
+      "hint": "Tam giác cân tại M nên góc N = góc P = (180° - góc M) / 2.",
+      "solution": "Góc N = Góc P = (180° - 80°) / 2 = 100° / 2 = 50°."
+    },
+    {
+      "question": "Trong tam giác DEF, vẽ trung tuyến DM. Gọi G là trọng tâm. Biết DM = 6cm. Tính DG và GM.",
+      "hint": "Trọng tâm chia trung tuyến theo tỉ lệ 2/3 kể từ đỉnh.",
+      "solution": "DG = 2/3 DM = 2/3 * 6 = 4 (cm). GM = 1/3 DM = 1/3 * 6 = 2 (cm)."
+    },
+    {
+      "question": "Chứng minh rằng trong tam giác vuông, cạnh huyền là cạnh lớn nhất.",
+      "hint": "Sử dụng quan hệ giữa góc và cạnh đối diện.",
+      "solution": "Trong tam giác vuông, góc vuông là góc lớn nhất (90°). Vì tổng 3 góc là 180° nên 2 góc kia phải nhọn (<90°). Cạnh đối diện góc lớn nhất là cạnh lớn nhất. Suy ra cạnh huyền lớn nhất."
+    },
+    {
+      "question": "Cho tam giác ABC cân tại A. Vẽ AH vuông góc với BC tại H. Chứng minh H là trung điểm của BC.",
+      "hint": "Chứng minh hai tam giác vuông AHB và AHC bằng nhau.",
+      "solution": "Xét hai tam giác vuông AHB và AHC: Cạnh huyền AB = AC (tam giác ABC cân). AH là cạnh chung. Suy ra tam giác AHB = tam giác AHC (cạnh huyền - cạnh góc vuông). Từ đó suy ra HB = HC, hay H là trung điểm BC."
+    }
+  ]
+}

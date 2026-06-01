@@ -1,0 +1,67 @@
+{
+  "id": 3,
+  "title": "Chương 3: Các hình khối trong thực tiễn",
+  "summary": "### 1. Hình hộp chữ nhật\nHình hộp chữ nhật có 6 mặt là hình chữ nhật, 8 đỉnh, 12 cạnh. \n\n* **Thể tích:** $V = a \\cdot b \\cdot h$\n* **Diện tích xung quanh:** $S_{xq} = 2(a+b) \\cdot h$\n\n> **Ví dụ:** Hộp phấn, viên gạch.\n\n### 2. Hình lập phương\nHình lập phương có 6 mặt là hình vuông bằng nhau. \n\n* **Thể tích:** $V = a^3$\n* **Diện tích xung quanh:** $S_{xq} = 4a^2$\n\n> **Ví dụ:** Khối rubik, con xúc xắc.\n\n### 3. Hình lăng trụ đứng\nHình lăng trụ đứng có 2 đáy song song và bằng nhau, các mặt bên là hình chữ nhật vuông góc với đáy. \n\n* **Thể tích:** $V = S_{đáy} \\cdot h$\n* **Diện tích xung quanh:** $S_{xq} = C_{đáy} \\cdot h$\n\n> **Ví dụ:** Hộp kẹo lăng trụ tam giác.",
+  "quizzes": [
+    {
+      "question": "Hình hộp chữ nhật có bao nhiêu mặt?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Hình hộp chữ nhật có 6 mặt, 8 đỉnh, 12 cạnh."
+    },
+    {
+      "question": "Công thức tính thể tích hình lập phương cạnh a là:",
+      "options": [
+        "3a",
+        "a^2",
+        "a^3",
+        "6a^2"
+      ],
+      "answer": 2,
+      "explanation": "Thể tích hình lập phương = cạnh x cạnh x cạnh = a^3."
+    },
+    {
+      "question": "Hình lăng trụ đứng tam giác có các mặt bên là hình gì?",
+      "options": [
+        "Hình tam giác",
+        "Hình thang",
+        "Hình chữ nhật",
+        "Hình vuông"
+      ],
+      "answer": 2,
+      "explanation": "Các mặt bên của hình lăng trụ đứng luôn là hình chữ nhật."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Một căn phòng hình hộp chữ nhật có chiều dài 5m, chiều rộng 4m và chiều cao 3m. Tính thể tích căn phòng.",
+      "hint": "Sử dụng công thức V = a.b.h",
+      "solution": "V = 5 * 4 * 3 = 60 (m^3)"
+    },
+    {
+      "question": "Cần bao nhiêu diện tích giấy để làm một chiếc hộp hình lập phương không có nắp cạnh 10cm?",
+      "hint": "Hộp không nắp chỉ có 5 mặt.",
+      "solution": "Diện tích giấy = 5 * a^2 = 5 * 10^2 = 500 (cm^2)"
+    },
+    {
+      "question": "Tính diện tích xung quanh của hình lăng trụ đứng tam giác có chiều cao 10cm và chu vi đáy là 15cm.",
+      "hint": "Sxq = Chu vi đáy * chiều cao",
+      "solution": "Sxq = 15 * 10 = 150 (cm^2)"
+    },
+    {
+      "question": "Bể cá hình hộp chữ nhật kích thước đáy 40cm x 50cm. Khi đổ 40 lít nước vào thì mực nước cao bao nhiêu cm?",
+      "hint": "Đổi 40 lít = 40 dm^3 = 40000 cm^3. V = Sđáy * h.",
+      "solution": "Sđáy = 40 * 50 = 2000 cm^2. h = V / Sđáy = 40000 / 2000 = 20 (cm)."
+    },
+    {
+      "question": "Một khối rubik hình lập phương có diện tích toàn phần là 54 cm^2. Tính cạnh của khối rubik.",
+      "hint": "Stp = 6 * a^2.",
+      "solution": "a^2 = 54 / 6 = 9. Cạnh a = √9 = 3 (cm)."
+    }
+  ]
+}

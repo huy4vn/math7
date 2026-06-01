@@ -1,0 +1,67 @@
+{
+  "id": 6,
+  "title": "Chương 6: Các đại lượng tỉ lệ",
+  "summary": "1. Tỉ lệ thức: Là đẳng thức của hai tỉ số a/b = c/d. Tính chất: a.d = b.c.\nVí dụ: 2/3 = 4/6 suy ra 2.6 = 3.4.\n2. Tính chất dãy tỉ số bằng nhau: a/b = c/d = (a+c)/(b+d) = (a-c)/(b-d).\nVí dụ: Nếu x/2 = y/3 và x+y = 10 thì x/2 = y/3 = 10/5 = 2.\n3. Đại lượng tỉ lệ thuận: Hai đại lượng y và x liên hệ theo công thức y = k.x (k ≠ 0). k gọi là hệ số tỉ lệ.\nVí dụ: Quãng đường tỉ lệ thuận với thời gian (khi vận tốc không đổi).\n4. Đại lượng tỉ lệ nghịch: Hai đại lượng y và x liên hệ theo công thức y = a/x hay x.y = a (a ≠ 0). a gọi là hệ số tỉ lệ.\nVí dụ: Vận tốc tỉ lệ nghịch với thời gian (khi quãng đường không đổi).",
+  "quizzes": [
+    {
+      "question": "Từ đẳng thức 2 . 6 = 3 . 4, ta lập được tỉ lệ thức nào?",
+      "options": [
+        "2/3 = 4/6",
+        "2/6 = 3/4",
+        "3/2 = 6/4",
+        "4/3 = 6/2"
+      ],
+      "answer": 0,
+      "explanation": "2.6 = 3.4 suy ra 2/3 = 4/6."
+    },
+    {
+      "question": "Nếu y tỉ lệ thuận với x theo hệ số tỉ lệ k = 3, công thức biểu diễn y theo x là:",
+      "options": [
+        "y = x + 3",
+        "y = 3/x",
+        "y = 3x",
+        "x = 3y"
+      ],
+      "answer": 2,
+      "explanation": "Công thức tỉ lệ thuận: y = kx => y = 3x."
+    },
+    {
+      "question": "Một người đi xe đạp với vận tốc v và thời gian t để đi hết quãng đường S. v và t là hai đại lượng:",
+      "options": [
+        "Tỉ lệ thuận",
+        "Tỉ lệ nghịch",
+        "Không liên quan",
+        "Cộng gộp"
+      ],
+      "answer": 1,
+      "explanation": "v.t = S (hằng số), nên v và t tỉ lệ nghịch với nhau."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Tìm x trong tỉ lệ thức: x/4 = 5/2",
+      "hint": "Sử dụng tính chất nhân chéo: x.2 = 4.5",
+      "solution": "2x = 20 => x = 10."
+    },
+    {
+      "question": "Tìm hai số x và y biết x/3 = y/5 và x + y = 32.",
+      "hint": "Áp dụng tính chất dãy tỉ số bằng nhau.",
+      "solution": "x/3 = y/5 = (x+y)/(3+5) = 32/8 = 4. Do đó x = 3*4 = 12, y = 5*4 = 20."
+    },
+    {
+      "question": "Biết x và y là hai đại lượng tỉ lệ thuận. Khi x = 2 thì y = 8. Tìm hệ số tỉ lệ k và biểu diễn y theo x.",
+      "hint": "y = kx.",
+      "solution": "8 = k.2 => k = 4. Biểu diễn: y = 4x."
+    },
+    {
+      "question": "Một công việc cần 10 công nhân làm trong 12 ngày. Hỏi 15 công nhân (cùng năng suất) thì làm xong trong bao nhiêu ngày?",
+      "hint": "Số công nhân và số ngày là hai đại lượng tỉ lệ nghịch.",
+      "solution": "Gọi x là số ngày. Ta có 15.x = 10.12 => 15x = 120 => x = 8 ngày."
+    },
+    {
+      "question": "Chia số 90 thành 3 phần tỉ lệ với 2, 3, 4. Tìm 3 phần đó.",
+      "hint": "Gọi 3 phần là a,b,c. a/2 = b/3 = c/4 và a+b+c = 90.",
+      "solution": "a/2 = b/3 = c/4 = (a+b+c)/(2+3+4) = 90/9 = 10. Vậy a=20, b=30, c=40."
+    }
+  ]
+}

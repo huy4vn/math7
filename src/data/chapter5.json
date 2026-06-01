@@ -1,0 +1,67 @@
+{
+  "id": 5,
+  "title": "Chương 5: Một số yếu tố thống kê",
+  "summary": "1. Thu thập và phân loại dữ liệu: Dữ liệu định tính (chữ, màu sắc, phân loại) và Dữ liệu định lượng (số liệu).\nVí dụ: Số lượng học sinh là định lượng, màu áo là định tính.\n2. Tính hợp lí của dữ liệu: Kiểm tra xem dữ liệu có đúng logic thực tế không (VD tỉ lệ % không vượt quá 100%).\nVí dụ: Tổng số phần trăm các lựa chọn trong khảo sát phải bằng 100%.\n3. Biểu đồ hình quạt tròn: Dùng để so sánh các phần so với tổng thể (toàn bộ hình tròn biểu diễn 100%). Góc ở tâm tính bằng Tỉ lệ % * 360°.\nVí dụ: Thể hiện tỉ lệ học sinh thích các môn thể thao trong lớp.\n4. Biểu đồ đoạn thẳng: Thể hiện sự thay đổi, xu hướng của một đại lượng theo thời gian.\nVí dụ: Thể hiện sự thay đổi nhiệt độ qua các ngày trong tuần.",
+  "quizzes": [
+    {
+      "question": "Dữ liệu nào sau đây là dữ liệu định lượng?",
+      "options": [
+        "Màu mắt",
+        "Xếp loại học lực",
+        "Chiều cao",
+        "Sở thích"
+      ],
+      "answer": 2,
+      "explanation": "Chiều cao được biểu diễn bằng số đo, là dữ liệu định lượng."
+    },
+    {
+      "question": "Biểu đồ nào thích hợp nhất để biểu diễn tỉ lệ phần trăm các thành phần trong tổng thể?",
+      "options": [
+        "Biểu đồ cột",
+        "Biểu đồ hình quạt tròn",
+        "Biểu đồ đoạn thẳng",
+        "Biểu đồ tranh"
+      ],
+      "answer": 1,
+      "explanation": "Biểu đồ hình quạt tròn rất trực quan để xem tỉ lệ % của từng thành phần."
+    },
+    {
+      "question": "Biểu đồ đoạn thẳng thường dùng để làm gì?",
+      "options": [
+        "So sánh các tổng thể",
+        "Xem xét xu hướng thay đổi theo thời gian",
+        "Đếm số lượng",
+        "Phân loại màu sắc"
+      ],
+      "answer": 1,
+      "explanation": "Biểu đồ đoạn thẳng hiển thị rất tốt sự biến thiên, tăng giảm theo thời gian."
+    }
+  ],
+  "essays": [
+    {
+      "question": "Phân loại dữ liệu sau đây là định tính hay định lượng: Số học sinh trong lớp, điểm Toán, loại môn thể thao yêu thích.",
+      "hint": "Xem yếu tố nào là con số, yếu tố nào là chữ/loại.",
+      "solution": "Định lượng: Số học sinh, điểm Toán. Định tính: Môn thể thao yêu thích."
+    },
+    {
+      "question": "Trong biểu đồ hình quạt tròn thể hiện sở thích: 40% thích Bóng đá. Góc ở tâm của hình quạt biểu diễn Bóng đá là bao nhiêu độ?",
+      "hint": "Lấy 40% nhân với 360°.",
+      "solution": "Góc ở tâm = 40% * 360° = 144°."
+    },
+    {
+      "question": "Một bảng thống kê sĩ số lớp học ghi: Tổng số 40 học sinh, trong đó Nữ là 45 học sinh. Dữ liệu này có hợp lí không? Vì sao?",
+      "hint": "So sánh phần tử với tổng thể.",
+      "solution": "Không hợp lí. Vì số học sinh Nữ (45) không thể lớn hơn tổng số học sinh của lớp (40)."
+    },
+    {
+      "question": "Cho bảng số liệu nhiệt độ trong 3 ngày: Ngày 1 (25°C), Ngày 2 (28°C), Ngày 3 (22°C). Tính nhiệt độ trung bình.",
+      "hint": "Cộng lại chia 3.",
+      "solution": "Nhiệt độ trung bình = (25 + 28 + 22) / 3 = 75 / 3 = 25°C."
+    },
+    {
+      "question": "Nếu chi phí ăn uống chiếm 50% tổng chi tiêu gia đình là 15 triệu đồng. Hỏi gia đình đó chi bao nhiêu tiền cho ăn uống?",
+      "hint": "Tính 50% của 15 triệu.",
+      "solution": "Số tiền chi cho ăn uống = 50% * 15,000,000 = 7,500,000 đồng."
+    }
+  ]
+}
