@@ -35,8 +35,8 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
         const res = await fetch('/api/sync');
         if (res.ok) {
           const data = await res.json();
-          // Filter data for this chapter - use == to handle both string and number
-          const chapterRecords = data.filter((r: any) => Number(r.chapterId) === Number(chapterId));
+          // Filter data for this chapter - records without chapterId default to chapter 1
+          const chapterRecords = data.filter((r: any) => Number(r.chapterId || 1) === Number(chapterId));
           console.log('[EssayComponent] all data:', data);
           console.log('[EssayComponent] chapterId:', chapterId, typeof chapterId);
           console.log('[EssayComponent] chapterRecords:', chapterRecords);
