@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HelpCircle, CheckCircle2, XCircle } from "lucide-react";
+import { HelpCircle, CheckCircle2, XCircle, Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -21,6 +21,7 @@ interface QuizProps {
 export default function QuizComponent({ quizzes }: QuizProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSelect = (qIndex: number, optIndex: number) => {
     if (showResults) return;
@@ -33,6 +34,27 @@ export default function QuizComponent({ quizzes }: QuizProps) {
       if (selectedAnswers[idx] === q.answer) score += 1;
     });
     return score;
+  };
+
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
+    const score = calculateScore();
+    try {
+      await fetch('/api/sync', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'quiz',
+          score,
+          total: quizzes.length,
+          answers: selectedAnswers
+        })
+      });
+    } catch (e) {
+      console.error('Failed to sync', e);
+    }
+    setIsSubmitting(false);
+    setShowResults(true);
   };
 
   // Common components to replace <p> with <span> for inline rendering
@@ -85,7 +107,7 @@ export default function QuizComponent({ quizzes }: QuizProps) {
                       key={oIdx} 
                       className={optClass}
                       onClick={() => handleSelect(qIdx, oIdx)}
-                      disabled={showResults}
+                      disabled={showResults || isSubmitting}
                     >
                       <span className={styles.optionLetter}>{String.fromCharCode(65 + oIdx)}</span>
                       <span className={styles.optionText}>
@@ -133,10 +155,16 @@ export default function QuizComponent({ quizzes }: QuizProps) {
       {!showResults ? (
         <button 
           className={`btn btn-primary ${styles.submitBtn}`} 
-          onClick={() => setShowResults(true)}
-          disabled={Object.keys(selectedAnswers).length < quizzes.length}
+          onClick={handleSubmit}
+          disabled={Object.keys(selectedAnswers).length < quizzes.length || isSubmitting}
         >
-          Nộp bài chấm điểm
+          {isSubmitting ? (
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
+              <Loader2 size={18} style={{ animation: 'spin 2s linear infinite' }} /> Đang lưu...
+            </span>
+          ) : (
+            "Nộp bài chấm điểm"
+          )}
         </button>
       ) : (
         <div className={styles.scoreBoard}>
