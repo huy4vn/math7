@@ -37,9 +37,6 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
           const data = await res.json();
           // Filter data for this chapter - records without chapterId default to chapter 1
           const chapterRecords = data.filter((r: any) => Number(r.chapterId || 1) === Number(chapterId));
-          console.log('[EssayComponent] all data:', data);
-          console.log('[EssayComponent] chapterId:', chapterId, typeof chapterId);
-          console.log('[EssayComponent] chapterRecords:', chapterRecords);
           
           // Load uploaded images
           const imageUploads = chapterRecords.filter((r: any) => r.type === 'image_upload');
