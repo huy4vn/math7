@@ -59,6 +59,7 @@ export async function POST(request: Request) {
       existingData.push({ id: Date.now().toString(), timestamp: new Date().toISOString(), ...newRecord });
     }
 
+    let blob;
     try {
       blob = await put(FILE_NAME, JSON.stringify(existingData), {
         access: 'private',
