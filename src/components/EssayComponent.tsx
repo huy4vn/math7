@@ -35,8 +35,8 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
         const res = await fetch('/api/sync');
         if (res.ok) {
           const data = await res.json();
-          // Filter data for this chapter
-          const chapterRecords = data.filter((r: any) => r.chapterId === chapterId);
+          // Filter data for this chapter - use == to handle both string and number
+          const chapterRecords = data.filter((r: any) => Number(r.chapterId) === Number(chapterId));
           
           // Load uploaded images
           const imageUploads = chapterRecords.filter((r: any) => r.type === 'image_upload');
