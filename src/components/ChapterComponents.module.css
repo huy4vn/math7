@@ -128,8 +128,6 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   border: 1px solid var(--card-border);
   object-fit: contain;
-  background-color: white;
-  padding: 0.5rem;
 }
 
 .markdownContent table {
