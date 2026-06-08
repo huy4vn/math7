@@ -26,3 +26,10 @@ const chapterDataMap: Record<number, any> = {
 export const getChapterById = (id: number) => {
   return chapterDataMap[id] || null;
 };
+
+import examsData from './exams.json';
+export const exams = examsData;
+
+export const getExamById = (id: string) => {
+  return exams.find(e => e.id === id) || null;
+};

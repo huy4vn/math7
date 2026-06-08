@@ -1,0 +1,172 @@
+.examContainer {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  max-width: 900px;
+}
+
+.examHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.examTitle {
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.examMeta {
+  display: flex;
+  gap: 1rem;
+}
+
+.badge, .badgeTimer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 99px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badgeTimer {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge[data-level="Dễ"] {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.badge[data-level="Trung bình"] {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.badge[data-level="Khó"] {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.resultBoard {
+  text-align: center;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  border: 2px solid rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.1);
+}
+
+.resultBoard h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #10b981;
+}
+
+.scoreSummary {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .scoreSummary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.scoreCard {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.scoreCard h3 {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.scoreValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.scoreCard p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 3rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+}
+
+.mcqSection {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.essaySection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.essayItem {
+  padding: 2rem;
+}
+
+.essayQuestion {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  white-space: pre-wrap;
+}
+
+.essaySolution {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.solutionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f59e0b;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.bottomSubmit {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.essayQuestion img, .essaySolution img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+  background-color: white;
+  padding: 0.5rem;
+}

@@ -25,7 +25,32 @@ export default function AdminDashboard() {
   const [error, setError] = useState("");
   const [data, setData] = useState<ResultRecord[]>([]);
   const [deletingUrls, setDeletingUrls] = useState<Record<string, boolean>>({});
+  const [deletingRecordIds, setDeletingRecordIds] = useState<Record<string, boolean>>({});
   const [expandedQuiz, setExpandedQuiz] = useState<string | null>(null);
+
+  const handleDeleteRecord = async (recordId: string) => {
+    if (!window.confirm("Bạn có chắc chắn muốn xóa toàn bộ kết quả này không?")) return;
+    
+    setDeletingRecordIds(prev => ({ ...prev, [recordId]: true }));
+    try {
+      const res = await fetch("/api/admin/delete-record", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ recordId }),
+      });
+      
+      if (res.ok) {
+        setData(prevData => prevData.filter(r => r.id !== recordId));
+      } else {
+        alert("Xóa kết quả thất bại. Vui lòng thử lại.");
+      }
+    } catch (e) {
+      console.error(e);
+      alert("Đã xảy ra lỗi khi xóa kết quả.");
+    } finally {
+      setDeletingRecordIds(prev => ({ ...prev, [recordId]: false }));
+    }
+  };
 
   const handleDeleteImage = async (recordId: string, url: string) => {
     if (!window.confirm("Bạn có chắc chắn muốn xóa ảnh này vĩnh viễn không?")) return;
@@ -159,8 +184,17 @@ export default function AdminDashboard() {
               <div className={styles.time}>{formatDate(record.timestamp)}</div>
               <div>
                 {record.type === "quiz" ? (
-                  <div>
-                    <div className={styles.score} style={{ marginBottom: '0.5rem' }}>
+                  <div style={{ position: 'relative' }}>
+                    <button
+                      onClick={() => handleDeleteRecord(record.id)}
+                      disabled={deletingRecordIds[record.id]}
+                      style={{ position: 'absolute', top: 0, right: 0, background: '#ef4444', border: 'none', borderRadius: '4px', color: 'white', padding: '0.2rem 0.5rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.75rem' }}
+                      title="Xóa toàn bộ kết quả này"
+                    >
+                      {deletingRecordIds[record.id] ? <Loader2 size={12} style={{ animation: 'spin 2s linear infinite' }} /> : <Trash2 size={12} />}
+                      Xóa
+                    </button>
+                    <div className={styles.score} style={{ marginBottom: '0.5rem', paddingRight: '3rem' }}>
                       {record.score} / {record.total}
                     </div>
                     {record.answers && record.correctAnswers && (
@@ -201,8 +235,19 @@ export default function AdminDashboard() {
                     )}
                   </div>
                 ) : record.type === "essay" ? (
-                  <div className={styles.details}>
-                    <strong>Câu {Number(record.essayIndex) + 1}:</strong> {record.studentAnswer}
+                  <div className={styles.details} style={{ position: 'relative' }}>
+                    <button
+                      onClick={() => handleDeleteRecord(record.id)}
+                      disabled={deletingRecordIds[record.id]}
+                      style={{ position: 'absolute', top: '-5px', right: 0, background: '#ef4444', border: 'none', borderRadius: '4px', color: 'white', padding: '0.2rem 0.5rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.75rem' }}
+                      title="Xóa toàn bộ kết quả này"
+                    >
+                      {deletingRecordIds[record.id] ? <Loader2 size={12} style={{ animation: 'spin 2s linear infinite' }} /> : <Trash2 size={12} />}
+                      Xóa
+                    </button>
+                    <div style={{ paddingRight: '3rem' }}>
+                      <strong>Câu {Number(record.essayIndex) + 1}:</strong> {record.studentAnswer}
+                    </div>
                     {record.imageUrls && record.imageUrls.length > 0 && (
                       <div style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                         {record.imageUrls.map((url, i) => (
@@ -224,8 +269,19 @@ export default function AdminDashboard() {
                     )}
                   </div>
                 ) : (
-                  <div className={styles.details}>
-                    <strong>Đã tải lên {record.imageUrls?.length || 0} ảnh:</strong>
+                  <div className={styles.details} style={{ position: 'relative' }}>
+                    <button
+                      onClick={() => handleDeleteRecord(record.id)}
+                      disabled={deletingRecordIds[record.id]}
+                      style={{ position: 'absolute', top: '-5px', right: 0, background: '#ef4444', border: 'none', borderRadius: '4px', color: 'white', padding: '0.2rem 0.5rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.75rem' }}
+                      title="Xóa toàn bộ kết quả này"
+                    >
+                      {deletingRecordIds[record.id] ? <Loader2 size={12} style={{ animation: 'spin 2s linear infinite' }} /> : <Trash2 size={12} />}
+                      Xóa
+                    </button>
+                    <div style={{ paddingRight: '3rem' }}>
+                      <strong>Đã tải lên {record.imageUrls?.length || 0} ảnh:</strong>
+                    </div>
                     <div style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                       {record.imageUrls?.map((url, i) => (
                         <div key={i} style={{ position: 'relative', display: 'inline-block' }}>

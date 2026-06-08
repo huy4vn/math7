@@ -47,7 +47,14 @@ export default function Home() {
         <p className={styles.subtitle}>
           Ôn tập toàn diện lý thuyết, làm bài tập trắc nghiệm và thử sức với các bài tự luận chuẩn sách giáo khoa Chân Trời Sáng Tạo.
         </p>
+        <Link href="/exam" className={styles.examButton}>
+          Làm Đề Thi Tổng Hợp
+        </Link>
       </motion.div>
+
+      <div className={styles.sectionTitle}>
+        <h2>Các chương học</h2>
+      </div>
 
       <motion.div 
         className={styles.grid}
