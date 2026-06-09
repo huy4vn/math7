@@ -12,10 +12,8 @@
   border-bottom: 1px solid var(--card-border);
   position: sticky;
   top: 0;
-  z-index: 10;
-  background: var(--card-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  z-index: 20;
+  background: var(--background);
   margin-top: -1.5rem;
   padding-top: 1.5rem;
   margin-left: -1.5rem;
@@ -23,6 +21,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .iconWrapper {
