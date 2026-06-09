@@ -32,7 +32,7 @@ export default function EssayComponent({ essays, chapterId }: EssayProps) {
     if (!chapterId) return;
     const loadData = async () => {
       try {
-        const res = await fetch('/api/sync');
+        const res = await fetch('/api/sync?t=' + Date.now(), { cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           // Filter data for this chapter - records without chapterId default to chapter 1

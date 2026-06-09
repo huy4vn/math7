@@ -3,6 +3,8 @@ import { NextResponse } from 'next/server';
 
 const FILE_NAME = 'math-learning-results.json';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   const token = process.env.BLOB_READ_WRITE_TOKEN;
   if (!token) return NextResponse.json({ error: 'No token found' }, { status: 501 });
