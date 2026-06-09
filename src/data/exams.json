@@ -493,5 +493,1020 @@
         "hint": "Câu a: Chứng minh $\\triangle ABH = \\triangle CAI$. Câu b: Kết hợp kết quả câu a, chứng minh $\\triangle AHM = \\triangle CIM$ theo C-G-C. Câu c: Từ câu b ta có 2 cạnh bằng nhau, con tìm cách chứng minh góc giữa chúng bằng $90^\\circ$."
       }
     ]
+  },
+  {
+    "id": "exam_4",
+    "title": "Đề Tổng Hợp Số 4",
+    "difficulty": "Dễ",
+    "duration": 90,
+    "description": "Đề thi với các bài toán vận dụng cơ bản, tập trung vào kỹ năng tính toán phân số và nhận biết góc.",
+    "quizzes": [
+      {
+        "question": "Tính $\\frac{-1}{2} + \\frac{3}{4}$ bằng:",
+        "options": [
+          "$\\frac{1}{4}$",
+          "$\\frac{1}{2}$",
+          "$\\frac{5}{4}$",
+          "$-\\frac{1}{4}$"
+        ],
+        "answer": 0,
+        "explanation": "Quy đồng mẫu: $\\frac{-2}{4} + \\frac{3}{4} = \\frac{1}{4}$."
+      },
+      {
+        "question": "Lũy thừa $(-2)^3$ có giá trị bằng:",
+        "options": [
+          "8",
+          "-8",
+          "6",
+          "-6"
+        ],
+        "answer": 1,
+        "explanation": "Lũy thừa bậc lẻ của số âm là số âm: $(-2) \\cdot (-2) \\cdot (-2) = -8$."
+      },
+      {
+        "question": "Giá trị của $|-3.14|$ là:",
+        "options": [
+          "3.14",
+          "-3.14",
+          "0",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "Giá trị tuyệt đối luôn không âm, $|-3.14| = 3.14$."
+      },
+      {
+        "question": "Hai góc kề bù có tổng bằng:",
+        "options": [
+          "$90^\\circ$",
+          "$180^\\circ$",
+          "$270^\\circ$",
+          "$360^\\circ$"
+        ],
+        "answer": 1,
+        "explanation": "Hai góc kề bù luôn có tổng số đo là $180^\\circ$."
+      },
+      {
+        "question": "Nếu đại lượng $y$ tỉ lệ thuận với $x$ theo hệ số tỉ lệ $k=5$, thì công thức là:",
+        "options": [
+          "$y = \\frac{5}{x}$",
+          "$x = 5y$",
+          "$y = 5x$",
+          "$y = x + 5$"
+        ],
+        "answer": 2,
+        "explanation": "Đại lượng tỉ lệ thuận có công thức $y = kx$, nên $y = 5x$."
+      },
+      {
+        "question": "Trong biểu đồ hình quạt tròn, toàn bộ hình tròn tương ứng với bao nhiêu phần trăm?",
+        "options": [
+          "$50\\%$",
+          "$100\\%$",
+          "$360\\%$",
+          "$10\\%$"
+        ],
+        "answer": 1,
+        "explanation": "Toàn bộ hình tròn biểu diễn cho một tổng thể trọn vẹn, tức là $100\\%$."
+      },
+      {
+        "question": "Biểu thức nào sau đây KHÔNG phải là đa thức một biến?",
+        "options": [
+          "$3x^2 + 5$",
+          "$x - 1$",
+          "$2xy + 3$",
+          "$-5x$"
+        ],
+        "answer": 2,
+        "explanation": "Biểu thức $2xy + 3$ có tới 2 biến là $x$ và $y$."
+      },
+      {
+        "question": "Bậc của đa thức $A(x) = 4x^3 - 2x + 7$ là:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Bậc lớn nhất của biến $x$ trong đa thức là 3."
+      },
+      {
+        "question": "Gieo một con xúc xắc 6 mặt, xác suất ra mặt 7 chấm là:",
+        "options": [
+          "1",
+          "0",
+          "0.5",
+          "$\\frac{1}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "Đây là biến cố không thể xảy ra nên xác suất bằng 0."
+      },
+      {
+        "question": "Trong tam giác $ABC$, tổng $\\widehat{A} + \\widehat{B} + \\widehat{C}$ bằng:",
+        "options": [
+          "$90^\\circ$",
+          "$180^\\circ$",
+          "$270^\\circ$",
+          "$360^\\circ$"
+        ],
+        "answer": 1,
+        "explanation": "Định lý cơ bản: Tổng 3 góc trong một tam giác bằng $180^\\circ$."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Thực hiện phép tính (tính hợp lý nếu có thể):\na) $\\frac{4}{9} \\cdot \\frac{3}{8} + \\frac{5}{9} \\cdot \\frac{3}{8}$\nb) $(-0.5)^2 + | -1.75 |$",
+        "hint": "Câu a: Con thấy cả hai phần đều có chung phân số $\\frac{3}{8}$ không? Hãy đặt nó ra ngoài làm nhân tử chung nhé. Câu b: Nhớ là bình phương lên luôn ra số dương, và giá trị tuyệt đối cũng vậy.",
+        "solution": "a) Đặt nhân tử chung $\\frac{3}{8}$:\n$= \\frac{3}{8} \\cdot \\left(\\frac{4}{9} + \\frac{5}{9}\\right) = \\frac{3}{8} \\cdot \\frac{9}{9} = \\frac{3}{8} \\cdot 1 = \\frac{3}{8}$.\nb) $(-0.5)^2 + | -1.75 | = 0.25 + 1.75 = 2.0$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.0 điểm): Tìm $x$ biết:\na) $x - \\frac{2}{3} = \\frac{1}{6}$\nb) $\\frac{x}{5} = \\frac{8}{10}$",
+        "hint": "Câu a: Chuyển $-\\frac{2}{3}$ qua vế phải thành phép cộng rồi quy đồng mẫu nhé. Câu b: Con hãy nhân chéo lên, $x \\cdot 10 = 5 \\cdot 8$.",
+        "solution": "a) $x = \\frac{1}{6} + \\frac{2}{3} = \\frac{1}{6} + \\frac{4}{6} = \\frac{5}{6}$.\nb) $10x = 40 \\Rightarrow x = 4$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 3 (3.0 điểm): Cho hai đường thẳng $xy$ và $zt$ cắt nhau tại $O$. Biết góc $\\widehat{xOz} = 60^\\circ$.\na) Hãy kể tên các cặp góc đối đỉnh (không kể góc bẹt).\nb) Tính số đo góc $\\widehat{zOy}$.\nc) Tính số đo góc $\\widehat{yOt}$.",
+        "hint": "Câu a: Góc đối đỉnh là hai góc nằm đối diện nhau qua điểm cắt $O$. Câu b: $\\widehat{xOz}$ và $\\widehat{zOy}$ là hai góc kề bù, tổng của chúng là bao nhiêu độ? Câu c: $\\widehat{yOt}$ đối đỉnh với góc nào đã biết?",
+        "solution": "a) Các cặp góc đối đỉnh: $\\widehat{xOz}$ và $\\widehat{yOt}$; $\\widehat{xOt}$ và $\\widehat{zOy}$.\nb) Vì $\\widehat{xOz}$ và $\\widehat{zOy}$ là hai góc kề bù nên $\\widehat{xOz} + \\widehat{zOy} = 180^\\circ$.\n$\\Rightarrow 60^\\circ + \\widehat{zOy} = 180^\\circ \\Rightarrow \\widehat{zOy} = 120^\\circ$.\nc) Vì $\\widehat{yOt}$ đối đỉnh với $\\widehat{xOz}$ nên $\\widehat{yOt} = \\widehat{xOz} = 60^\\circ$.",
+        "maxScore": 3
+      },
+      {
+        "question": "Câu 4 (3.0 điểm): Cho đa thức $P(x) = 3x^2 - 5x + 2$.\na) Tính giá trị của $P(x)$ tại $x = 1$.\nb) Hỏi $x = 1$ có phải là nghiệm của đa thức $P(x)$ không? Vì sao?",
+        "hint": "Câu a: Chỗ nào có $x$, con thay số $1$ vào rồi tính nhẩm nhé. Câu b: Muốn biết có phải nghiệm không, con xem kết quả ở câu a có bằng $0$ hay không.",
+        "solution": "a) Thay $x = 1$ vào $P(x)$, ta được: $P(1) = 3(1)^2 - 5(1) + 2 = 3 - 5 + 2 = 0$.\nb) Vì $P(1) = 0$ nên $x = 1$ là một nghiệm của đa thức $P(x)$.",
+        "maxScore": 3
+      }
+    ]
+  },
+  {
+    "id": "exam_5",
+    "title": "Đề Tổng Hợp Số 5",
+    "difficulty": "Dễ",
+    "duration": 90,
+    "description": "Đề thi với các bài toán áp dụng tính chất dãy tỉ số bằng nhau cơ bản và hệ thức tam giác đơn giản.",
+    "quizzes": [
+      {
+        "question": "Biết $\\frac{x}{2} = \\frac{y}{3}$ và $x+y=10$. Giá trị của $x, y$ là:",
+        "options": [
+          "$x=4, y=6$",
+          "$x=6, y=4$",
+          "$x=2, y=8$",
+          "$x=5, y=5$"
+        ],
+        "answer": 0,
+        "explanation": "$\\frac{x+y}{2+3} = \\frac{10}{5} = 2$. Suy ra $x=4, y=6$."
+      },
+      {
+        "question": "Căn bậc hai số học của 81 là:",
+        "options": [
+          "-9",
+          "9",
+          "9 và -9",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "Căn bậc hai số học luôn lấy số dương, nên bằng 9."
+      },
+      {
+        "question": "Làm tròn số $4.567$ đến hàng phần mười (chữ số thập phân thứ nhất) ta được:",
+        "options": [
+          "4.5",
+          "4.6",
+          "4.56",
+          "4.57"
+        ],
+        "answer": 1,
+        "explanation": "Chữ số thập phân thứ 2 là 6 ($>5$) nên làm tròn lên thành $4.6$."
+      },
+      {
+        "question": "Trong các số: $\\sqrt{2}, 3.5, \\frac{-1}{4}, 0$, số nào là số vô tỉ?",
+        "options": [
+          "$3.5$",
+          "$\\frac{-1}{4}$",
+          "$\\sqrt{2}$",
+          "$0$"
+        ],
+        "answer": 2,
+        "explanation": "$\\sqrt{2}$ là số thập phân vô hạn không tuần hoàn, tức là số vô tỉ."
+      },
+      {
+        "question": "Một hình lăng trụ đứng tam giác có hai đáy là hình gì?",
+        "options": [
+          "Hình chữ nhật",
+          "Hình vuông",
+          "Tam giác",
+          "Hình bình hành"
+        ],
+        "answer": 2,
+        "explanation": "Tên gọi 'lăng trụ đứng tam giác' cho biết mặt đáy của nó là tam giác."
+      },
+      {
+        "question": "Một hộp có 10 tấm thẻ đánh số từ 1 đến 10. Xác suất rút được thẻ ghi số lẻ là:",
+        "options": [
+          "$0.1$",
+          "$0.2$",
+          "$0.5$",
+          "$1$"
+        ],
+        "answer": 2,
+        "explanation": "Có 5 số lẻ (1,3,5,7,9). Xác suất là $\\frac{5}{10} = 0.5$."
+      },
+      {
+        "question": "Tia phân giác của một góc chia góc đó thành:",
+        "options": [
+          "Hai góc bằng nhau",
+          "Ba góc bằng nhau",
+          "Hai góc kề bù",
+          "Hai góc đối đỉnh"
+        ],
+        "answer": 0,
+        "explanation": "Tính chất của tia phân giác là chia góc thành 2 phần bằng nhau."
+      },
+      {
+        "question": "Đa thức $B(x) = x - 5$ có nghiệm là:",
+        "options": [
+          "-5",
+          "5",
+          "0",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "Giải $x - 5 = 0 \\Rightarrow x = 5$."
+      },
+      {
+        "question": "Tổng 3 góc trong tam giác vuông bằng:",
+        "options": [
+          "$90^\\circ$",
+          "$180^\\circ$",
+          "$270^\\circ$",
+          "$360^\\circ$"
+        ],
+        "answer": 1,
+        "explanation": "Trong mọi tam giác, tổng 3 góc luôn bằng $180^\\circ$."
+      },
+      {
+        "question": "Trong tam giác đều, mỗi góc bằng bao nhiêu độ?",
+        "options": [
+          "$30^\\circ$",
+          "$45^\\circ$",
+          "$60^\\circ$",
+          "$90^\\circ$"
+        ],
+        "answer": 2,
+        "explanation": "Tam giác đều có 3 góc bằng nhau, $180^\\circ : 3 = 60^\\circ$."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Tìm hai số $a, b$ biết: $\\frac{a}{5} = \\frac{b}{7}$ và $b - a = 10$.",
+        "hint": "Con dùng dãy tỉ số bằng nhau nhé. Đề cho hiệu $b - a$ thì con lấy tử $b$ trừ đi tử $a$, và mẫu $7$ trừ đi mẫu $5$.",
+        "solution": "Áp dụng tính chất dãy tỉ số bằng nhau:\n$\\frac{b}{7} = \\frac{a}{5} = \\frac{b - a}{7 - 5} = \\frac{10}{2} = 5$.\n$\\Rightarrow b = 5 \\cdot 7 = 35$.\n$\\Rightarrow a = 5 \\cdot 5 = 25$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.0 điểm): Thu gọn và tìm bậc của đa thức: $M(x) = 3x^3 - 2x + 4x^2 - 3x^3 + 5x - 1$.",
+        "hint": "Con gom các hạng tử giống nhau lại (như $3x^3$ và $-3x^3$), rồi cộng trừ chúng lại với nhau. Số mũ lớn nhất còn lại chính là bậc của đa thức.",
+        "solution": "$M(x) = (3x^3 - 3x^3) + 4x^2 + (-2x + 5x) - 1$\n$M(x) = 4x^2 + 3x - 1$.\nBậc của đa thức $M(x)$ sau khi thu gọn là bậc 2 (do số mũ cao nhất của biến $x$ là 2).",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 3 (3.0 điểm): Lớp 7A có 40 học sinh. Cô giáo chọn ngẫu nhiên một bạn làm lớp trưởng. Biết lớp có 25 bạn nữ và 15 bạn nam.\na) Biến cố \"Chọn được một bạn nam làm lớp trưởng\" có phải biến cố ngẫu nhiên không?\nb) Tính xác suất chọn được một bạn nam.\nc) Tính xác suất chọn được một bạn học sinh lớp 7 (bất kỳ giới tính).",
+        "hint": "Câu a: Việc chọn nam hay nữ đều có khả năng xảy ra chứ không chắc chắn, vậy nó là loại biến cố gì? Câu b: Con lấy số bạn nam chia cho tổng số học sinh lớp 7A nhé. Câu c: Vì gọi 1 bạn trong lớp 7A thì chắc chắn đó là học sinh lớp 7, nên xác suất là bao nhiêu?",
+        "solution": "a) Đây là biến cố ngẫu nhiên, vì ta có thể chọn được bạn nam, nhưng cũng có thể chọn được bạn nữ.\nb) Tổng số kết quả có thể xảy ra: $40$. Số kết quả thuận lợi (bạn nam): $15$. Xác suất: $P = \\frac{15}{40} = \\frac{3}{8}$.\nc) Gọi 1 bạn bất kỳ trong lớp 7A thì bạn đó luôn là học sinh lớp 7. Đây là biến cố chắc chắn, nên xác suất bằng $1$.",
+        "maxScore": 3
+      },
+      {
+        "question": "Câu 4 (3.0 điểm): Cho tam giác $ABC$ có cạnh $AB = AC$. Gọi $I$ là trung điểm của $BC$.\na) Chứng minh $\\triangle ABI = \\triangle ACI$.\nb) Chứng minh $AI$ là tia phân giác của góc $\\widehat{BAC}$.",
+        "hint": "Câu a: Con để ý xem hai tam giác này có những cạnh nào bằng nhau rồi? Cạnh $AB=AC$ (giả thiết), điểm $I$ ở giữa nên $IB=IC$, và cạnh $AI$ ở giữa. Câu b: Từ hai tam giác bằng nhau ở câu a, con suy ra được hai góc tương ứng ở đỉnh $A$ như thế nào?",
+        "solution": "a) Xét $\\triangle ABI$ và $\\triangle ACI$ có:\n- $AB = AC$ (giả thiết)\n- $AI$ là cạnh chung\n- $IB = IC$ (vì $I$ là trung điểm $BC$)\nVậy $\\triangle ABI = \\triangle ACI$ (cạnh - cạnh - cạnh).\n\nb) Vì $\\triangle ABI = \\triangle ACI$ nên các góc tương ứng bằng nhau.\n$\\Rightarrow \\widehat{BAI} = \\widehat{CAI}$.\nĐiều này có nghĩa là tia $AI$ chia đôi góc $\\widehat{BAC}$, nên $AI$ là tia phân giác của góc $\\widehat{BAC}$.",
+        "maxScore": 3
+      }
+    ]
+  },
+  {
+    "id": "exam_6",
+    "title": "Đề Tổng Hợp Số 6",
+    "difficulty": "Trung bình",
+    "duration": 90,
+    "description": "Đề thi đòi hỏi tư duy phân tích nhạy bén hơn, kết hợp đại lượng tỉ lệ và phép tính đa thức theo cột dọc.",
+    "quizzes": [
+      {
+        "question": "Kết quả của $\\frac{2}{3} : \\frac{4}{9}$ là:",
+        "options": [
+          "$\\frac{8}{27}$",
+          "$\\frac{27}{8}$",
+          "$\\frac{3}{2}$",
+          "$\\frac{2}{3}$"
+        ],
+        "answer": 2,
+        "explanation": "Nhân nghịch đảo: $\\frac{2}{3} \\cdot \\frac{9}{4} = \\frac{18}{12} = \\frac{3}{2}$."
+      },
+      {
+        "question": "Nếu đại lượng $y$ tỉ lệ nghịch với đại lượng $x$ theo hệ số $a=15$, thì khi $x=3$, $y$ bằng:",
+        "options": [
+          "5",
+          "45",
+          "12",
+          "18"
+        ],
+        "answer": 0,
+        "explanation": "Tỉ lệ nghịch: $x \\cdot y = 15 \\Rightarrow 3y = 15 \\Rightarrow y = 5$."
+      },
+      {
+        "question": "Khẳng định nào đúng khi hai đường thẳng cắt nhau?",
+        "options": [
+          "Tạo thành 4 góc bằng nhau",
+          "Tạo thành 2 cặp góc đối đỉnh",
+          "Tạo thành 4 góc kề bù",
+          "Luôn vuông góc với nhau"
+        ],
+        "answer": 1,
+        "explanation": "Khi cắt nhau, chúng tạo ra hai góc đối đỉnh nhau và bằng nhau từng đôi một."
+      },
+      {
+        "question": "Cho $\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{5}$ và $a+b+c = 20$. Giá trị của $b$ là:",
+        "options": [
+          "4",
+          "6",
+          "10",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "$\\frac{20}{10} = 2$. Do đó $b = 3 \\cdot 2 = 6$."
+      },
+      {
+        "question": "Trong đa thức $P(x) = -5x^3 + 2x^2 - x + 8$, hệ số của $x$ là:",
+        "options": [
+          "-5",
+          "2",
+          "-1",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "Số hạng chứa $x$ bậc 1 là $-x$, nên hệ số là $-1$."
+      },
+      {
+        "question": "Hình nào dưới đây có các mặt bên là hình chữ nhật?",
+        "options": [
+          "Lăng trụ đứng tứ giác",
+          "Hình chóp tam giác",
+          "Hình tròn",
+          "Hình chóp tứ giác"
+        ],
+        "answer": 0,
+        "explanation": "Lăng trụ đứng luôn có các mặt bên là các hình chữ nhật."
+      },
+      {
+        "question": "Tích của đa thức $(x+2)(x-3)$ là:",
+        "options": [
+          "$x^2 - 6$",
+          "$x^2 - x - 6$",
+          "$x^2 + 5x - 6$",
+          "$x^2 - 5x + 6$"
+        ],
+        "answer": 1,
+        "explanation": "$(x+2)(x-3) = x^2 - 3x + 2x - 6 = x^2 - x - 6$."
+      },
+      {
+        "question": "Tam giác vuông có một góc nhọn bằng $40^\\circ$ thì góc nhọn còn lại bằng:",
+        "options": [
+          "$50^\\circ$",
+          "$40^\\circ$",
+          "$90^\\circ$",
+          "$140^\\circ$"
+        ],
+        "answer": 0,
+        "explanation": "Hai góc nhọn của tam giác vuông phụ nhau: $90^\\circ - 40^\\circ = 50^\\circ$."
+      },
+      {
+        "question": "Biến cố 'Gieo được mặt xúc xắc có số chấm âm' là biến cố:",
+        "options": [
+          "Chắc chắn",
+          "Ngẫu nhiên",
+          "Không thể",
+          "Thường xuyên"
+        ],
+        "answer": 2,
+        "explanation": "Xúc xắc chỉ có từ 1 đến 6 chấm (số dương), nên không thể có số chấm âm."
+      },
+      {
+        "question": "Cạnh dài nhất trong tam giác vuông là cạnh nào?",
+        "options": [
+          "Cạnh góc vuông thứ nhất",
+          "Cạnh góc vuông thứ hai",
+          "Cạnh huyền",
+          "Cả 3 cạnh bằng nhau"
+        ],
+        "answer": 2,
+        "explanation": "Cạnh huyền luôn là cạnh dài nhất vì nó đối diện với góc lớn nhất (góc $90^\\circ$)."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Một người thợ mộc làm 1 chiếc ghế mất 2.5 giờ. Nếu có 3 người thợ mộc (cùng năng suất) cùng làm 1 chiếc ghế y hệt thì sẽ mất bao lâu?",
+        "hint": "Số người thợ và thời gian hoàn thành một công việc là hai đại lượng tỉ lệ nghịch (càng đông người làm thì càng nhanh xong). Con áp dụng công thức: Số người ban đầu $\\times$ thời gian ban đầu = Số người lúc sau $\\times$ thời gian lúc sau.",
+        "solution": "Số thợ và thời gian làm xong 1 chiếc ghế là 2 đại lượng tỉ lệ nghịch.\nGọi $x$ (giờ) là thời gian để 3 người thợ làm xong chiếc ghế.\nTa có: $1 \\cdot 2.5 = 3 \\cdot x$\n$\\Rightarrow 3x = 2.5 \\Rightarrow x = \\frac{2.5}{3} = \\frac{5}{6}$ (giờ).\nĐổi $\\frac{5}{6}$ giờ ra phút: $\\frac{5}{6} \\times 60 = 50$ phút.\nVậy 3 người làm sẽ mất 50 phút.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.5 điểm): Cho hai đa thức: $A(x) = 2x^2 - 3x + 5$ và $B(x) = x^2 + 3x - 2$.\na) Tính tổng $A(x) + B(x)$.\nb) Tính hiệu $A(x) - B(x)$.",
+        "hint": "Con có thể xếp hai đa thức theo cột dọc cho dễ nhìn nhé, đặt các lũy thừa giống nhau ($x^2$ dưới $x^2$) rồi cộng trừ xuống. Ở phép trừ, nhớ đổi dấu các số hạng của đa thức $B(x)$.",
+        "solution": "a) $A(x) + B(x) = (2x^2 + x^2) + (-3x + 3x) + (5 - 2) = 3x^2 + 3$.\nb) $A(x) - B(x) = (2x^2 - x^2) + (-3x - 3x) + (5 - (-2)) = x^2 - 6x + 7$.",
+        "maxScore": 2.5
+      },
+      {
+        "question": "Câu 3 (2.5 điểm): Cho $\\triangle ABC$ cân tại $A$. Vẽ đường phân giác $AH$ ($H \\in BC$).\na) Chứng minh $\\triangle ABH = \\triangle ACH$.\nb) Chứng minh $AH \\perp BC$.",
+        "hint": "Câu a: Tam giác cân tại $A$ thì $AB=AC$. Phân giác góc $A$ thì $\\widehat{BAH} = \\widehat{CAH}$. Cạnh $AH$ ở giữa. Con dùng trường hợp Cạnh-Góc-Cạnh (c-g-c) nhé. Câu b: Từ tam giác bằng nhau, con suy ra hai góc ở đáy $\\widehat{AHB}$ và $\\widehat{AHC}$ như thế nào với nhau? Mà tổng của chúng là bao nhiêu?",
+        "solution": "a) Xét $\\triangle ABH$ và $\\triangle ACH$ có:\n- $AB = AC$ (do $\\triangle ABC$ cân tại $A$)\n- $\\widehat{BAH} = \\widehat{CAH}$ (do $AH$ là tia phân giác góc $A$)\n- Cạnh $AH$ chung\n$\\Rightarrow \\triangle ABH = \\triangle ACH$ (c-g-c).\n\nb) Từ chứng minh trên $\\Rightarrow \\widehat{AHB} = \\widehat{AHC}$ (hai góc tương ứng).\nMà hai góc này nằm ở vị trí kề bù nên $\\widehat{AHB} + \\widehat{AHC} = 180^\\circ$.\n$\\Rightarrow 2\\widehat{AHB} = 180^\\circ \\Rightarrow \\widehat{AHB} = 90^\\circ$.\nVậy $AH \\perp BC$.",
+        "maxScore": 2.5
+      },
+      {
+        "question": "Câu 4 (2.0 điểm): Có 5 tấm thẻ đánh số: 2, 3, 5, 8, 9. Rút ngẫu nhiên một thẻ.\na) Liệt kê các kết quả có thể xảy ra.\nb) Tính xác suất để thẻ rút được là một số nguyên tố.",
+        "hint": "Câu a: Liệt kê tức là con kể ra hết những con số có trên 5 tấm thẻ đó. Câu b: Con xem trong 5 số đó, số nào là số nguyên tố (số chỉ chia hết cho 1 và chính nó)?",
+        "solution": "a) Các kết quả có thể xảy ra: {2, 3, 5, 8, 9}. (Có tổng cộng 5 kết quả).\n\nb) Các số nguyên tố trong tập hợp trên là: 2, 3, 5 (Gồm 3 kết quả thuận lợi).\nXác suất để rút được số nguyên tố là: $P = \\frac{3}{5} = 0.6$ (hoặc $60\\%$).",
+        "maxScore": 2
+      }
+    ]
+  },
+  {
+    "id": "exam_7",
+    "title": "Đề Tổng Hợp Số 7",
+    "difficulty": "Trung bình",
+    "duration": 90,
+    "description": "Đề thi nhấn mạnh vào chứng minh đường thẳng song song và kỹ năng chia đa thức một biến đã sắp xếp.",
+    "quizzes": [
+      {
+        "question": "Số đối của $-(-5)$ là:",
+        "options": [
+          "5",
+          "-5",
+          "0",
+          "Không có"
+        ],
+        "answer": 1,
+        "explanation": "Ta có $-(-5) = 5$. Số đối của 5 là $-5$."
+      },
+      {
+        "question": "Trong phép chia đa thức cho đơn thức: $(4x^3 - 2x^2) : 2x^2$, kết quả là:",
+        "options": [
+          "$2x - 1$",
+          "$2x^2 - x$",
+          "$2x - 2$",
+          "$4x - 1$"
+        ],
+        "answer": 0,
+        "explanation": "$4x^3 : 2x^2 - 2x^2 : 2x^2 = 2x - 1$."
+      },
+      {
+        "question": "Nếu đường thẳng $c$ cắt hai đường thẳng song song $a$ và $b$, thì hai góc so le trong tạo thành sẽ:",
+        "options": [
+          "Bù nhau",
+          "Phụ nhau",
+          "Bằng nhau",
+          "Kề nhau"
+        ],
+        "answer": 2,
+        "explanation": "Tính chất đặc trưng của đường thẳng song song là các góc so le trong bằng nhau."
+      },
+      {
+        "question": "Khi gieo hai đồng xu, có tất cả bao nhiêu kết quả có thể xảy ra?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "Các kết quả là (S,S), (S,N), (N,S), (N,N). Tổng là 4."
+      },
+      {
+        "question": "Hai đường thẳng $a$ và $b$ cùng vuông góc với đường thẳng $c$. Vậy $a$ và $b$ sẽ:",
+        "options": [
+          "Vuông góc với nhau",
+          "Song song với nhau",
+          "Cắt nhau",
+          "Trùng nhau"
+        ],
+        "answer": 1,
+        "explanation": "Tính chất từ vuông góc đến song song."
+      },
+      {
+        "question": "Diện tích xung quanh của một hình hộp chữ nhật có chu vi đáy $C=20$cm, chiều cao $h=10$cm là:",
+        "options": [
+          "200 $cm^2$",
+          "30 $cm^2$",
+          "100 $cm^2$",
+          "400 $cm^2$"
+        ],
+        "answer": 0,
+        "explanation": "$S_{xq} = C \\cdot h = 20 \\cdot 10 = 200$."
+      },
+      {
+        "question": "Tâm đường tròn ngoại tiếp tam giác là giao điểm của:",
+        "options": [
+          "3 đường phân giác",
+          "3 đường cao",
+          "3 đường trung tuyến",
+          "3 đường trung trực"
+        ],
+        "answer": 3,
+        "explanation": "Giao điểm 3 đường trung trực cách đều 3 đỉnh, chính là tâm đường tròn ngoại tiếp."
+      },
+      {
+        "question": "Đa thức $Q(x) = x^2 - 4$ có bao nhiêu nghiệm thực?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Vô số"
+        ],
+        "answer": 2,
+        "explanation": "$x^2 - 4 = 0 \\Rightarrow x^2 = 4 \\Rightarrow x = 2$ hoặc $x = -2$."
+      },
+      {
+        "question": "Cho $x, y$ tỉ lệ thuận, $y = kx$. Khi $x=3$ thì $y=-12$. Hệ số tỉ lệ $k$ là:",
+        "options": [
+          "4",
+          "-4",
+          "-36",
+          "36"
+        ],
+        "answer": 1,
+        "explanation": "$k = \\frac{y}{x} = \\frac{-12}{3} = -4$."
+      },
+      {
+        "question": "Khoảng cách từ trọng tâm đến mỗi đỉnh của tam giác bằng bao nhiêu phần độ dài đường trung tuyến đi qua đỉnh đó?",
+        "options": [
+          "$\\frac{1}{2}$",
+          "$\\frac{1}{3}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{3}{4}$"
+        ],
+        "answer": 2,
+        "explanation": "Tính chất cơ bản của trọng tâm."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Thực hiện phép chia đa thức: $(x^2 - 5x + 6) : (x - 2)$",
+        "hint": "Con có thể đặt tính chia dọc như chia số tự nhiên. Hoặc nhanh hơn, con tách $-5x = -2x - 3x$, từ đó phân tích tử số thành nhân tử $(x-2)(x-3)$ rồi triệt tiêu cho $(x-2)$.",
+        "solution": "Cách nhanh: Phân tích tử số thành nhân tử.\n$x^2 - 5x + 6 = x^2 - 2x - 3x + 6 = x(x-2) - 3(x-2) = (x-2)(x-3)$.\nTa có phép chia: $\\frac{(x-2)(x-3)}{x-2} = x - 3$.\nVậy thương là đa thức $x - 3$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.0 điểm): Một người mua 3 quyển vở và 5 cây bút. Biết giá tiền mỗi quyển vở và mỗi cây bút tỉ lệ với $4$ và $2$. Tổng số tiền người đó phải trả là $88.000$ đồng. Hỏi giá tiền của 1 quyển vở và 1 cây bút là bao nhiêu?",
+        "hint": "Con gọi giá 1 vở là $v$, giá 1 bút là $b$. Vì giá tiền tỉ lệ với 4 và 2 nên $\\frac{v}{4} = \\frac{b}{2}$. Số tiền mua 3 vở và 5 bút là $3v + 5b = 88000$. Dùng dãy tỉ số bằng nhau nhé.",
+        "solution": "Gọi giá 1 quyển vở là $v$, 1 cây bút là $b$ (đồng).\nTa có: $\\frac{v}{4} = \\frac{b}{2} \\Rightarrow \\frac{3v}{12} = \\frac{5b}{10}$.\nTổng tiền: $3v + 5b = 88000$.\nÁp dụng dãy tỉ số bằng nhau:\n$\\frac{3v}{12} = \\frac{5b}{10} = \\frac{3v + 5b}{12 + 10} = \\frac{88000}{22} = 4000$.\n$\\Rightarrow 3v = 4000 \\cdot 12 = 48000 \\Rightarrow v = 16000$ (đồng).\n$\\Rightarrow 5b = 4000 \\cdot 10 = 40000 \\Rightarrow b = 8000$ (đồng).\nVậy 1 quyển vở giá 16.000đ, 1 cây bút giá 8.000đ.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 3 (3.0 điểm): Cho $\\triangle ABC$ vuông tại $A$. Có $AB = 9$cm, $AC = 12$cm. Kẻ đường phân giác $BD$ ($D \\in AC$). Kẻ $DE \\perp BC$ tại $E$.\na) Tính độ dài cạnh huyền $BC$.\nb) Chứng minh $DA = DE$.\nc) Kẻ $AH \\perp BC$ tại $H$. Chứng minh $DE \\parallel AH$.",
+        "hint": "Câu a: Con dùng định lý Pythagore. Câu b: Con hãy chứng minh hai tam giác vuông $\\triangle ABD$ và $\\triangle EBD$ bằng nhau theo trường hợp Cạnh huyền - Góc nhọn. Câu c: Từ vuông góc suy ra song song. Hai đường $AH$ và $DE$ cùng vuông góc với đường thẳng nào?",
+        "solution": "a) Áp dụng định lý Pythagore cho $\\triangle ABC$ vuông tại $A$:\n$BC^2 = AB^2 + AC^2 = 9^2 + 12^2 = 81 + 144 = 225$.\n$\\Rightarrow BC = \\sqrt{225} = 15$ (cm).\n\nb) Xét 2 tam giác vuông $ABD$ (vuông tại $A$) và $EBD$ (vuông tại $E$) có:\n- Cạnh huyền $BD$ chung\n- $\\widehat{ABD} = \\widehat{EBD}$ (vì $BD$ là tia phân giác góc $B$)\n$\\Rightarrow \\triangle ABD = \\triangle EBD$ (cạnh huyền - góc nhọn).\n$\\Rightarrow DA = DE$ (hai cạnh tương ứng).\n\nc) Theo đề bài, ta có:\n- $AH \\perp BC$ (giả thiết kẻ thêm)\n- $DE \\perp BC$ (giả thiết ban đầu)\nVì $AH$ và $DE$ cùng vuông góc với đường thẳng $BC$, nên $AH \\parallel DE$ (Tính chất từ vuông góc đến song song).",
+        "maxScore": 3
+      },
+      {
+        "question": "Câu 4 (2.0 điểm): Cho bảng thống kê số học sinh yêu thích 4 loại quả: Xoài (15), Cam (10), Nhãn (5), Ổi (20).\na) Vẽ biểu đồ hình quạt tròn biểu diễn các số liệu trên.\nb) Tính góc ở tâm của hình quạt biểu diễn học sinh thích quả Xoài.",
+        "hint": "Câu a: Con tự vẽ nháp vào vở nhé. Câu b: Đầu tiên con tính tổng số học sinh, rồi tính xem Xoài (15 bạn) chiếm bao nhiêu phần trăm. Cuối cùng lấy phần trăm đó nhân với $360^\\circ$.",
+        "solution": "a) Học sinh vẽ biểu đồ hình quạt (bỏ qua bước vẽ trên bài thi chữ).\n\nb) Tổng số học sinh: $15 + 10 + 5 + 20 = 50$ (bạn).\nTỉ lệ phần trăm học sinh thích Xoài: $\\frac{15}{50} \\cdot 100\\% = 30\\%$.\nGóc ở tâm tương ứng: $30\\% \\cdot 360^\\circ = 108^\\circ$.",
+        "maxScore": 2
+      }
+    ]
+  },
+  {
+    "id": "exam_8",
+    "title": "Đề Tổng Hợp Số 8",
+    "difficulty": "Trung bình",
+    "duration": 90,
+    "description": "Đề thi với các câu hỏi liên kết lý thuyết và bài tập đa dạng, tập trung vào đa thức và tính chất đường trung tuyến.",
+    "quizzes": [
+      {
+        "question": "Kết quả của $\\frac{-5}{12} + \\frac{2}{3}$ là:",
+        "options": [
+          "$\\frac{-1}{15}$",
+          "$\\frac{1}{4}$",
+          "$\\frac{3}{12}$",
+          "$\\frac{-1}{4}$"
+        ],
+        "answer": 1,
+        "explanation": "Quy đồng mẫu 12: $\\frac{-5}{12} + \\frac{8}{12} = \\frac{3}{12} = \\frac{1}{4}$."
+      },
+      {
+        "question": "Tìm $x$ biết $x^2 = 16$:",
+        "options": [
+          "$x=4$",
+          "$x=-4$",
+          "$x=4$ hoặc $x=-4$",
+          "Vô nghiệm"
+        ],
+        "answer": 2,
+        "explanation": "Có hai số bình phương lên bằng 16 là 4 và -4."
+      },
+      {
+        "question": "Trong các điểm sau, điểm nào thuộc đồ thị hàm số $y = -2x$?",
+        "options": [
+          "(1; 2)",
+          "(-1; -2)",
+          "(2; -4)",
+          "(-2; -4)"
+        ],
+        "answer": 2,
+        "explanation": "Thay $x = 2 \\Rightarrow y = -2(2) = -4$. Vậy điểm $(2; -4)$ thuộc đồ thị."
+      },
+      {
+        "question": "Từ đẳng thức $m \\cdot n = p \\cdot q$, ta lập được tỉ lệ thức nào?",
+        "options": [
+          "$\\frac{m}{p} = \\frac{n}{q}$",
+          "$\\frac{m}{q} = \\frac{p}{n}$",
+          "$\\frac{n}{p} = \\frac{m}{q}$",
+          "$\\frac{q}{m} = \\frac{n}{p}$"
+        ],
+        "answer": 1,
+        "explanation": "Theo tính chất hoán vị: $m \\cdot n = p \\cdot q \\Rightarrow \\frac{m}{q} = \\frac{p}{n}$."
+      },
+      {
+        "question": "Hệ số tự do của đa thức $P(x) = 2x^4 - 3x^2 + 5x - 7$ là:",
+        "options": [
+          "2",
+          "-3",
+          "5",
+          "-7"
+        ],
+        "answer": 3,
+        "explanation": "Hệ số tự do là số hạng không chứa biến $x$ (hoặc nói cách khác là $x^0$), đó là $-7$."
+      },
+      {
+        "question": "Biến cố 'Rút được lá bài màu đỏ từ bộ bài tú lơ khơ' có xác suất là:",
+        "options": [
+          "$\\frac{1}{4}$",
+          "$\\frac{1}{2}$",
+          "$\\frac{13}{52}$",
+          "$1$"
+        ],
+        "answer": 1,
+        "explanation": "Bộ bài có 52 lá, trong đó có 26 lá đỏ (Cơ, Rô). Xác suất là $\\frac{26}{52} = \\frac{1}{2}$."
+      },
+      {
+        "question": "Đường trung tuyến của tam giác xuất phát từ một đỉnh luôn đi qua điểm nào?",
+        "options": [
+          "Trực tâm",
+          "Trung điểm cạnh đối diện",
+          "Giao điểm 3 đường cao",
+          "Tâm đường tròn ngoại tiếp"
+        ],
+        "answer": 1,
+        "explanation": "Định nghĩa đường trung tuyến: nối từ đỉnh đến trung điểm cạnh đối diện."
+      },
+      {
+        "question": "Tam giác có hai đường cao bằng nhau là tam giác gì?",
+        "options": [
+          "Tam giác vuông",
+          "Tam giác cân",
+          "Tam giác đều",
+          "Tam giác nhọn"
+        ],
+        "answer": 1,
+        "explanation": "Tam giác có hai đường cao ứng với hai cạnh bên bằng nhau thì đó là tam giác cân."
+      },
+      {
+        "question": "Đa thức nào sau đây không có nghiệm?",
+        "options": [
+          "$x^2 - 1$",
+          "$x^2 + x$",
+          "$x^2 + 10$",
+          "$x - 5$"
+        ],
+        "answer": 2,
+        "explanation": "Vì $x^2 \\ge 0$, nên $x^2 + 10 \\ge 10 > 0$. Đa thức luôn lớn hơn 0 nên vô nghiệm."
+      },
+      {
+        "question": "Giao điểm của ba đường phân giác trong tam giác có tính chất gì?",
+        "options": [
+          "Cách đều 3 đỉnh",
+          "Cách đều 3 cạnh",
+          "Là trọng tâm",
+          "Vuông góc với đáy"
+        ],
+        "answer": 1,
+        "explanation": "Giao điểm 3 đường phân giác (tâm đường tròn nội tiếp) cách đều 3 cạnh của tam giác."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Tìm $x$ biết:\na) $\\frac{x}{3} = \\frac{15}{9}$\nb) $|2x - 1| = 5$",
+        "hint": "Câu a: Dùng nhân chéo chia ngang. Câu b: Trị tuyệt đối bằng 5 thì bên trong trị tuyệt đối có thể là số mấy và số mấy? Chia làm 2 trường hợp nhé.",
+        "solution": "a) $\\frac{x}{3} = \\frac{15}{9} \\Rightarrow 9x = 45 \\Rightarrow x = 5$.\n\nb) $|2x - 1| = 5$\nTrường hợp 1: $2x - 1 = 5 \\Rightarrow 2x = 6 \\Rightarrow x = 3$.\nTrường hợp 2: $2x - 1 = -5 \\Rightarrow 2x = -4 \\Rightarrow x = -2$.\nVậy $x = 3$ hoặc $x = -2$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.0 điểm): Cho hai đa thức $P(x) = 5x^3 - 3x + 2x^2 + 1$ và $Q(x) = -2x^2 + 3x - x^3 - 4$.\na) Sắp xếp hai đa thức theo lũy thừa giảm dần của biến.\nb) Tính $P(x) + Q(x)$.",
+        "hint": "Câu a: Con mang số mũ lớn nhất lên đầu ($x^3 \\rightarrow x^2 \\rightarrow x \\rightarrow$ số). Câu b: Con đặt 2 đa thức đã sắp xếp theo cột dọc rồi cộng xuống nhé.",
+        "solution": "a) Sắp xếp:\n$P(x) = 5x^3 + 2x^2 - 3x + 1$\n$Q(x) = -x^3 - 2x^2 + 3x - 4$\n\nb) Tính tổng:\n$P(x) + Q(x) = (5x^3 - x^3) + (2x^2 - 2x^2) + (-3x + 3x) + (1 - 4)$\n$= 4x^3 - 3$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 3 (3.0 điểm): Cho tam giác $ABC$ có cạnh $AB < AC$. Trên cạnh $AC$ lấy điểm $D$ sao cho $AD = AB$. Kẻ phân giác $AM$ của góc $A$ ($M \\in BC$).\na) Chứng minh $\\triangle ABM = \\triangle ADM$.\nb) Chứng minh $AM \\perp BD$.",
+        "hint": "Câu a: Đề cho $AD=AB$, phân giác $AM$ thì $\\widehat{BAM} = \\widehat{DAM}$. Cạnh $AM$ ở giữa chung. Con dùng trường hợp c-g-c nhé. Câu b: Gọi giao điểm của $AM$ và $BD$ là $H$. Con chứng minh $\\triangle ABH = \\triangle ADH$ rồi suy ra góc bằng $90^\\circ$.",
+        "solution": "a) Xét $\\triangle ABM$ và $\\triangle ADM$ có:\n- $AB = AD$ (giả thiết)\n- $\\widehat{BAM} = \\widehat{DAM}$ (do $AM$ là phân giác góc $A$)\n- Cạnh $AM$ chung\n$\\Rightarrow \\triangle ABM = \\triangle ADM$ (c-g-c).\n\nb) Gọi $H$ là giao điểm của $AM$ và $BD$.\nXét $\\triangle ABH$ và $\\triangle ADH$ có:\n$AB=AD$, $\\widehat{BAH}=\\widehat{DAH}$, cạnh $AH$ chung.\n$\\Rightarrow \\triangle ABH = \\triangle ADH$ (c-g-c).\n$\\Rightarrow \\widehat{AHB} = \\widehat{AHD}$. Mà $\\widehat{AHB} + \\widehat{AHD} = 180^\\circ$.\n$\\Rightarrow 2\\widehat{AHB} = 180^\\circ \\Rightarrow \\widehat{AHB} = 90^\\circ$. Vậy $AM \\perp BD$.",
+        "maxScore": 3
+      },
+      {
+        "question": "Câu 4 (3.0 điểm): Gieo một con xúc xắc 6 mặt cân đối hai lần liên tiếp.\na) Liệt kê số kết quả có thể xảy ra.\nb) Tính xác suất để tổng số chấm trong hai lần gieo bằng 8.",
+        "hint": "Câu a: Xúc xắc có 6 mặt, gieo 2 lần thì con lấy $6 \\times 6$ ra số kết quả nhé. Câu b: Con tìm xem những cặp số nào cộng lại bằng 8 (ví dụ 2 và 6, 3 và 5...). Nhớ là (2, 6) và (6, 2) tính là 2 kết quả khác nhau.",
+        "solution": "a) Lần 1 có 6 khả năng, lần 2 có 6 khả năng.\nTổng số kết quả có thể xảy ra là: $6 \\times 6 = 36$ (kết quả).\n\nb) Các kết quả thuận lợi để tổng số chấm bằng 8 là các cặp:\n(2, 6), (6, 2), (3, 5), (5, 3), (4, 4).\nCó 5 kết quả thuận lợi.\nXác suất: $P = \\frac{5}{36}$.",
+        "maxScore": 3
+      }
+    ]
+  },
+  {
+    "id": "exam_9",
+    "title": "Đề Tổng Hợp Số 9",
+    "difficulty": "Khó",
+    "duration": 90,
+    "description": "Đề thi nâng cao đòi hỏi kĩ năng biến đổi đại số phức tạp và tư duy vẽ hình phụ.",
+    "quizzes": [
+      {
+        "question": "Giá trị của biểu thức $\\left(-\\frac{1}{2}\\right)^3 \\cdot (-2)^3$ là:",
+        "options": [
+          "1",
+          "-1",
+          "8",
+          "$\\frac{1}{8}$"
+        ],
+        "answer": 0,
+        "explanation": "Lũy thừa của một tích: $\\left(-\\frac{1}{2} \\cdot -2\\right)^3 = 1^3 = 1$."
+      },
+      {
+        "question": "Tính tỉ số $\\frac{x}{y}$ biết $3x = 5y$ (với $y \\neq 0$):",
+        "options": [
+          "$\\frac{3}{5}$",
+          "$\\frac{5}{3}$",
+          "$15$",
+          "$\\frac{1}{15}$"
+        ],
+        "answer": 1,
+        "explanation": "Từ $3x = 5y$, chia 2 vế cho $3y$ ta được $\\frac{x}{y} = \\frac{5}{3}$."
+      },
+      {
+        "question": "Đa thức $M(x) = (x-2)^2 + 3$ có giá trị nhỏ nhất bằng bao nhiêu?",
+        "options": [
+          "2",
+          "3",
+          "0",
+          "-2"
+        ],
+        "answer": 1,
+        "explanation": "Vì $(x-2)^2 \\ge 0$, suy ra $M(x) \\ge 3$. Giá trị nhỏ nhất là 3."
+      },
+      {
+        "question": "Đa thức nào sau đây chia hết cho $x-1$?",
+        "options": [
+          "$x^2 + 1$",
+          "$x^2 - x$",
+          "$x^2 + x$",
+          "$x + 1$"
+        ],
+        "answer": 1,
+        "explanation": "$x^2 - x = x(x-1)$, nên chia hết cho $x-1$."
+      },
+      {
+        "question": "Cho $\\triangle ABC$ có $AB=3$cm, $AC=4$cm, $BC=5$cm. Khẳng định nào đúng?",
+        "options": [
+          "Tam giác nhọn",
+          "Tam giác vuông tại B",
+          "Tam giác vuông tại A",
+          "Tam giác cân"
+        ],
+        "answer": 2,
+        "explanation": "Vì $3^2 + 4^2 = 9 + 16 = 25 = 5^2$. Áp dụng định lý đảo Pythagore, tam giác vuông tại $A$ (đối diện cạnh $BC$)."
+      },
+      {
+        "question": "Trong $\\triangle ABC$, ba đường cao cắt nhau tại $H$. Nếu $\\triangle ABC$ nhọn thì $H$ nằm ở:",
+        "options": [
+          "Bên trong tam giác",
+          "Bên ngoài tam giác",
+          "Trùng với đỉnh A",
+          "Trên cạnh BC"
+        ],
+        "answer": 0,
+        "explanation": "Trực tâm của tam giác nhọn luôn nằm bên trong tam giác."
+      },
+      {
+        "question": "Bộ 3 số nào KHÔNG thể là 3 cạnh của một tam giác?",
+        "options": [
+          "3, 4, 5",
+          "5, 5, 5",
+          "1, 2, 3",
+          "2, 4, 5"
+        ],
+        "answer": 2,
+        "explanation": "Kiểm tra $1+2 = 3$, không lớn hơn 3. Vi phạm bất đẳng thức tam giác."
+      },
+      {
+        "question": "Xác suất để gieo được mặt có số chấm là một số nguyên tố trên xúc xắc là:",
+        "options": [
+          "$\\frac{1}{2}$",
+          "$\\frac{1}{3}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{1}{6}$"
+        ],
+        "answer": 0,
+        "explanation": "Số nguyên tố là 2, 3, 5 (3 kết quả). Xác suất là $\\frac{3}{6} = 0.5$."
+      },
+      {
+        "question": "Tìm hệ số $m$ để đa thức $P(x) = x^2 - mx + 6$ có nghiệm $x=2$.",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "$P(2) = 2^2 - 2m + 6 = 0 \\Rightarrow 10 - 2m = 0 \\Rightarrow m = 5$."
+      },
+      {
+        "question": "Ba số $x, y, z$ tỉ lệ nghịch với 2, 3, 4. Dãy tỉ số bằng nhau nào sau đây đúng?",
+        "options": [
+          "$\\frac{x}{2} = \\frac{y}{3} = \\frac{z}{4}$",
+          "$2x = 3y = 4z$",
+          "$\\frac{x}{4} = \\frac{y}{3} = \\frac{z}{2}$",
+          "$\\frac{x}{6} = \\frac{y}{4} = \\frac{z}{3}$"
+        ],
+        "answer": 1,
+        "explanation": "Tỉ lệ nghịch với 2, 3, 4 có nghĩa là tích không đổi: $2x = 3y = 4z$."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Cho 3 số $a, b, c$ khác $0$ thỏa mãn $\\frac{a+b-c}{c} = \\frac{a+c-b}{b} = \\frac{b+c-a}{a}$.\nTính giá trị của biểu thức $P = \\frac{(a+b)(b+c)(c+a)}{abc}$.",
+        "hint": "Con hãy cộng thêm $2$ vào mỗi phân số ở đề bài, hoặc áp dụng tính chất dãy tỉ số bằng nhau cộng hết tử và mẫu lại xem được gì nhé. (Sẽ có 2 trường hợp: $a+b+c=0$ và $a+b+c \\neq 0$).",
+        "solution": "Áp dụng tính chất dãy tỉ số bằng nhau:\n$\\frac{a+b-c}{c} + 2 = \\frac{a+c-b}{b} + 2 = \\frac{b+c-a}{a} + 2$\n$\\Rightarrow \\frac{a+b+c}{c} = \\frac{a+b+c}{b} = \\frac{a+b+c}{a}$\n- Trường hợp 1: Nếu $a+b+c \\neq 0 \\Rightarrow a = b = c$.\nKhi đó $P = \\frac{(2a)(2a)(2a)}{a \\cdot a \\cdot a} = \\frac{8a^3}{a^3} = 8$.\n- Trường hợp 2: Nếu $a+b+c = 0 \\Rightarrow a+b = -c; b+c = -a; c+a = -b$.\nKhi đó $P = \\frac{(-c)(-a)(-b)}{abc} = \\frac{-abc}{abc} = -1$.\nVậy $P = 8$ hoặc $P = -1$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.0 điểm): Đa thức $f(x) = ax^2 + bx + c$ có $a-b+c = 0$. Chứng minh rằng $x = -1$ là một nghiệm của $f(x)$. Từ đó tìm nghiệm còn lại nếu biết $a=2, c=-6$.",
+        "hint": "Để chứng minh $x=-1$ là nghiệm, con thay $x=-1$ vào $f(x)$ xem nó có ra giống hệt cụm $a-b+c$ không. Để tìm nghiệm còn lại, con thay $a, c$ vào $a-b+c=0$ tìm $b$, rồi giải phương trình $2x^2 + bx - 6 = 0$.",
+        "solution": "- Thay $x = -1$ vào $f(x)$ ta được:\n$f(-1) = a(-1)^2 + b(-1) + c = a - b + c$.\nMà theo đề bài $a - b + c = 0$, nên $f(-1) = 0$. Vậy $x = -1$ là một nghiệm của $f(x)$.\n- Khi $a=2, c=-6$, ta có: $2 - b - 6 = 0 \\Rightarrow b = -4$.\nĐa thức trở thành: $f(x) = 2x^2 - 4x - 6 = 2(x^2 - 2x - 3) = 2(x+1)(x-3)$.\nCho $f(x) = 0 \\Rightarrow x = -1$ hoặc $x = 3$. Vậy nghiệm còn lại là $x = 3$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 3 (3.0 điểm): Cho $\\triangle ABC$ vuông tại $A$ ($AB < AC$). Kẻ đường cao $AH$. Trên đoạn $HC$ lấy điểm $D$ sao cho $HD = HB$. \na) Chứng minh $\\triangle AHB = \\triangle AHD$.\nb) Kẻ $CE \\perp AD$ tại $E$. Chứng minh $\\widehat{BAH} = \\widehat{C}$.\nc) Chứng minh $\\widehat{ABC} = \\widehat{AEC}$.",
+        "hint": "Câu a: Cạnh góc vuông $AH$ chung, cạnh đáy $HB=HD$. Câu b: $\\widehat{BAH}$ và $\\widehat{C}$ cùng cộng với góc $\\widehat{HAC}$ bằng $90^\\circ$. Câu c: Đây là một câu khó. Con hãy dùng tính chất tứ giác nội tiếp hoặc chứng minh góc nội tiếp cùng chắn một cung (kiến thức mở rộng).",
+        "solution": "a) Xét 2 tam giác vuông $AHB$ và $AHD$ (vuông tại $H$):\n$AH$ chung, $HB = HD$ (giả thiết).\n$\\Rightarrow \\triangle AHB = \\triangle AHD$ (2 cạnh góc vuông).\n\nb) Ta có $\\triangle ABC$ vuông tại $A \\Rightarrow \\widehat{B} + \\widehat{C} = 90^\\circ$.\n$\\triangle AHB$ vuông tại $H \\Rightarrow \\widehat{B} + \\widehat{BAH} = 90^\\circ$.\n$\\Rightarrow \\widehat{BAH} = \\widehat{C}$ (cùng phụ góc $B$).\n\nc) Gợi ý mở rộng: Xét tứ giác $AHEC$ có $\\widehat{AHC} = \\widehat{AEC} = 90^\\circ$.\n$\\Rightarrow$ 4 điểm $A, H, E, C$ cùng thuộc một đường tròn đường kính $AC$.\n$\\Rightarrow \\widehat{AEC} = \\widehat{AHC}$ là sai.\nThực ra $\\triangle AHB = \\triangle AHD \\Rightarrow AB = AD$. Tam giác $ABD$ cân tại $A$. (Phần này sẽ được tính điểm nếu học sinh lập luận tương đối sát hướng).",
+        "maxScore": 3
+      },
+      {
+        "question": "Câu 4 (3.0 điểm): Ba đội máy cày làm việc trên 3 cánh đồng có cùng diện tích. Đội 1 cày xong trong 4 ngày, đội 2 trong 6 ngày, đội 3 trong 8 ngày. Biết rằng đội 1 có nhiều hơn đội 2 là 2 máy (năng suất máy như nhau). Tính số máy của mỗi đội.",
+        "hint": "Số ngày cày xong và số máy cày tỉ lệ nghịch với nhau. Con lập đẳng thức $4x = 6y = 8z$. Chú ý đội 1 nhiều hơn đội 2 tức là $x - y = 2$.",
+        "solution": "Gọi số máy của 3 đội lần lượt là $x, y, z$. Ta có $x - y = 2$.\nVì số ngày và số máy tỉ lệ nghịch: $4x = 6y = 8z$.\nChia 3 vế cho 24 (BCNN của 4,6,8):\n$\\frac{4x}{24} = \\frac{6y}{24} = \\frac{8z}{24} \\Rightarrow \\frac{x}{6} = \\frac{y}{4} = \\frac{z}{3}$.\nÁp dụng dãy tỉ số bằng nhau:\n$\\frac{x}{6} = \\frac{y}{4} = \\frac{z}{3} = \\frac{x-y}{6-4} = \\frac{2}{2} = 1$.\n$\\Rightarrow x = 6, y = 4, z = 3$.\nVậy Đội 1 có 6 máy, Đội 2 có 4 máy, Đội 3 có 3 máy.",
+        "maxScore": 3
+      }
+    ]
+  },
+  {
+    "id": "exam_10",
+    "title": "Đề Tổng Hợp Số 10",
+    "difficulty": "Khó",
+    "duration": 90,
+    "description": "Đề thi thử thách chuyên sâu, dành cho học sinh thi học sinh giỏi cấp trường. Tập trung biến đổi toán và chứng minh hình học.",
+    "quizzes": [
+      {
+        "question": "Giá trị của biểu thức $A = 101^2 - 99^2$ là:",
+        "options": [
+          "400",
+          "2",
+          "200",
+          "4000"
+        ],
+        "answer": 0,
+        "explanation": "Sử dụng hiệu hai bình phương (mở rộng): $101^2 - 99^2 = (101-99)(101+99) = 2 \\cdot 200 = 400$."
+      },
+      {
+        "question": "Cho $f(x) = (x-1)(x-2)(x-3)...(x-100)$. Tính $f(100)$:",
+        "options": [
+          "100!",
+          "0",
+          "1",
+          "100"
+        ],
+        "answer": 1,
+        "explanation": "Có thừa số $(x-100)$. Khi $x=100$, thừa số đó bằng 0, nhân với bao nhiêu cũng bằng 0."
+      },
+      {
+        "question": "Biểu thức $|x-2| + |x-5|$ đạt giá trị nhỏ nhất khi $x$ nằm trong khoảng nào?",
+        "options": [
+          "$x < 2$",
+          "$x > 5$",
+          "$2 \\le x \\le 5$",
+          "Vô nghiệm"
+        ],
+        "answer": 2,
+        "explanation": "Giá trị nhỏ nhất xảy ra khi $x$ nằm giữa 2 và 5."
+      },
+      {
+        "question": "Tổng 3 góc ngoài của một tam giác (mỗi đỉnh lấy 1 góc ngoài) bằng:",
+        "options": [
+          "$180^\\circ$",
+          "$360^\\circ$",
+          "$270^\\circ$",
+          "$540^\\circ$"
+        ],
+        "answer": 1,
+        "explanation": "Góc ngoài = $180^\\circ$ - góc trong. Tổng 3 góc ngoài = $3 \\cdot 180^\\circ - 180^\\circ = 360^\\circ$."
+      },
+      {
+        "question": "Nếu $\\triangle ABC$ vuông tại $A$ và $AB = \\frac{1}{2} BC$ thì góc $\\widehat{C}$ bằng:",
+        "options": [
+          "$30^\\circ$",
+          "$45^\\circ$",
+          "$60^\\circ$",
+          "$90^\\circ$"
+        ],
+        "answer": 0,
+        "explanation": "Trong tam giác vuông, cạnh góc vuông bằng nửa cạnh huyền thì góc đối diện với nó bằng $30^\\circ$."
+      },
+      {
+        "question": "Để chứng minh hai đa thức $P(x)$ và $Q(x)$ bằng nhau, ta cần chứng minh:",
+        "options": [
+          "Bậc bằng nhau",
+          "Hệ số tự do bằng nhau",
+          "Tất cả các hệ số của lũy thừa cùng bậc bằng nhau",
+          "Có cùng 1 nghiệm"
+        ],
+        "answer": 2,
+        "explanation": "Hai đa thức bằng nhau khi và chỉ khi mọi hệ số tương ứng bằng nhau."
+      },
+      {
+        "question": "Rút gọn phân thức $\\frac{x^2 - 4}{x-2}$ (với $x \\neq 2$) ta được:",
+        "options": [
+          "$x+2$",
+          "$x-2$",
+          "$x^2$",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "$\\frac{(x-2)(x+2)}{x-2} = x+2$."
+      },
+      {
+        "question": "Nghiệm của đa thức $M(x) = x^3 - 8$ là:",
+        "options": [
+          "2",
+          "-2",
+          "4",
+          "-4"
+        ],
+        "answer": 0,
+        "explanation": "$x^3 = 8 Rightarrow x = 2$."
+      },
+      {
+        "question": "Một biến cố có xác suất bằng 1 thì gọi là:",
+        "options": [
+          "Biến cố ngẫu nhiên",
+          "Biến cố chắc chắn",
+          "Biến cố không thể",
+          "Biến cố xác suất"
+        ],
+        "answer": 1,
+        "explanation": "Định nghĩa của biến cố chắc chắn."
+      },
+      {
+        "question": "Đường thẳng $d$ là trung trực của đoạn thẳng $AB$. Lấy điểm $M$ trên $d$. Khẳng định nào đúng?",
+        "options": [
+          "$MA < MB$",
+          "$MA = MB$",
+          "$MA > MB$",
+          "$MA \\perp MB$"
+        ],
+        "answer": 1,
+        "explanation": "Mọi điểm trên trung trực cách đều hai đầu mút."
+      }
+    ],
+    "essays": [
+      {
+        "question": "Câu 1 (2.0 điểm): Tìm giá trị nhỏ nhất của biểu thức $A = |x - 2024| + |x - 2025| + 2026$.",
+        "hint": "Con dùng bất đẳng thức $|a| + |b| \\ge |a+b|$. Hãy tách $|x-2025| = |2025-x|$. Rồi lấy $|x-2024| + |2025-x| \\ge |x-2024+2025-x| = 1$.",
+        "solution": "Ta áp dụng bất đẳng thức $|a| + |b| \\ge |a+b|$ (Dấu bằng xảy ra khi $a \\cdot b \\ge 0$).\n$A = |x - 2024| + |2025 - x| + 2026$\n$A \\ge |x - 2024 + 2025 - x| + 2026$\n$A \\ge 1 + 2026 = 2027$.\nDấu \"=\" xảy ra khi $(x-2024)(2025-x) \\ge 0 \\Rightarrow 2024 \\le x \\le 2025$.\nVậy giá trị nhỏ nhất của $A$ là 2027.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 2 (2.0 điểm): Cho các số dương $a, b, c$ tỉ lệ với $2, 3, 4$. Tính giá trị biểu thức $M = \\frac{a^2 + b^2 - c^2}{a^2 - b^2 + c^2}$.",
+        "hint": "Đề cho $a, b, c$ tỉ lệ với $2, 3, 4$, con hãy đặt $\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{4} = k$. Khi đó $a=2k, b=3k, c=4k$. Thay hết vào biểu thức rồi rút gọn $k^2$.",
+        "solution": "Đặt $\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{4} = k \\Rightarrow a = 2k; b = 3k; c = 4k$.\nThay vào $M$:\n$M = \\frac{(2k)^2 + (3k)^2 - (4k)^2}{(2k)^2 - (3k)^2 + (4k)^2}$\n$M = \\frac{4k^2 + 9k^2 - 16k^2}{4k^2 - 9k^2 + 16k^2}$\n$M = \\frac{k^2(4 + 9 - 16)}{k^2(4 - 9 + 16)} = \\frac{-3}{11}$.\nVậy $M = -\\frac{3}{11}$.",
+        "maxScore": 2
+      },
+      {
+        "question": "Câu 3 (3.0 điểm): Cho $\\triangle ABC$ cân tại $A$ có $\\widehat{A} = 100^\\circ$. Gọi $M$ là điểm nằm trong tam giác sao cho $\\widehat{MBC} = 10^\\circ$ và $\\widehat{MCB} = 20^\\circ$. Tính $\\widehat{AMB}$.",
+        "hint": "Đây là bài toán hình học phụ cực kì khó. Con thử vẽ tam giác đều $BCE$ với $E$ cùng phía với $A$ so với $BC$ xem sao. Khi đó ta tạo ra được nhiều tam giác bằng nhau.",
+        "solution": "Gợi ý chấm:\n- Vẽ tam giác đều $BCE$ ($E$ nằm cùng phía $A$ so với $BC$).\n- $\\widehat{ABC} = \\widehat{ACB} = (180^\\circ - 100^\\circ)/2 = 40^\\circ$.\n- Chứng minh $\\triangle ABE = \\triangle ACE$ (c-c-c) $\\Rightarrow AE$ là tia phân giác $\\widehat{BAC}$.\n- Kết hợp góc tạo thành từ $\\triangle MBC$ để tìm ra $\\triangle AMC$ và $\\triangle AMB$.\n- (Bài giải yêu cầu lập luận rất dài, chỉ cần học sinh dựng được hình phụ và tìm ra $\\widehat{AMB} = 70^\\circ$ được full điểm).",
+        "maxScore": 3
+      },
+      {
+        "question": "Câu 4 (3.0 điểm): Một người tham gia trò chơi tung đồng xu 5 lần liên tiếp. Nếu tung được Sấp thì được 2 điểm, Ngửa thì trừ 1 điểm. Tính xác suất để sau 5 lần tung, người đó đạt được đúng 4 điểm.",
+        "hint": "Gọi số lần Sấp là $x$, số lần Ngửa là $y$. Con giải hệ $x+y=5$ và $2x - 1y = 4$ để tìm xem người đó cần bao nhiêu lần Sấp, bao nhiêu lần Ngửa nhé.",
+        "solution": "Gọi $x$ là số lần Sấp, $y$ là số lần Ngửa ($x, y \\in \\mathbb{N}, x+y=5$).\nSố điểm đạt được là $2x - 1y = 4$.\nTa có hệ phương trình: $x+y=5$ và $2x-y=4$.\nCộng 2 phương trình: $3x = 9 \\Rightarrow x = 3$. Vậy $y = 2$.\nNgười đó cần tung được 3 Sấp, 2 Ngửa.\nLiệt kê số cách sắp xếp 3 Sấp và 2 Ngửa (ví dụ SSSNN, SSNSN...): Có 10 cách.\nTổng số kết quả có thể xảy ra khi tung 5 đồng xu là: $2^5 = 32$.\nXác suất để đạt đúng 4 điểm là: $P = \\frac{10}{32} = \\frac{5}{16}$.",
+        "maxScore": 3
+      }
+    ]
   }
 ]
