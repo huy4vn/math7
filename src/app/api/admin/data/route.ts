@@ -19,7 +19,8 @@ export async function POST(request: Request) {
     if (blobs.length === 0) return NextResponse.json([]);
 
     const res = await fetch(blobs[0].url, {
-      headers: { Authorization: `Bearer ${token}` }
+      headers: { Authorization: `Bearer ${token}` },
+      cache: 'no-store'
     });
 
     if (!res.ok) {

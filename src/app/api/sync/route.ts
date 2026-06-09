@@ -12,7 +12,7 @@ export async function GET() {
   try {
     const { blobs } = await list({ prefix: FILE_NAME, limit: 1, token });
     if (blobs.length === 0) return NextResponse.json([]);
-    const res = await fetch(blobs[0].url, { headers: { Authorization: `Bearer ${token}` } });
+    const res = await fetch(blobs[0].url, { headers: { Authorization: `Bearer ${token}` }, cache: 'no-store' });
     const data = await res.json();
     return NextResponse.json(data);
   } catch (error: any) {
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     const { blobs } = await list({ prefix: FILE_NAME, limit: 1, token });
     
     if (blobs.length > 0) {
-      const res = await fetch(blobs[0].url, { headers: { Authorization: `Bearer ${token}` } });
+      const res = await fetch(blobs[0].url, { headers: { Authorization: `Bearer ${token}` }, cache: 'no-store' });
       if (res.ok) {
         existingData = await res.json();
       }
