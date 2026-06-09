@@ -5,121 +5,221 @@
   "quizzes": [
     {
       "question": "Dữ liệu nào sau đây là dữ liệu định lượng?",
-      "options": ["Màu mắt", "Xếp loại học lực", "Chiều cao", "Sở thích"],
+      "options": [
+        "Màu mắt",
+        "Xếp loại học lực",
+        "Chiều cao",
+        "Sở thích"
+      ],
       "answer": 2,
       "explanation": "Chiều cao được biểu diễn bằng số đo, có thể so sánh và tính toán, nên là dữ liệu định lượng."
     },
     {
       "question": "Dữ liệu nào sau đây là dữ liệu định tính?",
-      "options": ["Điểm kiểm tra Toán", "Cân nặng", "Nơi sinh", "Số lượng thành viên trong gia đình"],
+      "options": [
+        "Điểm kiểm tra Toán",
+        "Cân nặng",
+        "Nơi sinh",
+        "Số lượng thành viên trong gia đình"
+      ],
       "answer": 2,
       "explanation": "Nơi sinh là thông tin thể hiện bằng chữ/tên gọi, không phải số liệu cụ thể."
     },
     {
       "question": "Biểu đồ nào thích hợp nhất để biểu diễn tỉ lệ phần trăm các thành phần trong tổng thể?",
-      "options": ["Biểu đồ cột", "Biểu đồ hình quạt tròn", "Biểu đồ đoạn thẳng", "Biểu đồ tranh"],
+      "options": [
+        "Biểu đồ cột",
+        "Biểu đồ hình quạt tròn",
+        "Biểu đồ đoạn thẳng",
+        "Biểu đồ tranh"
+      ],
       "answer": 1,
       "explanation": "Biểu đồ hình quạt tròn rất trực quan để xem tỉ lệ % của từng thành phần so với toàn thể (100%)."
     },
     {
       "question": "Biểu đồ đoạn thẳng thường dùng để làm gì?",
-      "options": ["So sánh các tổng thể", "Xem xét xu hướng thay đổi theo thời gian", "Đếm số lượng", "Phân loại màu sắc"],
+      "options": [
+        "So sánh các tổng thể",
+        "Xem xét xu hướng thay đổi theo thời gian",
+        "Đếm số lượng",
+        "Phân loại màu sắc"
+      ],
       "answer": 1,
       "explanation": "Biểu đồ đoạn thẳng hiển thị rất tốt sự biến thiên, xu hướng tăng giảm của một đại lượng theo thời gian."
     },
     {
       "question": "Trong biểu đồ hình quạt tròn, góc ở tâm tương ứng với $25\\%$ là bao nhiêu độ?",
-      "options": ["$25^\\circ$", "$45^\\circ$", "$90^\\circ$", "$180^\\circ$"],
+      "options": [
+        "$25^\\circ$",
+        "$45^\\circ$",
+        "$90^\\circ$",
+        "$180^\\circ$"
+      ],
       "answer": 2,
       "explanation": "Góc ở tâm = $25\\% \\times 360^\\circ = 90^\\circ$."
     },
     {
       "question": "Trong biểu đồ hình quạt tròn, góc ở tâm tương ứng với $10\\%$ là bao nhiêu độ?",
-      "options": ["$10^\\circ$", "$18^\\circ$", "$36^\\circ$", "$72^\\circ$"],
+      "options": [
+        "$10^\\circ$",
+        "$18^\\circ$",
+        "$36^\\circ$",
+        "$72^\\circ$"
+      ],
       "answer": 2,
       "explanation": "Góc ở tâm = $10\\% \\times 360^\\circ = 36^\\circ$."
     },
     {
       "question": "Nếu một hình quạt trong biểu đồ có góc ở tâm là $72^\\circ$, thì phần đó chiếm tỉ lệ bao nhiêu phần trăm?",
-      "options": ["$10\\%$", "$20\\%$", "$25\\%$", "$50\\%$"],
+      "options": [
+        "$10\\%$",
+        "$20\\%$",
+        "$25\\%$",
+        "$50\\%$"
+      ],
       "answer": 1,
       "explanation": "Tỉ lệ % = $(72^\\circ / 360^\\circ) \\times 100\\% = 20\\%$."
     },
     {
       "question": "Dữ liệu nào sau đây là không hợp lý?",
-      "options": ["Nhiệt độ cơ thể người là $37^\\circ$C", "Số học sinh nghỉ học là $1.5$ học sinh", "Điểm Toán là $8.5$", "Chiều cao là $155.5$ cm"],
+      "options": [
+        "Nhiệt độ cơ thể người là $37^\\circ$C",
+        "Số học sinh nghỉ học là $1.5$ học sinh",
+        "Điểm Toán là $8.5$",
+        "Chiều cao là $155.5$ cm"
+      ],
       "answer": 1,
       "explanation": "Số học sinh phải là số tự nhiên, không thể là số thập phân (1.5 học sinh)."
     },
     {
       "question": "Dữ liệu nào sau đây là không hợp lý về mặt logic?",
-      "options": ["Tổng tỉ lệ phần trăm các thành phần là $100\\%$", "Số tuổi của học sinh lớp 7 là 12 tuổi", "Chiều cao của một học sinh lớp 7 là 3 mét", "Số môn học là 10"],
+      "options": [
+        "Tổng tỉ lệ phần trăm các thành phần là $100\\%$",
+        "Số tuổi của học sinh lớp 7 là 12 tuổi",
+        "Chiều cao của một học sinh lớp 7 là 3 mét",
+        "Số môn học là 10"
+      ],
       "answer": 2,
       "explanation": "Chiều cao 3 mét (300 cm) là vô lý đối với một người bình thường, đặc biệt là học sinh lớp 7."
     },
     {
       "question": "Để biểu diễn doanh thu của một cửa hàng thay đổi như thế nào trong 12 tháng của năm, ta nên dùng biểu đồ nào?",
-      "options": ["Biểu đồ hình quạt tròn", "Biểu đồ đoạn thẳng", "Biểu đồ Venn", "Sơ đồ tư duy"],
+      "options": [
+        "Biểu đồ hình quạt tròn",
+        "Biểu đồ đoạn thẳng",
+        "Biểu đồ Venn",
+        "Sơ đồ tư duy"
+      ],
       "answer": 1,
       "explanation": "Để thấy xu hướng thay đổi (doanh thu tăng/giảm qua các tháng), biểu đồ đoạn thẳng là phù hợp nhất."
     },
     {
       "question": "Để biểu diễn tỉ lệ học sinh đạt loại Giỏi, Khá, Trung bình, Yếu của một lớp học, ta nên dùng biểu đồ nào?",
-      "options": ["Biểu đồ hình quạt tròn", "Biểu đồ đoạn thẳng", "Biểu đồ phân tán", "Trục số"],
+      "options": [
+        "Biểu đồ hình quạt tròn",
+        "Biểu đồ đoạn thẳng",
+        "Biểu đồ phân tán",
+        "Trục số"
+      ],
       "answer": 0,
       "explanation": "Để biểu diễn tỉ lệ phần trăm các thành phần so với tổng thể, biểu đồ hình quạt tròn là trực quan nhất."
     },
     {
       "question": "Trục hoành (nằm ngang) của biểu đồ đoạn thẳng thường biểu diễn đại lượng nào?",
-      "options": ["Tỉ lệ phần trăm", "Số lượng", "Giá trị của đại lượng", "Thời gian"],
+      "options": [
+        "Tỉ lệ phần trăm",
+        "Số lượng",
+        "Giá trị của đại lượng",
+        "Thời gian"
+      ],
       "answer": 3,
       "explanation": "Trục hoành thường biểu diễn các mốc thời gian (ngày, tháng, năm...) để theo dõi sự thay đổi."
     },
     {
       "question": "Tổng các góc ở tâm của tất cả các hình quạt trong một biểu đồ hình quạt tròn luôn bằng bao nhiêu?",
-      "options": ["$90^\\circ$", "$180^\\circ$", "$360^\\circ$", "$100^\\circ$"],
+      "options": [
+        "$90^\\circ$",
+        "$180^\\circ$",
+        "$360^\\circ$",
+        "$100^\\circ$"
+      ],
       "answer": 2,
       "explanation": "Toàn bộ hình tròn đại diện cho 100%, tương ứng với một góc đầy đủ là 360°."
     },
     {
       "question": "Dữ liệu nào là dữ liệu định tính trong danh sách sau: 'Khá, 8 điểm, 45 kg, 150 cm'?",
-      "options": ["Khá", "8 điểm", "45 kg", "150 cm"],
+      "options": [
+        "Khá",
+        "8 điểm",
+        "45 kg",
+        "150 cm"
+      ],
       "answer": 0,
       "explanation": "'Khá' là thông tin thể hiện bằng chữ (sự phân loại), nên là dữ liệu định tính."
     },
     {
       "question": "Trong một bảng thống kê về xếp loại học lực, tổng các tỉ lệ phần trăm của các loại Giỏi, Khá, Trung bình, Yếu là $105\\%$. Dữ liệu này bị lỗi gì?",
-      "options": ["Lỗi về mặt toán học", "Lỗi logic thực tế", "Lỗi phân loại", "Không có lỗi"],
+      "options": [
+        "Lỗi về mặt toán học",
+        "Lỗi logic thực tế",
+        "Lỗi phân loại",
+        "Không có lỗi"
+      ],
       "answer": 0,
       "explanation": "Tổng tỉ lệ phần trăm của các thành phần trong một tổng thể phải đúng bằng 100%. Vượt quá 100% là lỗi về toán học."
     },
     {
       "question": "Biểu đồ đoạn thẳng cho thấy đường nối từ thứ Hai đến thứ Ba đi lên (có độ dốc dương). Điều này có nghĩa là đại lượng đang xét:",
-      "options": ["Giảm đi", "Tăng lên", "Giữ nguyên", "Chưa thể xác định"],
+      "options": [
+        "Giảm đi",
+        "Tăng lên",
+        "Giữ nguyên",
+        "Chưa thể xác định"
+      ],
       "answer": 1,
       "explanation": "Đoạn thẳng đi lên thể hiện giá trị của đại lượng tại mốc thời gian sau lớn hơn mốc thời gian trước, tức là đang tăng lên."
     },
     {
       "question": "Một biểu đồ hình quạt tròn biểu diễn 4 loại trái cây yêu thích. Loại A ($25\\%$), Loại B ($40\\%$), Loại C ($15\\%$). Tỉ lệ của Loại D là bao nhiêu?",
-      "options": ["$10\\%$", "$20\\%$", "$25\\%$", "$30\\%$"],
+      "options": [
+        "$10\\%$",
+        "$20\\%$",
+        "$25\\%$",
+        "$30\\%$"
+      ],
       "answer": 1,
       "explanation": "Tổng tỉ lệ phải là $100\\%$. Tỉ lệ loại D = $100\\% - (25\\% + 40\\% + 15\\%) = 100\\% - 80\\% = 20\\%$."
     },
     {
       "question": "Với biểu đồ đoạn thẳng biểu diễn nhiệt độ từ thứ Hai đến Chủ nhật, điểm cao nhất trên đồ thị ứng với ngày thứ mấy sẽ cho biết điều gì?",
-      "options": ["Ngày có nhiệt độ thấp nhất", "Ngày có nhiệt độ trung bình", "Ngày có nhiệt độ cao nhất", "Nhiệt độ của ngày đầu tuần"],
+      "options": [
+        "Ngày có nhiệt độ thấp nhất",
+        "Ngày có nhiệt độ trung bình",
+        "Ngày có nhiệt độ cao nhất",
+        "Nhiệt độ của ngày đầu tuần"
+      ],
       "answer": 2,
       "explanation": "Điểm có vị trí cao nhất trên trục tung biểu thị giá trị lớn nhất của đại lượng, tức là ngày có nhiệt độ cao nhất."
     },
     {
       "question": "Trong bảng khảo sát môn học yêu thích, có dữ liệu ghi 'Số học sinh thích môn Toán là $-2$'. Dữ liệu này bị lỗi gì?",
-      "options": ["Lỗi về tỉ lệ", "Lỗi logic thực tế", "Lỗi về loại biểu đồ", "Không có lỗi"],
+      "options": [
+        "Lỗi về tỉ lệ",
+        "Lỗi logic thực tế",
+        "Lỗi về loại biểu đồ",
+        "Không có lỗi"
+      ],
       "answer": 1,
       "explanation": "Số lượng học sinh phải là số tự nhiên không âm. Có số âm học sinh là hoàn toàn vô lý trong thực tế."
     },
     {
       "question": "Khẳng định nào sai khi nói về dữ liệu định lượng?",
-      "options": ["Là thông tin thể hiện bằng số liệu.", "Có thể so sánh to nhỏ.", "Có thể thực hiện các phép toán cộng trừ nhân chia.", "Là thông tin thể hiện bằng chữ hoặc màu sắc."],
+      "options": [
+        "Là thông tin thể hiện bằng số liệu.",
+        "Có thể so sánh to nhỏ.",
+        "Có thể thực hiện các phép toán cộng trừ nhân chia.",
+        "Là thông tin thể hiện bằng chữ hoặc màu sắc."
+      ],
       "answer": 3,
       "explanation": "Dữ liệu thể hiện bằng chữ hoặc màu sắc là dữ liệu định tính, không phải định lượng."
     }
@@ -127,52 +227,52 @@
   "essays": [
     {
       "question": "Phân loại các dữ liệu sau thành dữ liệu định tính và định lượng: \n1. Số lượng học sinh trong lớp (45 học sinh).\n2. Điểm thi giữa kì môn Toán (8.5 điểm).\n3. Màu áo đồng phục (Trắng, Xanh).\n4. Xếp loại hạnh kiểm (Tốt, Khá, Trung bình).",
-      "hint": "Xem dữ liệu nào là con số (định lượng), dữ liệu nào là chữ/loại (định tính).",
+      "hint": "Con hãy nhớ lại lý thuyết nhé: Dữ liệu nào là con số cụ thể, tính toán được thì gọi là \"định lượng\". Dữ liệu nào chỉ dùng để gọi tên, phân loại (chữ viết) thì gọi là \"định tính\".",
       "solution": "- **Dữ liệu định lượng** (thể hiện bằng số liệu, tính toán được): 1. Số lượng học sinh (45); 2. Điểm thi (8.5).\n- **Dữ liệu định tính** (thể hiện bằng chữ, phân loại): 3. Màu áo (Trắng, Xanh); 4. Xếp loại hạnh kiểm (Tốt, Khá, Trung bình)."
     },
     {
       "question": "Trong biểu đồ hình quạt tròn thể hiện sở thích thể thao của học sinh, môn Bóng đá chiếm $40\\%$. Tính góc ở tâm của hình quạt biểu diễn môn Bóng đá.",
-      "hint": "Góc ở tâm = Tỉ lệ % nhân với $360^\\circ$.",
+      "hint": "Con dùng công thức này nhé: Góc ở tâm = Tỉ lệ % nhân với $360^\\circ$. Con thay số $40\\%$ vào để tính thử xem.",
       "solution": "Áp dụng công thức tính góc ở tâm:\n$$\\text{Góc ở tâm} = 40\\% \\times 360^\\circ = \\frac{40}{100} \\times 360^\\circ = 144^\\circ$$\nVậy hình quạt biểu diễn môn Bóng đá có góc ở tâm là $144^\\circ$."
     },
     {
       "question": "Một bảng thống kê sĩ số lớp học ghi: Tổng số $40$ học sinh, trong đó có $45$ học sinh Nữ và $-5$ học sinh Nam. Dữ liệu này mắc những lỗi không hợp lý nào?",
-      "hint": "Kiểm tra sự phù hợp với thực tế và logic toán học của từng con số.",
+      "hint": "Con thử xét xem: Số lượng con người (học sinh nam) có thể là số âm ($-5$) được không? Và lớp có $40$ người mà riêng nữ đã $45$ người thì có hợp lý không?",
       "solution": "Bảng dữ liệu mắc 2 lỗi nghiêm trọng:\n1. **Lỗi logic thực tế:** Số lượng học sinh nam là $-5$ (số âm), điều này là vô lý vì số người đếm được phải là số tự nhiên không âm.\n2. **Lỗi toán học/logic:** Số học sinh nữ ($45$) lại lớn hơn tổng số học sinh của cả lớp ($40$), điều này là không thể."
     },
     {
       "question": "Cho bảng số liệu nhiệt độ lúc 12h trưa trong 5 ngày: Thứ 2 ($25^\\circ$C), Thứ 3 ($28^\\circ$C), Thứ 4 ($22^\\circ$C), Thứ 5 ($24^\\circ$C), Thứ 6 ($26^\\circ$C). Nếu vẽ biểu đồ đoạn thẳng, đường biểu diễn sẽ đi lên trong khoảng thời gian nào và đi xuống trong khoảng thời gian nào?",
-      "hint": "So sánh nhiệt độ ngày hôm sau với ngày hôm trước để xem tăng (đi lên) hay giảm (đi xuống).",
+      "hint": "Con hãy so sánh nhiệt độ của ngày hôm sau so với ngày hôm trước. Nếu nhiệt độ tăng lên thì đường biểu diễn sẽ đi lên, nếu nhiệt độ giảm đi thì đường biểu diễn sẽ đi xuống.",
       "solution": "- **Đường biểu diễn đi lên (tăng nhiệt độ):** Từ Thứ 2 đến Thứ 3 ($25^\\circ$C lên $28^\\circ$C); từ Thứ 4 đến Thứ 5 ($22^\\circ$C lên $24^\\circ$C); từ Thứ 5 đến Thứ 6 ($24^\\circ$C lên $26^\\circ$C).\n- **Đường biểu diễn đi xuống (giảm nhiệt độ):** Từ Thứ 3 đến Thứ 4 ($28^\\circ$C xuống $22^\\circ$C)."
     },
     {
       "question": "Gia đình An có tổng chi tiêu tháng là $20$ triệu đồng. Biểu đồ hình quạt tròn cho thấy chi phí Giáo dục chiếm góc ở tâm là $54^\\circ$. Hỏi chi phí cho Giáo dục là bao nhiêu tiền?",
-      "hint": "Trước tiên tính tỉ lệ % của chi phí Giáo dục ($54^\\circ / 360^\\circ$), sau đó nhân tỉ lệ đó với 20 triệu.",
+      "hint": "Trước tiên, con tính xem $54^\\circ$ chiếm bao nhiêu phần trăm của cả vòng tròn $360^\\circ$. Sau đó con lấy phần trăm đó nhân với tổng chi tiêu $20$ triệu là sẽ ra số tiền cho Giáo dục.",
       "solution": "Bước 1: Tính tỉ lệ phần trăm của chi phí Giáo dục:\n$$\\text{Tỉ lệ} \\% = \\frac{54^\\circ}{360^\\circ} \\times 100\\% = 15\\%$$\nBước 2: Tính số tiền chi cho Giáo dục:\n$$\\text{Chi phí Giáo dục} = 15\\% \\times 20.000.000 = 3.000.000 \\text{ (đồng)}$$\nVậy gia đình An chi 3 triệu đồng cho Giáo dục."
     },
     {
       "question": "Một bài khảo sát về phương tiện đi học có tỉ lệ như sau: Xe đạp ($45\\%$), Xe máy ($30\\%$), Xe buýt ($20\\%$), Đi bộ ($15\\%$). Theo bạn, kết quả khảo sát này có tính hợp lý không? Vì sao?",
-      "hint": "Cộng tất cả các tỉ lệ phần trăm lại xem tổng bằng bao nhiêu.",
+      "hint": "Con hãy thử làm phép cộng: lấy tất cả các phần trăm cộng lại với nhau xem tổng có ra đúng $100\\%$ không nhé. Nếu vượt quá hoặc thiếu thì số liệu đó không hợp lý.",
       "solution": "Ta tính tổng các tỉ lệ phần trăm:\n$$45\\% + 30\\% + 20\\% + 15\\% = 110\\%$$\nTổng tỉ lệ phần trăm vượt quá $100\\%$. Do đó, kết quả khảo sát này **không hợp lý** (lỗi về mặt toán học)."
     },
     {
       "question": "Biểu đồ đoạn thẳng biểu diễn số lượng sách bán được của nhà sách trong 4 tháng đầu năm. Đường biểu diễn dốc lên từ tháng 1 đến tháng 2, nằm ngang từ tháng 2 đến tháng 3, và dốc xuống từ tháng 3 đến tháng 4. Hãy nhận xét về tình hình bán sách của nhà sách.",
-      "hint": "Dốc lên nghĩa là tăng, nằm ngang nghĩa là không đổi, dốc xuống nghĩa là giảm.",
+      "hint": "Trong biểu đồ đoạn thẳng: Đường dốc lên nghĩa là số lượng đang tăng. Đường nằm ngang là số lượng không đổi. Đường dốc xuống là số lượng đang giảm. Con áp dụng vào từng khoảng thời gian nhé.",
       "solution": "Dựa vào biểu đồ, ta có thể nhận xét tình hình kinh doanh như sau:\n- **Tháng 1 đến tháng 2:** Số lượng sách bán được tăng lên.\n- **Tháng 2 đến tháng 3:** Số lượng sách bán được giữ nguyên, không thay đổi (ổn định).\n- **Tháng 3 đến tháng 4:** Số lượng sách bán được giảm đi."
     },
     {
       "question": "Nêu mục đích sử dụng và đặc điểm nhận diện chính của Biểu đồ hình quạt tròn và Biểu đồ đoạn thẳng.",
-      "hint": "Nhớ lại bảng so sánh về từ khóa mục đích và hình dạng (tỉ lệ vs xu hướng).",
+      "hint": "Con nhớ lại bảng so sánh cuối phần lý thuyết nhé: Biểu đồ hình quạt tròn từ khóa là \"Tỉ lệ phần trăm, cơ cấu\". Còn biểu đồ đoạn thẳng từ khóa là \"Xu hướng thay đổi, diễn biến theo thời gian\".",
       "solution": "- **Biểu đồ hình quạt tròn:** \n  - Mục đích: Biểu diễn tỉ lệ phần trăm, cơ cấu, thành phần của từng bộ phận so với toàn thể.\n  - Đặc điểm: Là một hình tròn được chia thành nhiều hình quạt (lát cắt), tổng các lát cắt luôn bằng 100% hoặc $360^\\circ$.\n- **Biểu đồ đoạn thẳng:**\n  - Mục đích: Thể hiện sự thay đổi, diễn biến, xu hướng của một đại lượng theo thời gian.\n  - Đặc điểm: Gồm các điểm dữ liệu nằm trên hệ trục toạ độ (thời gian - giá trị), được nối với nhau bằng các đoạn thẳng."
     },
     {
       "question": "Trong lớp 7A có $40$ học sinh. Số học sinh đạt điểm Tốt môn Thể dục là $10$ em. Hỏi khi vẽ biểu đồ hình quạt tròn biểu diễn phân loại điểm môn Thể dục, hình quạt biểu diễn điểm Tốt có góc ở tâm là bao nhiêu?",
-      "hint": "Tính tỉ lệ % của số học sinh đạt điểm Tốt so với cả lớp, rồi nhân với $360^\\circ$.",
+      "hint": "Bước 1: Con tính xem $10$ bạn chiếm bao nhiêu phần trăm so với cả lớp ($40$ bạn). Bước 2: Lấy số phần trăm đó nhân với $360^\\circ$ để ra được góc ở tâm của hình quạt.",
       "solution": "Bước 1: Tính tỉ lệ phần trăm học sinh đạt điểm Tốt:\n$$\\text{Tỉ lệ} = \\frac{10}{40} \\times 100\\% = 25\\%$$\nBước 2: Tính góc ở tâm tương ứng:\n$$\\text{Góc ở tâm} = 25\\% \\times 360^\\circ = 90^\\circ$$\nVậy hình quạt đó có góc ở tâm là $90^\\circ$."
     },
     {
       "question": "Cho bảng dữ liệu: {Tuổi: 12, Cân nặng: 40kg, Quê quán: Hà Nội, Chiều cao: 1.45m, Xếp loại: Giỏi}. Hãy trích xuất ra một tập hợp dữ liệu định lượng và một tập hợp dữ liệu định tính từ bảng này.",
-      "hint": "Phân nhóm theo tính chất: số lượng tính toán được và chữ/tên gọi phân loại.",
+      "hint": "Con hãy nhặt ra các dữ liệu là con số cụ thể (để tính toán đo lường) bỏ vào nhóm định lượng. Các dữ liệu mang tính gọi tên, miêu tả (chữ viết) thì con bỏ vào nhóm định tính nhé.",
       "solution": "- **Tập hợp dữ liệu định lượng (số liệu):** {12, 40kg, 1.45m}. Đây là các số đo về tuổi, cân nặng và chiều cao.\n- **Tập hợp dữ liệu định tính (chữ, phân loại):** {Hà Nội, Giỏi}. Đây là thông tin về địa danh và phân loại năng lực."
     }
   ]
